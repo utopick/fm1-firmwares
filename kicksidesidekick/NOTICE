@@ -1,0 +1,67 @@
+KickSide - Your Musical SideKick (the fm1-accompaniment project): our licences, and third-party code and its licences
+=====================================================================================================================
+
+Our own work, by licence (REUSE.toml and the SPDX line at the top of each file say which applies to a file):
+  - code (firmware/app/, tools/, the scripts in songs/): GPL-3.0-or-later (LICENSE, LICENSES/GPL-3.0-or-later.txt);
+  - songs, backtracks and the docs: CC BY-SA 4.0 (LICENSES/CC-BY-SA-4.0.txt). The songs' tunes are public domain or the
+    project's own (each song.yaml says which); the arrangements are the project's;
+  - the KickSide name, logo and mascot (firmware/assets/): not licensed, all rights reserved by the author
+    (LICENSES/LicenseRef-KickSide-Trademark.txt).
+
+What follows is the third-party code that is copied into this repository (firmware/vendor/) and ends up in the firmware
+package. Each folder keeps its own licence files; the paths below are from the repository root. Read from those files,
+2026-11-14 (firmware/vendor/README.md has the upstream commits).
+
+1. fm1-base and felucca-bsp: MPL-2.0
+   Paths: firmware/vendor/fm1-base/ (licence: firmware/vendor/fm1-base/LICENSE, LICENSING.md, CREDITS.md, LICENSES/),
+          firmware/vendor/fm1-base/bsp/ (felucca-bsp; licence: firmware/vendor/fm1-base/bsp/LICENSE, LICENSING.md, NOTICE).
+   Copyright (C) 2026 Charles Vestal and Leo Kuroshita (@kurogedelic), Hugelton Instruments, with the contributors named in
+   firmware/vendor/fm1-base/CREDITS.md (among them keremimo / Kerem Kilic, Henri David (hdavid), Chris Farrell).
+   Upstream: https://github.com/charlesvestal/fm1-base (2d8ed748cdade582c65d9fc8d8cf17da4ddadec8) and
+   https://github.com/hugelton/felucca-bsp (773b0b99f5ade1a30d1879b2618c6c3c3e6ba031).
+   Files WE changed (each change is marked "fm1-accompaniment:" in the source; the patch is
+   firmware/vendor/patches/fm1-base-flash-id.patch; MPL-2.0 applies to these files as modified, and we publish the change with
+   them):
+     firmware/vendor/fm1-base/device/main_fm1.c        accepts the flash IDs 0x856014 and 0xB36014, any other: RAM only
+     firmware/vendor/fm1-base/bsp/loader/ldr_core.c    the update loader refuses an unknown flash ID before it erases anything
+     firmware/vendor/fm1-base/bsp/loader/loader.c      (the same)
+     firmware/vendor/fm1-base/tests/ldr_test.c         the loader's host test gets the new hook
+   Everything else in firmware/vendor/fm1-base/ is unchanged from upstream.
+   Fonts: Barlow (The Barlow Project Authors) and Terminus (Dimitar Toshkov Zhekov), SIL OFL 1.1 (firmware/vendor/fm1-base/
+   CREDITS.md). Not built into our firmware: fm1-base's own Bluetooth stack, its SBC encoder (Apache-2.0, AOSP) and micro-ecc
+   (BSD-2-Clause, Kenneth MacKay): the build leaves Bluetooth out ("parts" line of the build).
+
+2. Sonivox EAS (embedded wavetable synthesizer) and its General MIDI sound set: Apache-2.0
+   Paths: firmware/vendor/sonivox/ (licence: LICENSE, LICENSE-2.0.txt; NOTICE in firmware/vendor/sonivox/NOTICE and
+          firmware/vendor/sonivox/arm-wt-22k/NOTICE). The NOTICE text, as it stands there:
+
+       Copyright (c) 2004-2006 Sonic Network Inc.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+   Upstream: https://github.com/EmbeddedSynth/sonivox (86bd07341078084cb9f224b9e7d508fbf4751af0), a subset (arm-wt-22k/lib_src,
+   arm-wt-22k/host_src, the licence files). The GM sound set wt_200k_G (firmware/vendor/sonivox/arm-wt-22k/lib_src/wt_200k_G.c)
+   is (c) 2009 Sonic Network Inc., Apache-2.0. Unchanged. Our EAS configuration and host layer are our own (firmware/app/eas/).
+
+3. Felucca-Engines (the ANALOG, PHASE, NOISE and LOFI sound engines): MIT
+   Paths: firmware/vendor/felucca-engines/ (licence: firmware/vendor/felucca-engines/LICENSE; what was copied and from which
+          commit: VENDORED.md; src/fe_tables.h is generated from the MIT files by tools/gen_engine_tables.py).
+   Copyright (c) 2026 Leo Kuroshita (@kurogedelic), Hugelton Instruments.
+   Upstream: the Felucca repository's firmware/engines (d0260074ce100a47675814b7f38d61f11176c926). Only its MIT files are
+   copied, unchanged. Nothing else of Felucca (GPL-3.0) is used.
+
+4. The JieLi AC79 SDK files that the build puts into the package (uboot.boot, cfg_tool.bin, eq_cfg_hw.bin): Apache-2.0
+   (Zhuhai Jieli Technology). Read from third_party/jieli/ at build time; not copied into this repository.
+
+Not used, by decision D017: Polly's changes to EAS and any GPL code (Polly, TRIO's references, fm1-chord, CoralFlower, Felucca
+apart from the MIT engines above).

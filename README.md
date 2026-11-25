@@ -5,330 +5,335 @@ These are copies of the community firmwares for the M-VAVE FM-1, kept here so th
 isn't here yet, the app gets it from the firmware's own link instead.
 
 Each firmware belongs to its author and keeps its own licence, which is listed below. Only firmwares with an open licence
-are copied here, and each one's source code is at the link in its row. The files and this list are made by `update.py`,
+are copied here. Each one's folder also holds the licence and notice files of its repository, and its source code is at
+the link in its row. The files and this list are made by `update.py`,
 from the list FM1.Pocket builds out of [the FM-1 Firmware Hub](https://thefirmwarehub.com/) and Joakim Eriksson's fm1-emu
 list, so please don't edit them by hand. If you wrote one of these and want it taken down, open an issue and it will be
 removed.
 
-| File | Firmware | Author | Licence | Source |
-|---|---|---|---|---|
-| 386dx/2.0.fwsc | 386DX | seajaysec | GPL-3.0 | https://github.com/seajaysec/386-DX-FM1-KaraokeBot |
-| a22/0.6.0.fwsc | A22 | A22 | MIT | https://github.com/abektes/a22 |
-| abyss/1.0.1.fwsc | ABYSS | Tentacle | GPL-3.0 | https://github.com/Tentacletunes/abyss |
-| adrift/0.4.0.fwsc | Adrift | Romain Guy | MPL-2.0 | https://github.com/romainguy/adrift |
-| aetherfm1/2.0.4.fwsc | AETHER FM1 | GR!MM | GPL-3.0 | https://github.com/jeanlucmouton30-jpg/AETHER-FM1 |
-| afterimages/2.11.fwsc | After Images | TheGrizard | MPL-2.0 | https://github.com/TheGrizard/After-Images |
-| agtdeck/0.6.3.fwsc | AGTDECK | Kevin Elliott | GPL-3.0 | https://github.com/kevinelliott/fm-1-agent-deck |
-| aisling/1.6.1.fwsc | AISLING | CU_STE | GPL-3.0 | https://github.com/stephencummins/fm1-aisling |
-| aislingfx1/1.1.fwsc | AISLING FX-1 | CU_STE | GPL-3.0 | https://github.com/stephencummins/fx1-aisling |
-| alter/1.1.fwsc | ALTER | Forban5929 | GPL-3.0 | https://github.com/Forban5929/Alter-FM1 |
-| amb/1.3.2.fwsc | AMB-1 | charlesvestal | MPL-2.0 | https://github.com/charlesvestal/fm1-amb |
-| ambpond/0.1.2.fwsc | amb-pond | superxor | MPL-2.0 | https://github.com/superxor/amb-pond |
-| amenity/2.1.1.fwsc | Amenity | Presethead | GPL-3.0 | https://github.com/ejtb76/amenity |
-| andromeda/1.8.2-an2-r5.fwsc | ANDROMEDA | Polaris Sound Lab | GPL-3.0 | https://github.com/drophlex/ANDROMEDAFM1 |
-| araminta/4.8.fwsc | Araminta | Wulgaren | GPL-3.0 | https://github.com/Wulgaren/Araminta |
-| arctic/2.1.6.fwsc | Arctic Scream | p0larpatch | GPL-3.0 | https://github.com/PolarPatch/Arctic-scream-FM-1 |
-| arcturus/1.7.fwsc | Arcturus S6 | Zeptosecond DSP | GPL-3.0 | https://github.com/zeptosecond-dsp/Arcturus-S6 |
-| argo/1.8.5.fwsc | Argo | echoe | GPL-3.0 | https://github.com/echoe/argo_fm1 |
-| arpwav09/1.0.7.fwsc | ARP WAV 09 | Wav.09.02 | GPL-3.0 | https://github.com/wav0902/wav-fm1 |
-| artihive/2.0.6.fwsc | ARTIHIVE | KHAV | GPL-3.0 | https://github.com/KHAVld/ARTIHIVE |
-| assid/1.0.fwsc | ASS-ID | altessproduction | GPL-3.0 | https://github.com/altessproduction/ASS-ID_FM1 |
-| astra/0.1.fwsc | Astra | Michael Perry | GPL-3.0 | https://github.com/MichaelAPerry/ASTRA-FM-1 |
-| atek303/1.4.fwsc | ATEK303 | Animatek | GPL-3.0 | https://github.com/animatek/FM1-Animatek |
-| atlatl/1.2.5.fwsc | Skiff Atlatl | LIkst4 | GPL-3.0 | https://github.com/LIkst4/skiff-atlatl |
-| atlatltheatltuner/0.8.fwsc | Atl-Atl: The Atltuner | Jason Scheirer | GPL-3.0 | https://github.com/jasonbot/atl-atl |
-| audiorouter/0.6.2.fwsc | FM1 Audio Router | MAX RAVE | MPL-2.0 | https://github.com/maxravedj/fm1-audio-router |
-| b1/5.6.fwsc | B1 | Joppe Sikken (SikkenWorks) | GPL-3.0 | https://github.com/SikkenWorks/B1-Drawbar-Organ |
-| b3organ/0.6.1.fwsc | B3 ORGAN | R-Jeb | GPL-3.0 | https://github.com/R-Jeb/setBfree-fm1 |
-| baile/0.3.fwsc | BAILE | saulofilho | GPL-3.0 | https://github.com/saulofilho/baile-fm1 |
-| basssomething2/0.9.4.fwsc | Bass Something 2 | John Brown | MPL-2.0 | https://github.com/imijes/bass-something-2 |
-| bb1/2.3-hub.1.fwsc | BB1 | Ole Big Beat / TexasRADIO | GPL-3.0 | https://github.com/TexasRADIO/bb1-firmware |
-| beetle/1.8.3.fwsc | BEETLE | Joppe Sikken (SikkenWorks) | GPL-3.0 | https://github.com/SikkenWorks/BEETLE |
-| beetleblue/1.3.1.fwsc | BEETLE BLUE | Joppe Sikken (SikkenWorks) | GPL-3.0 | https://github.com/SikkenWorks/BEETLE-BLUE |
-| beiwagen/0.2.fwsc | Beiwagen | Kabelmaier | GPL-3.0 | https://github.com/DPangerl/beiwagen |
-| berlinan/0.5.1.fwsc | Berlinan | Jiří Píša | GPL-2.0-or-later | https://github.com/jiripisa/fm1-berlinan |
-| bgirlfm1/0.0.2.fwsc | bgirl-fm1 | Doug Smith (dougbtv) | GPL-3.0 | https://github.com/track-forge/bgirl-fm1 |
-| bigorna/2026.11.25.fwsc | Bigorna | Nuno Zimas | GPL-3.0 | https://github.com/nzimas/bigorna |
-| blop/1.1.0.fwsc | Blop | Obsimo | GPL-3.0 | https://github.com/OSR-Experiment/OSR-1 |
-| bluesbox/2.2.3.fwsc | Blues Box | Brian Provost | GPL-3.0 | https://github.com/provostprovost/blues |
-| bocjuhn/1.0.0-rc10.fwsc | bocjuhn | ryuji kanagawa | GPL-3.0 | https://github.com/IanP06/bocjuhn |
-| boopbox/1.9.10.fwsc | BoopBox | Josh McFarlin | GPL-3.0 | https://github.com/Josh-McFarlin/boopbox |
-| bourdon/0.35.fwsc | BOURDON | Kevin Sint | GPL-3.0 | https://github.com/kevinsint/bourdon |
-| brussels/0.9.2.fwsc | BRUSSELS | Piknik Elektronik | GPL-3.0 | https://github.com/fadyOne/brussels-fm1 |
-| bubba/0.10.0-beta.fwsc | Bubba Machine | Erbubar23 | GPL-3.0 | https://github.com/Erbubar23/bubba-machine |
-| bunker/1.0.0.fwsc | Bunker Evolved | Kid Bunka | GPL-3.0 | https://github.com/kidbee85-beep/bunker-evolved |
-| burgerstudiofm1/1.8.2-bs19.fwsc | Burger Studio FM-1 | Maker Hip (Hippie Maker) | GPL-3.0 | https://github.com/perawoga2-coder/Fm1sampa |
-| bytemania/1.3.3.fwsc | Bytemania | lloyd (llozd) | GPL-3.0 | https://github.com/llozd/bytemania |
-| caravel/1.2.0.fwsc | Caravel | BonszaiMusic | GPL-3.0 | https://github.com/bonszaimusic/caravel |
-| carnac/0.9.6.fwsc | Carnac OS | OrbVorgis | GPL-3.0 | https://github.com/OwenKirby/carnac-os |
-| castletunia/1.4.1.fwsc | Castletunia | Brian Provost | GPL-3.0 | https://github.com/provostprovost/castletunia |
-| chipbox/1.7.0-signatureshowcase.fwsc | Chipbox | Pasquale Barilla | GPL-3.0 | https://github.com/pbarilla/chipbox |
-| choppah/1.6.fwsc | CHOPPAH | profikid | MPL-2.0 | https://github.com/profikid/fm1-break-choppah |
-| choralroot/0.46.fwsc | ChoralRoot | Quixotic7 | GPL-3.0 | https://github.com/Quixotic7/ChoralRootFM1 |
-| chord/0.3.fwsc | fm1-chord | math0ne | GPL-3.0 | https://github.com/math0ne/fm1-chord |
-| chordrun/2.6.fwsc | CHORD RUN | swtdr34mz (based on Blop by Obsimo) | GPL-3.0 | https://github.com/swtdr34mz-afk/CHORD_RUN |
-| clairpiano/1.0.1.fwsc | Clair Piano | Simon Tokumine | MPL-2.0 | https://github.com/tokumine/fm1-claire-piano |
-| clatter/1.0.0.fwsc | CLATTER Pocket | allmyfriendsaresynths | GPL-3.0 | https://github.com/clickysteve/clatter-pocket |
-| clavioline/1.3.fwsc | Clavioline | MammothCheese | GPL-3.0 | https://github.com/MammothCheese/clavioline |
-| clipper/1.3.1.fwsc | Clipper | isod89 | GPL-3.0 | https://github.com/isod89/clipper-fm1 |
-| collapse/0.3.2.fwsc | COLLAPSE | swtdr34mz | MPL-2.0 | https://github.com/swtdr34mz-afk/COLLAPSE |
-| conductor/1.0.fwsc | CONDUCTOR | MammothCheese | GPL-3.0 | https://github.com/MammothCheese/conductor |
-| coqui/1.1.2.fwsc | COQUÍ | saulofilho | GPL-3.0 | https://github.com/saulofilho/coqui-fm1 |
-| coralflower/0.7.1.fwsc | CoralFlower | FicusFicusov | GPL-3.0 | https://github.com/FicusFicusov/CoralFlower |
-| cord/1.0.3.fwsc | CORD | Chase DeAnda | GPL-3.0 | https://github.com/chasedeanda/cord-fm1 |
-| cs1/2026.10.22.fwsc | CS-1 | twochannels | GPL-3.0 | https://github.com/twochannels/CS-1 |
-| ctl/1.0.3.fwsc | CTL-1 | charlesvestal | MPL-2.0 | https://github.com/charlesvestal/fm1-ctl |
-| cultbox/1.2.fwsc | CULTBOX | beatcult | GPL-3.0 | https://github.com/beatcult/CULTBOX |
-| cursedos/0.20.0.fwsc | cursed os | cursedsound | GPL-3.0 | https://github.com/cursedsound-music/CS_FM1 |
-| cutador/1.2.1.fwsc | Cut-A-Dor | Kid Bunka | GPL-3.0 | https://github.com/kidbee85-beep/cut-a-dor-release |
-| dabke/0.22-beta.fwsc | DABKE | STUDIOMORPHIK | MPL-2.0 | https://github.com/wissamsader/dabke |
-| dark1/1.0.7.fwsc | DARK-1 | Polystellarflow | GPL-3.0 | https://github.com/sparky480v/Dark-1 |
-| darkfunkdurcalsynt/1.8.2-dfd10.fwsc | Dark Funk Durcal Synt | Polaris Sound Lab | GPL-3.0 | https://github.com/drophlex/dark-funk-durcal-synt-fm1 |
-| daurade/1.0.1-01d6bd0.fwsc | Daurade | delirioux | GPL-3.0 | https://github.com/delirioux/daurade |
-| dayvx/0.1.1.fwsc | DAYV-X | Repoman | GPL-3.0 | https://github.com/halfman73/dayv-x |
-| deepfield/1.11.fwsc | DEEP FIELD | Kyle McCann | MPL-2.0 | https://github.com/WisestWizard/deepfield |
-| delrio/1.0.1.fwsc | Del Rio | Jess Del Rio | MPL-2.0 | https://github.com/jsopdebeeck/fm1-delrio |
-| demake/0.4.25.fwsc | Demake | Sequencist | GPL-3.0 | https://github.com/InigoHernandez/demake-synth |
-| dfdacidengine/1-v1.8.2-da1-r7.fwsc | DFD ACID ENGINE | Polaris Sound Lab | GPL-3.0 | https://github.com/drophlex/DFD-ACID-ENGINE |
-| dg5/0.5.1.fwsc | DØG-5 | ZIGGY (DØGS) | GPL-3.0 | https://github.com/vincentzsk-prod/dog5 |
-| dinghy/0.6.fwsc | Dinghy | zvenson | GPL-3.0 | https://github.com/zvenson/dinghy |
-| dp3oyb/1.1.1.fwsc | DP3OYB | DP3OYB | GPL-3.0 | https://github.com/DP3OYB/DP3OYB |
-| drift/0.9.6.fwsc | DRIFT | FBNFRTG | GPL-3.0 | https://github.com/FBNFRTG/drift-fm1 |
-| drumlab/1.0.0-graduationday.fwsc | Drumlab | pbarilla | GPL-3.0 | https://github.com/pbarilla/drumlab |
-| drumtonic/0.9.7.fwsc | Drumtonic | Federico Ciapi | GPL-3.0 | https://github.com/fc79/drumtonic |
-| dub/1.5.0.fwsc | DUB-1 | sbegueria | GPL-3.0 | https://github.com/sbegueria/fm1-dub |
-| dubbox/1.0.9.fwsc | DUB-BOX | altessproduction | MPL-2.0 | https://github.com/altessproduction/DUB-BOX-FM1 |
-| duell/1.3.7.fwsc | DUELL | OSCILL/R | GPL-3.0 | https://github.com/oscillr/DUELL |
-| dungeontracker/1.5.fwsc | Dungeon Tracker | Bourbon Weather | GPL-3.0 | https://github.com/BourbonWX/Dungeon-Tracker |
-| dx747/0.1.fwsc | DX747 | Esben von Buchwald | GPL-3.0 + SDK exception | https://github.com/esbenvb/fm1-dx747 |
-| echofield/0.2.15.fwsc | ECHOFIELD | PhilipsKnobs | MIT | https://github.com/Philip-Bos/echofield-fm1 |
-| elixir/1.5.4.fwsc | Elixir | Dan Majka | GPL-3.0 | https://github.com/dmajka/elixir |
-| estampie/0.4.0.fwsc | ESTAMPIE | Drew Robinson | GPL-3.0 | https://github.com/ocean/estampie |
-| etch/1.88.fwsc | ETCH | SikkenWorks | GPL-3.0 | https://github.com/SikkenWorks/ETCH |
-| evilgenius/0.1.4.fwsc | EVIL GENIUS | Quixotic7 | MPL-2.0 | https://github.com/Quixotic7/evilgenius |
-| fart/1.1.0.fwsc | Fart Machine One | adamcharleswilsonmusic-code | GPL-3.0 | https://github.com/adamcharleswilsonmusic-code/Fart-Machine-One |
-| felucca/1.8.3.fwsc | Felucca | hugelton | GPL-3.0 | https://github.com/hugelton/Felucca |
-| felucca-salt/0.9-salt14.fwsc | Felucca [Salt] | ChanceTheMaker | GPL-3.0 | https://github.com/ChanceTheMaker/Felucca |
-| felucca8/1.8.5.fwsc | Felucca 8 Patterns | echoe | GPL-3.0 | https://github.com/echoe/Felucca_8_patterns |
-| fernbedienung/1.2.fwsc | Fernbedienung | Kabelmaier | GPL-3.0 | https://github.com/DPangerl/fernbedienung |
-| fimba/0.7.0.fwsc | FiMba-1 | jadamsowers | GPL-3.0 | https://github.com/jadamsowers/fm1-fimba |
-| fizz/0.13.0.fwsc | FIZZ | Quixotic7 | MPL-2.0 | https://github.com/Quixotic7/FIZZ |
-| flat20/0.3.2.fwsc | FLAT-20 | Brandon Matthews | GPL-3.0 | https://github.com/thenewwazoo/FLAT-20 |
-| flyfish/1.1.1-fc4974e.fwsc | Flyfish | delirioux | GPL-3.0 | https://github.com/delirioux/flyfish |
-| fm106/1.02.fwsc | FM-106 | PatttF | GPL-3.0 | https://github.com/PatttF/fm-106 |
-| fm1800/0.12.5.fwsc | FM1-800 | morbious22 | GPL-3.0 | https://github.com/morbious22/FM1-800 |
-| fm1again/1.0.4.fwsc | FM-1 Again | PolarPatch | GPL-3.0 | https://github.com/PolarPatch/FM-1-Again |
-| fm1amy/0.1.0.fwsc | fm1-amy | Dan Ellis | GPL-3.0 | https://github.com/dpwe/fm1-amy |
-| fm1dock/0.9.0.fwsc | fm1-dock | joakimeriksson | GPL-3.0 | https://github.com/joakimeriksson/fm1-dock |
-| fm1doom/0.5.fwsc | FM-1 Doom | zvenson | GPL-3.0 | https://github.com/zvenson/fm1doom |
-| fm1gm/1.2.0.fwsc | FM1-GM | jartificer | GPL-3.0 | https://github.com/jartificer/fm1-gm |
-| fm1midimania/0.9.4.fwsc | FM-1 Midi-Mania | Shan-Sherif | GPL-3.0 | https://github.com/shan-sherif/fm-1-midi-mania |
-| fm1pockettutor/0.7.fwsc | FM1 Pocket Tutor | Wellington Saam | GPL-3.0 | https://github.com/wellingtonsaam/fm1-pocket-tutor |
-| fm1tonic/1.8e.fwsc | FM1 TONIC | Luigi Rossi | GPL-3.0 | https://github.com/luigirossi-music/fm1-tonic |
-| fm1trax/0.9.5.fwsc | FM1-TRAX | jartificer | GPL-3.0 | https://github.com/jartificer/fm1-trax |
-| fm1yoga/1.0.fwsc | FM1 YOGA | Michael Milz | MPL-2.0 | https://github.com/michamilz/fm1-yoga |
-| fm1zx/1.2.0.fwsc | FM-1 ZX | Orest Kulik | GPL-3.0 | https://github.com/okulik/fm1-zx |
-| fmav1/0.6.4.fwsc | FMav-1 | wootrop & gpix | GPL-3.0 | https://github.com/wootr0p/fmav1 |
-| fmdj/2026.10.22.fwsc | FMDj | DEADACTIVE | GPL-3.0 | https://github.com/DeadActive/FMDj |
-| fmel/1.3.fwsc | FMEL-1 | Antonio Altea | GPL-3.0 | https://github.com/AntonioAltea/fmel-1 |
-| fmfam/0.3.1.fwsc | FM-FAM | David Amo | MPL-2.0 | https://github.com/davidamomusic/fm-fam |
-| fmini/2.6.0.fwsc | FMini-1 | Ruppert | GPL-3.0 | https://github.com/ruppert/fmini-1 |
-| fmkick/0.5.1.fwsc | FM-KICK | David Amo | MPL-2.0 | https://github.com/davidamomusic/fm-kick |
-| fmlarynx/0.4.2.fwsc | FMLarynx | Presethead | GPL-3.0 | https://github.com/ejtb76/FMLarynx |
-| fmy262/0.8.3.fwsc | FMY262 | Mr. Tracy Evans | GPL-2.0 | https://github.com/jpark-spec/fmy262 |
-| fomajam/0.1.12.fwsc | FOMAJAM | konsumer | GPL-3.0 | https://github.com/konsumer/fomajam |
-| fomni/0.5.fwsc | FoMni | charlesvestal | GPL-3.0 | https://github.com/charlesvestal/fm1-fomni |
-| frasil/3.4.1.fwsc | FRASIL | Styves Goupil | MPL-2.0 | https://github.com/styvesgoupil/frasil |
-| freitakt/1.0.1.fwsc | FREITAKT | StripedBear | GPL-3.0 | https://github.com/StripedBear/freitakt |
-| frodhes/0.9.14.fwsc | Frodhes | Leonardo Mirabal | GPL-3.0 | https://github.com/leonardoMirabal/frodhes |
-| fumi/1.1.1.fwsc | FuMi-1 | cartesive | GPL-3.0 | https://github.com/cartesive/fumi-1 |
-| gabberkix/1.0.0.fwsc | GABBERKIX | Presethead | GPL-3.0 | https://github.com/ejtb76/gabberkix |
-| gammawave/1.2.1-GW.fwsc | Pocket GammaWave | ShadowTune (GammaWave Audio) | GPL-3.0 | https://github.com/fvalente/GammaWave-FM1 |
-| gator/0.6.fwsc | GATOR | ivanvoid | GPL-3.0 | https://github.com/npi3pak/fm1-gator |
-| ghoulbox/2.4.fwsc | GHOULBOX | jasonpersinger | GPL-3.0 | https://github.com/jasonpersinger/ghoulbox-fm1-dungeon-synth |
-| gio/0.3.1-beta.fwsc | GIO-1 | Guinan | MPL-2.0 | https://github.com/GuinanNo1/fm1-gio |
-| glitch/2.0.2.fwsc | glitch | saulofilho | GPL-3.0 | https://github.com/saulofilho/glitch |
-| golana/1.3.fwsc | Golana | Gadlele | GPL-3.0 | https://github.com/Gadlele/Golana |
-| golanadz/0.1.0-beta.fwsc | Golana DZ Edition | dzwerg | GPL-3.0 | https://github.com/dzwerg/Golana-DZ |
-| golf/1.0.fwsc | Golf | BARNIR | MPL-2.0 | https://github.com/barnierg76/golf-fm1 |
-| grainpiano/1.4.fwsc | GRAIN PIANO | swtdr34mz | GPL-3.0 | https://github.com/swtdr34mz-afk/GRAIN_PIANO |
-| grimm/2.0.2.fwsc | GR!MM | GRiMMBIENT | GPL-3.0 | https://github.com/GRiMMBIENT/grimm |
-| guitchordi/0.1.0-beta.1.fwsc | GuitChordi | Stoogs | GPL-3.0 | https://github.com/stoogs/guitchordi |
-| guru600/1.4.0.fwsc | Guru-600 | Marc Massé | GPL-3.0 | https://github.com/MarcGoudy/guru-600 |
-| gwaan1/0.4.3.fwsc | GWAAN-1 | FEDLIC TOKYO | MIT | https://github.com/fedlic/fm1-gwaan1 |
-| h1/0.3.2.fwsc | h1 | Jake Handy | MIT | https://github.com/jakehandy/h1 |
-| hadal1/1.0.1.fwsc | HADAL-1 | Polystellarflow | MPL-2.0 | https://github.com/sparky480v/hadal-1 |
-| hawkchua/2.1.7.fwsc | hawk-chua | plieuwski | GPL-3.0 | https://github.com/Plieuw/hawk-chua |
-| hera/1.1.fwsc | HERA | Ben Badio | GPL-3.0 | https://github.com/benbadio/hera-fm1 |
-| hortator/1.0.1.fwsc | Hortator | DeadActive | GPL-3.0 | https://github.com/DeadActive/hortator |
-| hortator-bt/1.0.1.fwsc | Hortator (Bluetooth) | DEADACTIVE | GPL-3.0 | https://github.com/deadactive/hortator |
-| hungrytravis/2026.11.10.fwsc | Hungry Travis | Trust This Mechanism | GPL-3.0 | https://github.com/adamcharleswilsonmusic-code/Hungry-Travis |
-| hyp1/1.5.70.fwsc | HYP-1 | RedtailWorks | GPL-3.0 | https://github.com/RustyPawz/fm1-HYP1 |
-| insertcoin/0.9.fwsc | INSERT COIN | swtdr34mz (based on Blop by Obsimo) | GPL-3.0 | https://github.com/swtdr34mz-afk/INSERT_COIN |
-| j6/1.4.0.fwsc | J6 | JackieAlacrity2373 | MPL-2.0 | https://github.com/JackieAlacrity2373/fm1-j6 |
-| jam/1.2.0.fwsc | Jam Playground | Bob Perry | GPL-3.0 | https://github.com/BunnyOrchard/jam-playground |
-| jamtrack/0.2.3.fwsc | JAMTRACK | PhilipsKnobs | MIT | https://github.com/Philip-Bos/jamtrack-fm1 |
-| jangada/1.0.1.fwsc | Jangada | zednaked | GPL-3.0 | https://github.com/zednaked/jangada |
-| jiant/V10.8.48.fwsc | JIANT FM | juanjiant-bit | GPL-3.0 | https://github.com/juanjiant-bit/JIANT |
-| juicy/0.1.fwsc | Juicy | Daniel Gilbert | GPL-3.0 | https://github.com/DanielGilbert/Juicy |
-| karma/3.1.6.fwsc | KARMA | Ariel Muchnik | GPL-3.0 | https://github.com/eatyourgreensstudio-dotcom/karma-fm1 |
-| kawa/0.9.fwsc | KAWA | Omnipotard | GPL-3.0 | https://github.com/Guizmoh/Kawa-Tracker-Fm1 |
-| keystepone/0.5.42.fwsc | keySTEP ONE | dzwerg | MPL-2.0 | https://github.com/dzwerg/keySTEP-ONE |
-| kicksidesidekick/0.10.7.fwsc | KickSide SideKick | Kyle (kjs4discovery) | GPL-3.0 | https://github.com/kjs4discovery/kicksidesidekick |
-| kitten/2.8-kitten.14.fwsc | Kitten Synths | Black Kitten Devices | GPL-3.0 | https://github.com/BlackKittenDevices/Kitten-Synths |
-| kittenrack/1.5.0.fwsc | Kitten Rack | Black Kitten Devices | GPL-3.0 | https://github.com/BlackKittenDevices/kitten-rack |
-| kriechstrom/0.5.2.fwsc | KRIECHSTROM | Grigorii Bezborodov | GPL-3.0 | https://github.com/Xforsa/kriechstrom |
-| krisjangle/0.15.fwsc | Kris Jangle | w33tSnx | MPL-2.0 | https://github.com/doohinkus/kris-jangle |
-| kurzhaar/1.1.fwsc | Kurzhaar, der Basshund | JazzMasterT | GPL-3.0 | https://github.com/kurzhaar168/kurzhaar |
-| kwasub/1.2.7b.fwsc | K-WASUB | Omnipotard (Guizmoh) | GPL-3.0 | https://github.com/Guizmoh/K-WASUB_Firmware_for_FM1 |
-| loafbreaker/0.9.79.fwsc | LOAF BREAKER | FLEXOR | MPL-2.0 | https://github.com/FLEXOR-R/loaf-breaker |
-| loom/0.18.2.fwsc | LOOM-8 | Charles Vestal | MPL-2.0 | https://github.com/charlesvestal/fm1-loom |
-| loomfm1/0.1.0.fwsc | Loom FM-1 | Co-oscillator | GPL-3.0 | https://github.com/Co-oscillator/Loom-FM-1 |
-| loopheads/0.1.2.fwsc | LOOPHEADS | Jaak St-Jaaques | GPL-3.0 | https://github.com/jaak-stjaaques/LOOPHEADS-public |
-| lrry/0.1.0-beta.fwsc | L/RRY | OSCILL/R | GPL-3.0 | https://github.com/oscillr/LRRY |
-| luxr/2026.11.02.fwsc | LUXR | HOLODECK AUDIOTOOLS | GPL-3.0 | https://github.com/orbitator/LUXR |
-| makohai/1.4.fwsc | Makohai | delirioux | GPL-3.0 | https://github.com/delirioux/makohai |
-| maku/1.0.fwsc | MAKU | okumurari | GPL-3.0 | https://github.com/okumurari2/maku |
-| manifold/1.0.7.fwsc | Manifold | stets43 | MPL-2.0 | https://github.com/stets43/Manifold |
-| manta/1.1.fwsc | Manta | delirioux | GPL-3.0 | https://github.com/delirioux/manta |
-| matryoshka/1.26.3.fwsc | Matryoshka | glvno | GPL-3.0 | https://github.com/glvno/matryoshka |
-| mb1/0.25.1.fwsc | MB-1 | Leonardo Lopez Chavira | MIT | https://github.com/leonardolopezchavira/minibrute-fm1 |
-| mc1/1.2.0.fwsc | MC-1 | dspaudio | GPL-3.0 | https://github.com/dspaudio/mc-1 |
-| melodee/1.6.1.fwsc | Melodee | keremimo | GPL-3.0 | https://github.com/keremimo/melodee |
-| metronome/0.4.fwsc | METRONOME | Da-Wei Lee | GPL-3.0 | https://github.com/daviddwlee84/fm1-metronome |
-| midimon/0.5.fwsc | MIDIMON | ignis32 | MPL-2.0 | https://github.com/ignis32/midimonitor_fm1 |
-| mightyarcade/1.0.fwsc | Mighty Arcade | Moby Pixel | MPL-2.0 | https://github.com/NickCulbertson/FM1-Mighty-Arcade |
-| mightyarp/1.5.fwsc | Mighty Arp | Moby Pixel | MPL-2.0 | https://github.com/NickCulbertson/FM1-Mighty-Arp |
-| mikufm/0.9.fwsc | Miku-FM | Michael Perry | GPL-3.0 | https://github.com/MichaelAPerry/MIKU-FM1 |
-| min1/0.2.1.fwsc | MIN-1 | Reytian | GPL-3.0 | https://github.com/Reytian/fm1-min1 |
-| minigrain/1.0.0.fwsc | Mini-Grain | eldontyrellcorp | GPL-3.0 | https://github.com/eldontyrellcorp/Mini-Grain |
-| miniju08/08-1.00.fwsc | Mini-Ju08 | Stephane Schmitz | GPL-3.0 | https://github.com/eldontyrellcorp/Mini-Ju08 |
-| minitone/1.0.5.fwsc | Mini-Tone | Stéphane Schmitz | GPL-3.0 | https://github.com/eldontyrellcorp/Mini-Tone |
-| mnm1/1.0.1.fwsc | MNM-1 | Veff | GPL-3.0 | https://github.com/galfaroth/mnm1 |
-| modelar/0.3.fwsc | MODELAR | Hirakos | MPL-2.0 | https://github.com/hirakos999/MODELAR |
-| monk/0.10.fwsc | MONK-1 | Charles Vestal | GPL-3.0 | https://github.com/charlesvestal/fm1-monk |
-| mono2k/1.13.fwsc | MONO2K | Iñigo Hernandez | GPL-3.0 | https://github.com/InigoHernandez/mono2k |
-| monohull/0.2.0.fwsc | Monohull | Mark White | GPL-3.0 | https://github.com/markterm/monohull |
-| mope1/0.5.0.fwsc | MOPE-1 | slothpallas | GPL-3.0-only | https://github.com/slothpallas/mope-1 |
-| morpheus/1.0.0.fwsc | MORPHEUS | Ben Badio | GPL-3.0 | https://github.com/benbadio/morpheus-fm1 |
-| morse/0.8.fwsc | MORSE | Da-Wei Lee | GPL-3.0 | https://github.com/daviddwlee84/fm1-morse |
-| moss1/1.0.fwsc | MOSS-1 | Theo Wecker | MPL-2.0 | https://github.com/theowecker/fm1-moss |
-| mpyre/1.0.3.fwsc | M-PYRE | History Of Sky | GPL-3.0 | https://github.com/HistoryOfSky/m-pyre |
-| mumble/0.1.1.fwsc | Mumble | Kiryl Dziamura | GPL-3.0 | https://github.com/kdziamura/fm1-mumble |
-| mutable/2.4.fwsc | Mutable Dreams | Kid Bunka | GPL-3.0 | https://github.com/kidbee85-beep/mutable-dreams |
-| mvance/2.8.1.fwsc | M-Vance | Kris (bk40-home) | GPL-3.0 | https://github.com/bk40-home/M-vance |
-| mvaneyard/0.15.fwsc | mvane yard | Enkerli | GPL-3.0 | https://github.com/Enkerli/mvane-yard |
-| mvave-v15/V15.fwsc | M-VAVE stock firmware | M-VAVE | Apache-2.0 (M-VAVE's FM1 Open recovery image) | https://github.com/m-vave/fm1_open |
-| mvsynth2/1.5.2.fwsc | M-Vsynth2 | Kris (bk40-home) | GPL-3.0 | https://github.com/bk40-home/M-Vsynth2 |
-| mycelium/1.0-test.fwsc | MYCELIUM | Mandalars | GPL-3.0 | https://github.com/megagott/mycelium-fm1 |
-| nachtfahrt/1.0.2.fwsc | NACHTFAHRT | Cranky Man | GPL-3.0 | https://github.com/FartyPants/fm1-nachtfahrt |
-| nanofreak/3.0.1.fwsc | Nano Freak | Virus Installer | GPL-3.0 | https://github.com/Virusiinstaller/nano-freak-fm1 |
-| nauclerus/1.1.0.fwsc | Nauclerus | Mr. Roboto | GPL-3.0 | https://github.com/Mr-Roboto/nauclerus |
-| nccnovationcircuitcompan/0.7.fwsc | NCC – Novation Circuit Companion | Fenderberg | GPL-3.0 | https://github.com/fenderberg/fm1-nc-companion |
-| neon/0.2.fwsc | NEON | Neon Summers | GPL-3.0 | https://github.com/LotionOnTheSkin/NEON |
-| niagara/0.3.1.fwsc | Niagara Drift | evanyerburgh | GPL-3.0 | https://github.com/evanyerburgh/niagara-drift |
-| nmsfm/0.9.fwsc | No Man Sky FM | Hericdk | GPL-3.0 | https://github.com/hericdk/nomanskyFM |
-| noizdemons/666.fwsc | NOIZ DEMONS | SPIKE the Percussionist | GPL-3.0 | https://github.com/SPIKE-the-Percussionist/noiz_demons |
-| obervave/3.5.4.fwsc | OberVave | zvenson | GPL-3.0 | https://github.com/zvenson/obervave |
-| obscuraline/1.0.fwsc | Obscura Line | MammothCheese | GPL-3.0 | https://github.com/MammothCheese/obscuraline |
-| obssynthfm1/0.2.0.fwsc | ObsSynth FM-1 | Orian Beltrame | GPL-3.0 | https://github.com/orianbsilva/obssynth-fm1 |
-| offworld/0.4.3.fwsc | OFFWORLD | swtdr34mz | MPL-2.0 | https://github.com/swtdr34mz-afk/OFFWORLD |
-| ombak/1.3.fwsc | Ombak | Lunar Eclipse Forge | GPL-3.0 | https://github.com/MadMooneyham/Ombak |
-| opdream/1.2.3.fwsc | OP dream | James | GPL-3.0 | https://github.com/bertrandhustle2/skiff |
-| opn1/2.0.1.fwsc | OPN-1 | putchdev | GPL-3.0 | https://github.com/putchdev/opn-1 |
-| orbit/1.0.1B.fwsc | ORBIT | dspaudio | GPL-3.0 | https://github.com/dspaudio/orbit |
-| orbita/2.0.12.fwsc | ORBITA | Polaris Sound Lab | GPL-3.0 | https://github.com/drophlex/ORBITA |
-| orgigs/1.5.fwsc | OrGigs | Bobo | GPL-3.0 | https://github.com/orgelbobo/orgigs |
-| paperlagoon/1.1.fwsc | PaperLagoon | hacha | GPL-3.0 | https://github.com/hacha/paperlagoon |
-| patchwerk/1.0.3.fwsc | Patchwerk | Matt Kuebrich | GPL-3.0 | https://github.com/MattKuebrich/patchwerk |
-| penumbra/1.13.fwsc | Penumbra | Lunar Eclipse Forge | GPL-3.0 | https://github.com/MadMooneyham/Penumbra |
-| perf1/0.17.0.fwsc | PERF-1 | deamonSLINKY | GPL-3.0 | https://github.com/deamonSLINKY/PERF-1 |
-| pigeon/0.5.0-beta.1.fwsc | PIGEON | The Shrimp Blimp | GPL-3.0 | https://github.com/TheShrimpBlimp/pigeon |
-| pingos1/1.0.1.fwsc | PING OS-1 | PING AUDIO | MPL-2.0 | https://github.com/PINGAUDIO/PING-OS-1 |
-| piterfly/1.2.5.fwsc | Piterfly | Piotr Woźniak | GPL-3.0 | https://github.com/piotrwozniak/piterfly |
-| playa/0.1.fwsc | PLAYA | JFS | GPL-3.0 | https://github.com/juan-ms2lab/playa |
-| plissken/0.31.fwsc | Plissken | OscarDad | MPL-2.0 | https://github.com/dustekin/plissken |
-| pocketband/0.4.fwsc | Pocket Band | elpabl0 | GPL-3.0 | https://github.com/elpabl0/pocketband |
-| polly/0.6.4.fwsc | Polly | charlesvestal | GPL-3.0 | https://github.com/charlesvestal/fm1-polly |
-| prophet67/1.4.fwsc | PROPHET-67 | swtdr34mz | MPL-2.0 | https://github.com/swtdr34mz-afk/PROPHET-67 |
-| ptfm/0.26.fwsc | PT/FM | hitosu | GPL-3.0 | https://github.com/hitosu/ptfm |
-| pulhra/1.5.1.fwsc | PULHRA | 646timur-cell | GPL-3.0 | https://github.com/646timur-cell/pulhra_main |
-| purplemonkey/0.12.fwsc | PurpleMonkey | Quixotic7 | GPL-3.0 | https://github.com/Quixotic7/PurpleMonkeyFM1 |
-| pvox/1.1-7869-fm1.fwsc | P-Vox | Hans Volt | GPL-3.0 | https://github.com/HanzVolt/P-Vox |
-| quantumgammawave/2.5.1.fwsc | Quantum GammaWave | Guille Lauría | GPL-3.0 | https://github.com/Guillel51/Quantum-GammaWave |
-| quartet/3.1.fwsc | Quartet | MammothCheese | GPL-3.0 | https://github.com/MammothCheese/quartet |
-| quartz/0.10.fwsc | QUARTZ | f0nski | GPL-3.0 | https://github.com/F0nski/quartz |
-| quest/43.fwsc | FM1 Quest | hericdk | GPL-3.0 | https://github.com/hericdk/fm1-quest |
-| rainbow/1.1.5-rb.fwsc | Rainbow Mode | joshbartlettband-web | GPL-3.0 | https://github.com/joshbartlettband-web/felucca-rainbow |
-| rakt/0.1.8.fwsc | RAKT | Chase DeAnda | GPL-3.0 | https://github.com/chasedeanda/rakt-fm1 |
-| rambeaver/745-hub.fwsc | RAMBEAVER | Trust This Mechanism | GPL-3.0 | https://github.com/adamcharleswilsonmusic-code/RAMBEAVER |
-| rand/1.0.1.fwsc | RAND | swtdr34mz | MPL-2.0 | https://github.com/swtdr34mz-afk/RAND |
-| ravel/1.46.0.fwsc | Ravel | De-Pattern | GPL-3.0 | https://github.com/De-Pattern/Ravel_FM1 |
-| rdpno/0.3.3.fwsc | RDPNO | R-Jeb | GPL-3.0 | https://github.com/R-Jeb/rdpno-fm1 |
-| remotefm1/0.4.0.fwsc | RemoteFM1 | Quixotic7 | MPL-2.0 | https://github.com/Quixotic7/RemoteFM1 |
-| rhinotiger/1.1.fwsc | RhinoTiger | hacha | GPL-3.0 | https://github.com/hacha/rhinotiger |
-| rhythmer/0.1.1-beta3.fwsc | Rhythmer | Jazzy Rhythmer | GPL-3.0 | https://github.com/JazzyRhythmer/Rhythmer |
-| rhytmsec1/1.4.3.fwsc | RHYTM-SEC-1 | James Hampshire | GPL-3.0 | https://github.com/hamperj/rhytm-sec-1 |
-| ruido/0.7.3.fwsc | Ruido | Miguel Hernández Domenech | GPL-3.0 | https://github.com/miguelhd/ruido |
-| rupture/2.0.14.fwsc | RUPTURE | Joppe Sikken (SikkenWorks) | GPL-3.0 | https://github.com/SikkenWorks/RUPTURE |
-| s1vave/2.0.1.fwsc | S1Vave | Andrew GG | GPL-3.0 | https://github.com/AndrewGG88/S1Vave |
-| samsara/1.0.0.fwsc | SAMSARA | Tomorrow's Man | MPL-2.0 | https://github.com/tomorrowsman/fm1-samsara |
-| sardine/1.0.6.fwsc | Sardine | delirioux | GPL-3.0 | https://github.com/delirioux/sardine |
-| satie1/0.1.3-beta.fwsc | SATIE-1 | OCKM Studio | GPL-3.0 | https://github.com/OCKM-STUDIO/SATIE-1 |
-| scintilla/0.3.2.fwsc | Scintilla | Joakim Eriksson | GPL-3.0 | https://github.com/joakimeriksson/scintilla-fm1 |
-| shifl/1.0.0.fwsc | shifl | Char Baba | GPL-3.0 | https://github.com/schwartzworld/shifl |
-| shineon/3.5.fwsc | Shine On | zvenson | GPL-3.0 | https://github.com/zvenson/shineon |
-| sid/0.3.fwsc | FM-1 SID | joakimeriksson | GPL-3.0 | https://github.com/joakimeriksson/fm1-sid |
-| sid1/1.0.1.fwsc | SID-1 | putchdev | GPL-3.0 | https://github.com/putchdev/sid-1 |
-| sidj/1.5.1.fwsc | SiDJ | thomasj (tubesockor) | GPL-3.0 | https://github.com/thomasj/fm1-sidj |
-| sidou/2.0.0.fwsc | SIDOU | Denis Sablić | GPL-3.0 | https://github.com/dsablic/sidou |
-| sill/1.0.4-c5cfe9e.fwsc | Sill | delirioux | GPL-3.0 | https://github.com/delirioux/sill |
-| sillage/2.2.2.fwsc | Sillage | T-TAURI | GPL-3.0 | https://github.com/lelacnoir-lab/Sillage |
-| sixmachines/0.1.6.fwsc | SIX MACHINES | swtdr34mz | MPL-2.0 | https://github.com/swtdr34mz-afk/SIX_MACHINES |
-| skiff/2.7.2.fwsc | Skiff | illuminus5 | GPL-3.0 | https://github.com/illuminus5/skiff |
-| sloop/2.8.5.fwsc | SLOOP | isod89 | GPL-3.0 | https://github.com/isod89/sloop-fm1 |
-| sloop-banks/2.5-b28-test.fwsc | SLOOP DX7 Banks | majnikool | GPL-3.0 | https://github.com/majnikool/sloop-fm1 |
-| sloop-floyd/2.4.fwsc | SLOOP Floyd FM | renebohne | GPL-3.0 | https://github.com/renebohne/sloop-fm1 |
-| sloopdub/1.8.fwsc | sloop-DUB | altessproduction | GPL-3.0 | https://github.com/altessproduction/sloop-dub-fm1 |
-| sloopdx/4.0.1.fwsc | sloopDX | zvenson | GPL-3.0 | https://github.com/zvenson/dxsloop |
-| smileyface/1.3.0-tutorialtime.fwsc | Smileyface | pbarilla | GPL-3.0 | https://github.com/pbarilla/smileyface |
-| spampy/1.2-r080.fwsc | SPAMPY | Spampy-Droid | GPL-3.0 | https://github.com/Spampy-Droid/SPAMPY-0.0-r949 |
-| spellbox/0.3.fwsc | SPELLBOX | Philippe Jaccoud | GPL-3.0 | https://github.com/pjac1810/spellbox |
-| splitmilk/1.0.fwsc | SPLITMILK | MammothCheese | GPL-3.0 | https://github.com/MammothCheese/SPLITMILK |
-| sq80/128-test.fwsc | SQ-80 | Leonardo Lopez Chavira | MIT | https://github.com/leonardolopezchavira/sq80-fm1 |
-| stack/4.01-beta.fwsc | STACK | Maker Hip (Hippie Maker) | MPL-2.0 | https://github.com/perawoga2-coder/stack |
-| stallion/1.1.fwsc | Stallion | Eberon Limited (John Gorman) | GPL-3.0 | https://github.com/EberonLtd/stallion-fm1 |
-| strangersynth/0.8.0.fwsc | STRANGER SYNTH | swtdr34mz | MPL-2.0 | https://github.com/swtdr34mz-afk/STRANGER_SYNTH |
-| sy1/1.0.0.fwsc | SY1 | Fenderberg | MIT | https://github.com/fenderberg/fm1-sy1 |
-| tack/0.15.0.fwsc | Tack | oikoaudio | GPL-3.0 | https://github.com/oikoaudio/tack |
-| tastywaves/1.0.1.fwsc | TastyWaves | marksweiss | GPL-3.0 | https://github.com/marksweiss/tastywaves |
-| tekstuur/2.0.fwsc | Tekstuur | BARNIR | MPL-2.0 | https://github.com/barnierg76/tekstuur-fm1 |
-| telegram101/857.fwsc | Telegram 101 | Big Beat Studio | GPL-3.0 | https://github.com/TexasRADIO/telegram-101-fm1-firmware |
-| tessera/3.7.5.fwsc | Tessera | Theo Dainis (Rastapopolix) | GPL-3.0 | https://github.com/Rastapopolix/tessera |
-| tether/1.0.fwsc | Tether | utopick | MIT | https://github.com/utopick/fm1-pocket |
-| textura/0.3.0.fwsc | Textura | Leonardo Mirabal | GPL-3.0 | https://github.com/leonardoMirabal/textura |
-| tonitor/2026.11.10.fwsc | Tonitor | Nuno Zimas | GPL-3.0 | https://github.com/nzimas/tonitor |
-| trapstationos/1.1.0.2.fwsc | TRAPSTATION OS | Schlensog Audio Lab | GPL-3.0 | https://github.com/sog-maker/trapstation-os |
-| tribe/0.3-beta.fwsc | TRIBE | apiel | GPL-3.0 | https://github.com/apiel/fm1-tribe |
-| trumpagotchi/1.0.1.fwsc | Trumpagotchi | Trust This Mechanism | GPL-3.0 | https://github.com/adamcharleswilsonmusic-code/Trumpagotchi |
-| tuna/1.2-99d50fb.fwsc | Tuna | delirioux | GPL-3.0 | https://github.com/delirioux/tuna |
-| u0u/0.4.fwsc | U0U | @Y_oulisse | GPL-3.0 | https://github.com/youlisse/U0U |
-| unholy/0.2.3.fwsc | Unholy Union | actuallysparky | GPL-3.0 | https://github.com/actuallysparky/FM-1-Unholy-Union-generative-drone-firmware |
-| valle/0.9.1-alpha.fwsc | Vallée | tammygucci | GPL-3.0 | https://github.com/tammygucci/valee |
-| vector37/0.3.2.fwsc | Vector37 | genkigenki | GPL-3.0 | https://github.com/genkigenki/Vector37 |
-| veffbox/0.11.0.fwsc | Veffbox | Veff | GPL-3.0 | https://github.com/galfaroth/veffbox |
-| viber/1.2.fwsc | Viber | Anto | GPL-3.0 | https://github.com/ant25fr/viber |
-| vnl1/0.9.2.fwsc | VNL-1 | pianomansam | GPL-3.0 | https://github.com/pianomansam/fm1-vnl |
-| volna/1.1.fwsc | Volna | M_Bougrimoff | GPL-3.0 | https://github.com/MaxMaximoff/volna |
-| wanderer/1.4.0.fwsc | Wanderer | Nicholas James / Low Vision Music | GPL-3.0 | https://github.com/spinnicholas/lvm-wanderer-fm1 |
-| waveloop/1.0.5.2-midi23.fwsc | WaveLoop FM-1 | ELI7VH | GPL-3.0 | https://github.com/ELI7VH/Felucca |
-| winampfm/0.12.fwsc | winampFM Synth | hericdk | GPL-3.0 | https://github.com/hericdk/winampFM |
-| x0x/1.3.fwsc | X0X | charlesvestal | GPL-3.0 | https://github.com/charlesvestal/fm1-x0x |
-| x0xrmx/1.1.0.fwsc | X0X-RMX | Mr-Roboto (Oliver) | GPL-3.0 | https://github.com/Mr-Roboto/fm1-x0x-rmx |
-| xenolith/1.0.fwsc | XENOLITH | Unit_v743 | GPL-3.0 | https://github.com/CaptainChronosis/XENOLITH |
-| xmod/1.2.1.fwsc | XMOD | Kot Morderca | GPL-3.0 | https://github.com/KotMorderca/XMOD |
-| yehnah/0.1.0.fwsc | Yehnah | Mello-D | GPL-3.0 | https://github.com/Mello-D/yehnah |
-| zen/1.2.fwsc | ZEN-1 | aceyprime | GPL-3.0 | https://github.com/aceyprime/zen-1 |
-| zenith1/1.0.fwsc | ZENITH-1 | Polystellarflow | MPL-2.0 | https://github.com/sparky480v/zenith-1 |
-| zodiac/1.0.0.fwsc | Zodiac | CU_STE | GPL-3.0 | https://github.com/stephencummins/fm1-zodiac |
-| zp12/2.5.fwsc | zp12 | zvenson | GPL-3.0 | https://github.com/zvenson/zp12 |
+| File | Firmware | Author | Licence | Notices | Source |
+|---|---|---|---|---|---|
+| 386dx/2.0.fwsc | 386DX | seajaysec | GPL-3.0 | [LICENSE](386dx/LICENSE), [LICENSING.md](386dx/LICENSING.md) | https://github.com/seajaysec/386-DX-FM1-KaraokeBot |
+| a22/0.6.0.fwsc | A22 | A22 | MIT | [LICENSE](a22/LICENSE) | https://github.com/abektes/a22 |
+| abyss/1.0.1.fwsc | ABYSS | Tentacle | GPL-3.0 | [LICENSE](abyss/LICENSE), [firmware--bsp--LICENSE](abyss/firmware--bsp--LICENSE), [firmware--bsp--LICENSING.md](abyss/firmware--bsp--LICENSING.md), [firmware--bsp--NOTICE](abyss/firmware--bsp--NOTICE) | https://github.com/Tentacletunes/abyss |
+| adrift/0.4.0.fwsc | Adrift | Romain Guy | MPL-2.0 | [LICENSE](adrift/LICENSE) | https://github.com/romainguy/adrift |
+| aetherfm1/2.0.4.fwsc | AETHER FM1 | GR!MM | GPL-3.0 | [LICENSE](aetherfm1/LICENSE), [LICENSING.md](aetherfm1/LICENSING.md) | https://github.com/jeanlucmouton30-jpg/AETHER-FM1 |
+| afterimages/2.11.fwsc | After Images | TheGrizard | MPL-2.0 | [LICENSE](afterimages/LICENSE), [app--fonts--LICENSE-DejaVu.txt](afterimages/app--fonts--LICENSE-DejaVu.txt) | https://github.com/TheGrizard/After-Images |
+| agtdeck/0.6.3.fwsc | AGTDECK | Kevin Elliott | GPL-3.0 | [LICENSE](agtdeck/LICENSE), [docs--play--LICENSE-fm1-emu.txt](agtdeck/docs--play--LICENSE-fm1-emu.txt), [firmware-build--LICENSE](agtdeck/firmware-build--LICENSE), [firmware-build--LICENSING.md](agtdeck/firmware-build--LICENSING.md) | https://github.com/kevinelliott/fm-1-agent-deck |
+| aisling/1.6.1.fwsc | AISLING | CU_STE | GPL-3.0 | [LICENSE](aisling/LICENSE), [LICENSING.md](aisling/LICENSING.md) | https://github.com/stephencummins/fm1-aisling |
+| aislingfx1/1.1.fwsc | AISLING FX-1 | CU_STE | GPL-3.0 | [LICENSE](aislingfx1/LICENSE), [LICENSING.md](aislingfx1/LICENSING.md) | https://github.com/stephencummins/fx1-aisling |
+| alter/1.1.fwsc | ALTER | Forban5929 | GPL-3.0 | [LICENSE](alter/LICENSE), [LICENSING.md](alter/LICENSING.md) | https://github.com/Forban5929/Alter-FM1 |
+| amb/1.3.2.fwsc | AMB-1 | charlesvestal | MPL-2.0 | [LICENSE](amb/LICENSE), [LICENSING.md](amb/LICENSING.md) | https://github.com/charlesvestal/fm1-amb |
+| ambpond/0.1.2.fwsc | amb-pond | superxor | MPL-2.0 | [LICENSE](ambpond/LICENSE), [LICENSING.md](ambpond/LICENSING.md) | https://github.com/superxor/amb-pond |
+| amenity/2.1.1.fwsc | Amenity | Presethead | GPL-3.0 | [LICENSE.md](amenity/LICENSE.md) | https://github.com/ejtb76/amenity |
+| andromeda/1.8.2-an2-r5.fwsc | ANDROMEDA | Polaris Sound Lab | GPL-3.0 | [LICENSE](andromeda/LICENSE), [firmware-src--LICENSE](andromeda/firmware-src--LICENSE), [firmware-src--LICENSING.md](andromeda/firmware-src--LICENSING.md), [firmware-src--firmware--bsp--LICENSE](andromeda/firmware-src--firmware--bsp--LICENSE), [firmware-src--firmware--bsp--LICENSING.md](andromeda/firmware-src--firmware--bsp--LICENSING.md), [firmware-src--firmware--bsp--NOTICE](andromeda/firmware-src--firmware--bsp--NOTICE), [firmware-src--firmware--engines--LICENSE](andromeda/firmware-src--firmware--engines--LICENSE) | https://github.com/drophlex/ANDROMEDAFM1 |
+| araminta/4.8.fwsc | Araminta | Wulgaren | GPL-3.0 | [LICENSE](araminta/LICENSE), [LICENSING.md](araminta/LICENSING.md) | https://github.com/Wulgaren/Araminta |
+| arctic/2.1.6.fwsc | Arctic Scream | p0larpatch | GPL-3.0 | [LICENSE](arctic/LICENSE), [LICENSING.md](arctic/LICENSING.md) | https://github.com/PolarPatch/Arctic-scream-FM-1 |
+| arcturus/1.7.fwsc | Arcturus S6 | Zeptosecond DSP | GPL-3.0 | [LICENSE](arcturus/LICENSE), [LICENSING.md](arcturus/LICENSING.md) | https://github.com/zeptosecond-dsp/Arcturus-S6 |
+| argo/1.8.5.fwsc | Argo | echoe | GPL-3.0 | [LICENSE](argo/LICENSE), [LICENSING.md](argo/LICENSING.md), [firmware--bsp--LICENSE](argo/firmware--bsp--LICENSE), [firmware--bsp--LICENSING.md](argo/firmware--bsp--LICENSING.md), [firmware--bsp--NOTICE](argo/firmware--bsp--NOTICE), [firmware--engines--LICENSE](argo/firmware--engines--LICENSE) | https://github.com/echoe/argo_fm1 |
+| arpwav09/1.0.7.fwsc | ARP WAV 09 | Wav.09.02 | GPL-3.0 | [LICENSE](arpwav09/LICENSE), [LICENSING.md](arpwav09/LICENSING.md) | https://github.com/wav0902/wav-fm1 |
+| artihive/2.0.6.fwsc | ARTIHIVE | KHAV | GPL-3.0 | [LICENSE](artihive/LICENSE), [LICENSING.md](artihive/LICENSING.md), [THIRD_PARTY_NOTICES.md](artihive/THIRD_PARTY_NOTICES.md) | https://github.com/KHAVld/ARTIHIVE |
+| assid/1.0.fwsc | ASS-ID | altessproduction | GPL-3.0 | [LICENSE](assid/LICENSE), [atek303--app--dsp--LICENSE-open303.txt](assid/atek303--app--dsp--LICENSE-open303.txt) | https://github.com/altessproduction/ASS-ID_FM1 |
+| astra/0.1.fwsc | Astra | Michael Perry | GPL-3.0 | [LICENSE](astra/LICENSE), [LICENSING.md](astra/LICENSING.md) | https://github.com/MichaelAPerry/ASTRA-FM-1 |
+| atek303/1.4.fwsc | ATEK303 | Animatek | GPL-3.0 | [LICENSE](atek303/LICENSE), [atek303--app--dsp--LICENSE-open303.txt](atek303/atek303--app--dsp--LICENSE-open303.txt) | https://github.com/animatek/FM1-Animatek |
+| atlatl/1.2.5.fwsc | Skiff Atlatl | LIkst4 | GPL-3.0 | [LICENSE](atlatl/LICENSE), [LICENSING.md](atlatl/LICENSING.md), [firmware--src--screen_mirror--LICENSE](atlatl/firmware--src--screen_mirror--LICENSE) | https://github.com/LIkst4/skiff-atlatl |
+| atlatltheatltuner/0.8.fwsc | Atl-Atl: The Atltuner | Jason Scheirer | GPL-3.0 | [LICENSE](atlatltheatltuner/LICENSE), [LICENSING.md](atlatltheatltuner/LICENSING.md), [tools--sdk--LICENSE](atlatltheatltuner/tools--sdk--LICENSE), [web--emu--LICENSE](atlatltheatltuner/web--emu--LICENSE) | https://github.com/jasonbot/atl-atl |
+| audiorouter/0.6.2.fwsc | FM1 Audio Router | MAX RAVE | MPL-2.0 | [.agents--skills--LICENSE](audiorouter/.agents--skills--LICENSE), [LICENSE](audiorouter/LICENSE), [LICENSING.md](audiorouter/LICENSING.md), [src--LICENSE](audiorouter/src--LICENSE), [src--LICENSING.md](audiorouter/src--LICENSING.md), [src--boot--m-bootloader--LICENSE](audiorouter/src--boot--m-bootloader--LICENSE), [src--boot--m-bootloader--NOTICE.md](audiorouter/src--boot--m-bootloader--NOTICE.md), [src--bsp--LICENSE](audiorouter/src--bsp--LICENSE), [src--bsp--LICENSING.md](audiorouter/src--bsp--LICENSING.md), [src--bsp--NOTICE](audiorouter/src--bsp--NOTICE) | https://github.com/maxravedj/fm1-audio-router |
+| b1/5.6.fwsc | B1 | Joppe Sikken (SikkenWorks) | GPL-3.0 | [LICENSE](b1/LICENSE) | https://github.com/SikkenWorks/B1-Drawbar-Organ |
+| b3organ/0.6.1.fwsc | B3 ORGAN | R-Jeb | GPL-3.0 | [LICENSE](b3organ/LICENSE), [LICENSING.md](b3organ/LICENSING.md) | https://github.com/R-Jeb/setBfree-fm1 |
+| baile/0.3.fwsc | BAILE | saulofilho | GPL-3.0 | [LICENSE](baile/LICENSE), [LICENSING.md](baile/LICENSING.md) | https://github.com/saulofilho/baile-fm1 |
+| basssomething2/0.9.4.fwsc | Bass Something 2 | John Brown | MPL-2.0 | [LICENSE](basssomething2/LICENSE) | https://github.com/imijes/bass-something-2 |
+| bb1/2.3-hub.1.fwsc | BB1 | Ole Big Beat / TexasRADIO | GPL-3.0 | [LICENSE](bb1/LICENSE), [LICENSING.md](bb1/LICENSING.md) | https://github.com/TexasRADIO/bb1-firmware |
+| beetle/1.8.3.fwsc | BEETLE | Joppe Sikken (SikkenWorks) | GPL-3.0 | [LICENSE](beetle/LICENSE), [firmware--fm1-native--LICENSE](beetle/firmware--fm1-native--LICENSE) | https://github.com/SikkenWorks/BEETLE |
+| beetleblue/1.3.1.fwsc | BEETLE BLUE | Joppe Sikken (SikkenWorks) | GPL-3.0 | [LICENSE](beetleblue/LICENSE), [firmware--fm1-native--LICENSE](beetleblue/firmware--fm1-native--LICENSE) | https://github.com/SikkenWorks/BEETLE-BLUE |
+| beiwagen/0.2.fwsc | Beiwagen | Kabelmaier | GPL-3.0 | [LICENSE](beiwagen/LICENSE), [LICENSING.md](beiwagen/LICENSING.md), [tools--sdk--LICENSE](beiwagen/tools--sdk--LICENSE), [web--emu--LICENSE](beiwagen/web--emu--LICENSE) | https://github.com/DPangerl/beiwagen |
+| berlinan/0.5.1.fwsc | Berlinan | Jiří Píša | GPL-2.0-or-later | [LICENSE](berlinan/LICENSE), [app--engine--softfloat--LICENSE](berlinan/app--engine--softfloat--LICENSE) | https://github.com/jiripisa/fm1-berlinan |
+| bgirlfm1/0.0.2.fwsc | bgirl-fm1 | Doug Smith (dougbtv) | GPL-3.0 | [LICENSE](bgirlfm1/LICENSE), [LICENSE.upstream](bgirlfm1/LICENSE.upstream), [felucca--LICENSE](bgirlfm1/felucca--LICENSE), [felucca--LICENSING.md](bgirlfm1/felucca--LICENSING.md) | https://github.com/track-forge/bgirl-fm1 |
+| bigorna/2026.11.25.fwsc | Bigorna | Nuno Zimas | GPL-3.0 | [LICENSE](bigorna/LICENSE), [LICENSING.md](bigorna/LICENSING.md), [tools--demo--LICENSE](bigorna/tools--demo--LICENSE) | https://github.com/nzimas/bigorna |
+| blop/1.1.0.fwsc | Blop | Obsimo | GPL-3.0 | [LICENSE](blop/LICENSE) | https://github.com/OSR-Experiment/OSR-1 |
+| bluesbox/2.2.3.fwsc | Blues Box | Brian Provost | GPL-3.0 | [LICENSE](bluesbox/LICENSE), [LICENSING.md](bluesbox/LICENSING.md) | https://github.com/provostprovost/blues |
+| bocjuhn/1.0.0-rc10.fwsc | bocjuhn | ryuji kanagawa | GPL-3.0 | [LICENSE](bocjuhn/LICENSE), [LICENSING.md](bocjuhn/LICENSING.md), [release--bocjuhn-1.0-rc10--LICENSE.txt](bocjuhn/release--bocjuhn-1.0-rc10--LICENSE.txt), [release--bocjuhn-1.0-rc6--LICENSE.txt](bocjuhn/release--bocjuhn-1.0-rc6--LICENSE.txt), [release--bocjuhn-1.0-rc7--LICENSE.txt](bocjuhn/release--bocjuhn-1.0-rc7--LICENSE.txt), [release--bocjuhn-1.0-rc8--LICENSE.txt](bocjuhn/release--bocjuhn-1.0-rc8--LICENSE.txt), [release--bocjuhn-1.0-rc9--LICENSE.txt](bocjuhn/release--bocjuhn-1.0-rc9--LICENSE.txt) | https://github.com/IanP06/bocjuhn |
+| boopbox/1.9.10.fwsc | BoopBox | Josh McFarlin | GPL-3.0 | [LICENSE](boopbox/LICENSE), [LICENSING.md](boopbox/LICENSING.md) | https://github.com/Josh-McFarlin/boopbox |
+| bourdon/0.35.fwsc | BOURDON | Kevin Sint | GPL-3.0 | [LICENSE](bourdon/LICENSE) | https://github.com/kevinsint/bourdon |
+| brussels/0.9.2.fwsc | BRUSSELS | Piknik Elektronik | GPL-3.0 | [LICENSE](brussels/LICENSE), [LICENSING.md](brussels/LICENSING.md), [public--firmware--LICENSE](brussels/public--firmware--LICENSE), [public--firmware--LICENSING.md](brussels/public--firmware--LICENSING.md) | https://github.com/fadyOne/brussels-fm1 |
+| bubba/0.10.0-beta.fwsc | Bubba Machine | Erbubar23 | GPL-3.0 | [LICENSE](bubba/LICENSE), [third_party--msfa--LICENSE](bubba/third_party--msfa--LICENSE), [third_party--msfa--LICENSE-GPL3-EngineMkI.txt](bubba/third_party--msfa--LICENSE-GPL3-EngineMkI.txt), [third_party--open303--LICENSE](bubba/third_party--open303--LICENSE), [third_party--plaits--LICENSE](bubba/third_party--plaits--LICENSE), [third_party--stmlib--LICENSE](bubba/third_party--stmlib--LICENSE) | https://github.com/Erbubar23/bubba-machine |
+| bunker/1.0.0.fwsc | Bunker Evolved | Kid Bunka | GPL-3.0 | [LICENSE](bunker/LICENSE), [dist--install--LICENSE.txt](bunker/dist--install--LICENSE.txt), [dist--licenses--LICENSING.md](bunker/dist--licenses--LICENSING.md), [firmware--LICENSE](bunker/firmware--LICENSE), [firmware--LICENSING.md](bunker/firmware--LICENSING.md), [firmware--firmware--engines--LICENSE](bunker/firmware--firmware--engines--LICENSE) | https://github.com/kidbee85-beep/bunker-evolved |
+| burgerstudiofm1/1.8.2-bs19.fwsc | Burger Studio FM-1 | Maker Hip (Hippie Maker) | GPL-3.0 | [LICENSE](burgerstudiofm1/LICENSE), [LICENSING.md](burgerstudiofm1/LICENSING.md), [firmware--bsp--LICENSE](burgerstudiofm1/firmware--bsp--LICENSE), [firmware--bsp--LICENSING.md](burgerstudiofm1/firmware--bsp--LICENSING.md), [firmware--bsp--NOTICE](burgerstudiofm1/firmware--bsp--NOTICE), [firmware--engines--LICENSE](burgerstudiofm1/firmware--engines--LICENSE) | https://github.com/perawoga2-coder/Fm1sampa |
+| bytemania/1.3.3.fwsc | Bytemania | lloyd (llozd) | GPL-3.0 | [LICENSE](bytemania/LICENSE), [LICENSING.md](bytemania/LICENSING.md) | https://github.com/llozd/bytemania |
+| caravel/1.2.0.fwsc | Caravel | BonszaiMusic | GPL-3.0 | [LICENSE](caravel/LICENSE), [LICENSING.md](caravel/LICENSING.md), [NOTICE](caravel/NOTICE), [docs--performance--stasis-060--LICENSE.txt](caravel/docs--performance--stasis-060--LICENSE.txt) | https://github.com/bonszaimusic/caravel |
+| carnac/0.9.6.fwsc | Carnac OS | OrbVorgis | GPL-3.0 | [LICENSE](carnac/LICENSE), [LICENSING.md](carnac/LICENSING.md) | https://github.com/OwenKirby/carnac-os |
+| castletunia/1.4.1.fwsc | Castletunia | Brian Provost | GPL-3.0 | [LICENSE](castletunia/LICENSE), [LICENSING.md](castletunia/LICENSING.md) | https://github.com/provostprovost/castletunia |
+| chipbox/1.7.0-signatureshowcase.fwsc | Chipbox | Pasquale Barilla | GPL-3.0 | [LICENSE](chipbox/LICENSE), [LICENSING.md](chipbox/LICENSING.md) | https://github.com/pbarilla/chipbox |
+| choppah/1.6.fwsc | CHOPPAH | profikid | MPL-2.0 | [LICENSE](choppah/LICENSE) | https://github.com/profikid/fm1-break-choppah |
+| choralroot/0.46.fwsc | ChoralRoot | Quixotic7 | GPL-3.0 | [LICENSE](choralroot/LICENSE), [LICENSING.md](choralroot/LICENSING.md), [tools--sdk--LICENSE](choralroot/tools--sdk--LICENSE) | https://github.com/Quixotic7/ChoralRootFM1 |
+| chord/0.3.fwsc | fm1-chord | math0ne | GPL-3.0 | [LICENSE](chord/LICENSE), [LICENSING.md](chord/LICENSING.md), [vendor--ac79--LICENSE](chord/vendor--ac79--LICENSE) | https://github.com/math0ne/fm1-chord |
+| chordrun/2.6.fwsc | CHORD RUN | swtdr34mz (based on Blop by Obsimo) | GPL-3.0 | [LICENSE](chordrun/LICENSE) | https://github.com/swtdr34mz-afk/CHORD_RUN |
+| clairpiano/1.0.1.fwsc | Clair Piano | Simon Tokumine | MPL-2.0 | [LICENSE](clairpiano/LICENSE), [LICENSING.md](clairpiano/LICENSING.md) | https://github.com/tokumine/fm1-claire-piano |
+| clatter/1.0.0.fwsc | CLATTER Pocket | allmyfriendsaresynths | GPL-3.0 | [LICENSE](clatter/LICENSE), [NOTICE.md](clatter/NOTICE.md), [THIRD_PARTY_NOTICES.md](clatter/THIRD_PARTY_NOTICES.md), [lxr--upstream--LICENSE](clatter/lxr--upstream--LICENSE), [lxr--upstream--NOTICE.md](clatter/lxr--upstream--NOTICE.md), [site--demo--emu--LICENSE](clatter/site--demo--emu--LICENSE) | https://github.com/clickysteve/clatter-pocket |
+| clavioline/1.3.fwsc | Clavioline | MammothCheese | GPL-3.0 | [LICENSE](clavioline/LICENSE), [LICENSING.md](clavioline/LICENSING.md) | https://github.com/MammothCheese/clavioline |
+| clipper/1.3.1.fwsc | Clipper | isod89 | GPL-3.0 | [LICENSE](clipper/LICENSE), [LICENSING.md](clipper/LICENSING.md) | https://github.com/isod89/clipper-fm1 |
+| collapse/0.3.2.fwsc | COLLAPSE | swtdr34mz | MPL-2.0 | [LICENSE](collapse/LICENSE) | https://github.com/swtdr34mz-afk/COLLAPSE |
+| conductor/1.0.fwsc | CONDUCTOR | MammothCheese | GPL-3.0 | [LICENSE](conductor/LICENSE), [LICENSING.md](conductor/LICENSING.md) | https://github.com/MammothCheese/conductor |
+| coqui/1.1.2.fwsc | COQUÍ | saulofilho | GPL-3.0 | [LICENSE](coqui/LICENSE), [LICENSING.md](coqui/LICENSING.md), [hub--emu--LICENSE](coqui/hub--emu--LICENSE), [hub--emu--LICENSING.md](coqui/hub--emu--LICENSING.md) | https://github.com/saulofilho/coqui-fm1 |
+| coralflower/0.7.1.fwsc | CoralFlower | FicusFicusov | GPL-3.0 | [LICENSE](coralflower/LICENSE), [LICENSING.md](coralflower/LICENSING.md), [docs--LICENSING-choralroot.md](coralflower/docs--LICENSING-choralroot.md), [tools--sdk--LICENSE](coralflower/tools--sdk--LICENSE) | https://github.com/FicusFicusov/CoralFlower |
+| cord/1.0.3.fwsc | CORD | Chase DeAnda | GPL-3.0 | [LICENSE](cord/LICENSE), [LICENSING.md](cord/LICENSING.md), [docs--LICENSING-choralroot.md](cord/docs--LICENSING-choralroot.md), [tools--sdk--LICENSE](cord/tools--sdk--LICENSE) | https://github.com/chasedeanda/cord-fm1 |
+| cs1/2026.10.22.fwsc | CS-1 | twochannels | GPL-3.0 | [LICENSE](cs1/LICENSE), [LICENSING.md](cs1/LICENSING.md) | https://github.com/twochannels/CS-1 |
+| ctl/1.0.3.fwsc | CTL-1 | charlesvestal | MPL-2.0 | [LICENSE](ctl/LICENSE), [LICENSING.md](ctl/LICENSING.md), [app--dsp--eas--LICENSE-2.0.txt](ctl/app--dsp--eas--LICENSE-2.0.txt), [app--dsp--eas--NOTICE](ctl/app--dsp--eas--NOTICE) | https://github.com/charlesvestal/fm1-ctl |
+| cultbox/1.2.fwsc | CULTBOX | beatcult | GPL-3.0 | [LICENSE](cultbox/LICENSE), [LICENSING.md](cultbox/LICENSING.md) | https://github.com/beatcult/CULTBOX |
+| cursedos/0.20.0.fwsc | cursed os | cursedsound | GPL-3.0 | [LICENSE](cursedos/LICENSE), [LICENSING.md](cursedos/LICENSING.md) | https://github.com/cursedsound-music/CS_FM1 |
+| cutador/1.2.1.fwsc | Cut-A-Dor | Kid Bunka | GPL-3.0 | [LICENSE](cutador/LICENSE), [dist--install--LICENSE.txt](cutador/dist--install--LICENSE.txt) | https://github.com/kidbee85-beep/cut-a-dor-release |
+| dabke/0.22-beta.fwsc | DABKE | STUDIOMORPHIK | MPL-2.0 | [LICENSE](dabke/LICENSE) | https://github.com/wissamsader/dabke |
+| dark1/1.0.7.fwsc | DARK-1 | Polystellarflow | GPL-3.0 | [LICENSE](dark1/LICENSE), [LICENSING.md](dark1/LICENSING.md) | https://github.com/sparky480v/Dark-1 |
+| darkfunkdurcalsynt/1.8.2-dfd10.fwsc | Dark Funk Durcal Synt | Polaris Sound Lab | GPL-3.0 | [LICENSE](darkfunkdurcalsynt/LICENSE), [firmware-src--LICENSE](darkfunkdurcalsynt/firmware-src--LICENSE), [firmware-src--LICENSING.md](darkfunkdurcalsynt/firmware-src--LICENSING.md), [firmware-src--firmware--bsp--LICENSE](darkfunkdurcalsynt/firmware-src--firmware--bsp--LICENSE), [firmware-src--firmware--bsp--LICENSING.md](darkfunkdurcalsynt/firmware-src--firmware--bsp--LICENSING.md), [firmware-src--firmware--bsp--NOTICE](darkfunkdurcalsynt/firmware-src--firmware--bsp--NOTICE), [firmware-src--firmware--engines--LICENSE](darkfunkdurcalsynt/firmware-src--firmware--engines--LICENSE) | https://github.com/drophlex/dark-funk-durcal-synt-fm1 |
+| daurade/1.0.1-01d6bd0.fwsc | Daurade | delirioux | GPL-3.0 | [LICENSE](daurade/LICENSE), [LICENSING.md](daurade/LICENSING.md) | https://github.com/delirioux/daurade |
+| dayvx/0.1.1.fwsc | DAYV-X | Repoman | GPL-3.0 | [LICENSE](dayvx/LICENSE), [LICENSING.md](dayvx/LICENSING.md) | https://github.com/halfman73/dayv-x |
+| deepfield/1.11.fwsc | DEEP FIELD | Kyle McCann | MPL-2.0 | [LICENSE](deepfield/LICENSE) | https://github.com/WisestWizard/deepfield |
+| delrio/1.0.1.fwsc | Del Rio | Jess Del Rio | MPL-2.0 | [LICENSE](delrio/LICENSE) | https://github.com/jsopdebeeck/fm1-delrio |
+| demake/0.4.25.fwsc | Demake | Sequencist | GPL-3.0 | [LICENSE](demake/LICENSE) | https://github.com/InigoHernandez/demake-synth |
+| dfdacidengine/1-v1.8.2-da1-r7.fwsc | DFD ACID ENGINE | Polaris Sound Lab | GPL-3.0 | [LICENSE](dfdacidengine/LICENSE), [NOTICE.md](dfdacidengine/NOTICE.md), [fm1--firmware--firmware-src--LICENSE](dfdacidengine/fm1--firmware--firmware-src--LICENSE), [fm1--firmware--firmware-src--LICENSING.md](dfdacidengine/fm1--firmware--firmware-src--LICENSING.md) | https://github.com/drophlex/DFD-ACID-ENGINE |
+| dg5/0.5.1.fwsc | DØG-5 | ZIGGY (DØGS) | GPL-3.0 | [LICENSE](dg5/LICENSE), [LICENSING.md](dg5/LICENSING.md), [NOTICE](dg5/NOTICE) | https://github.com/vincentzsk-prod/dog5 |
+| dinghy/0.6.fwsc | Dinghy | zvenson | GPL-3.0 | [LICENSE](dinghy/LICENSE), [LICENSING.md](dinghy/LICENSING.md), [firmware--src--screen_mirror--LICENSE](dinghy/firmware--src--screen_mirror--LICENSE) | https://github.com/zvenson/dinghy |
+| dp3oyb/1.1.1.fwsc | DP3OYB | DP3OYB | GPL-3.0 | [LICENSE](dp3oyb/LICENSE), [LICENSING.md](dp3oyb/LICENSING.md) | https://github.com/DP3OYB/DP3OYB |
+| drift/0.9.6.fwsc | DRIFT | FBNFRTG | GPL-3.0 | [LICENSE](drift/LICENSE), [LICENSING.md](drift/LICENSING.md), [firmware--engines--LICENSE](drift/firmware--engines--LICENSE), [web--site--licenses.html](drift/web--site--licenses.html) | https://github.com/FBNFRTG/drift-fm1 |
+| drumlab/1.0.0-graduationday.fwsc | Drumlab | pbarilla | GPL-3.0 | [LICENSE](drumlab/LICENSE), [LICENSING.md](drumlab/LICENSING.md) | https://github.com/pbarilla/drumlab |
+| drumtonic/0.9.7.fwsc | Drumtonic | Federico Ciapi | GPL-3.0 | [LICENSE](drumtonic/LICENSE), [LICENSING.md](drumtonic/LICENSING.md) | https://github.com/fc79/drumtonic |
+| dub/1.5.0.fwsc | DUB-1 | sbegueria | GPL-3.0 | [LICENSE](dub/LICENSE), [LICENSING.md](dub/LICENSING.md) | https://github.com/sbegueria/fm1-dub |
+| dubbox/1.0.9.fwsc | DUB-BOX | altessproduction | MPL-2.0 | [.agents--skills--LICENSE](dubbox/.agents--skills--LICENSE), [LICENSE](dubbox/LICENSE), [LICENSING.md](dubbox/LICENSING.md), [src--LICENSE](dubbox/src--LICENSE), [src--LICENSING.md](dubbox/src--LICENSING.md), [src--boot--m-bootloader--LICENSE](dubbox/src--boot--m-bootloader--LICENSE), [src--boot--m-bootloader--NOTICE.md](dubbox/src--boot--m-bootloader--NOTICE.md), [src--bsp--LICENSE](dubbox/src--bsp--LICENSE), [src--bsp--LICENSING.md](dubbox/src--bsp--LICENSING.md), [src--bsp--NOTICE](dubbox/src--bsp--NOTICE) | https://github.com/altessproduction/DUB-BOX-FM1 |
+| duell/1.3.7.fwsc | DUELL | OSCILL/R | GPL-3.0 | [LICENSE](duell/LICENSE), [NOTICE.md](duell/NOTICE.md), [duell--LICENSE](duell/duell--LICENSE), [duell--LICENSING.md](duell/duell--LICENSING.md) | https://github.com/oscillr/DUELL |
+| dungeontracker/1.5.fwsc | Dungeon Tracker | Bourbon Weather | GPL-3.0 | [LICENSE](dungeontracker/LICENSE), [LICENSING.md](dungeontracker/LICENSING.md) | https://github.com/BourbonWX/Dungeon-Tracker |
+| dx747/0.1.fwsc | DX747 | Esben von Buchwald | GPL-3.0 + SDK exception | [LICENSE.md](dx747/LICENSE.md), [THIRD_PARTY.md](dx747/THIRD_PARTY.md) | https://github.com/esbenvb/fm1-dx747 |
+| echofield/0.2.15.fwsc | ECHOFIELD | PhilipsKnobs | MIT | [LICENSE](echofield/LICENSE), [LICENSING.md](echofield/LICENSING.md), [companion--vendor--fm1-base--LICENSE-MPL-2.0](echofield/companion--vendor--fm1-base--LICENSE-MPL-2.0) | https://github.com/Philip-Bos/echofield-fm1 |
+| elixir/1.5.4.fwsc | Elixir | Dan Majka | GPL-3.0 | [LICENSE](elixir/LICENSE), [NOTICE.md](elixir/NOTICE.md) | https://github.com/dmajka/elixir |
+| emb/1.5.2.fwsc | Evander's Music Box | Michail Tsakiroglou | GPL-3.0 | [LICENSE](emb/LICENSE) | https://github.com/MikeTsak/Evanders-Music-Box--FM-1-LARP-firmware |
+| estampie/0.4.0.fwsc | ESTAMPIE | Drew Robinson | GPL-3.0 | [LICENSE](estampie/LICENSE), [LICENSING.md](estampie/LICENSING.md), [firmware--engines--LICENSE](estampie/firmware--engines--LICENSE) | https://github.com/ocean/estampie |
+| etch/1.88.fwsc | ETCH | SikkenWorks | GPL-3.0 | [LICENSE](etch/LICENSE), [firmware--fm1-native--LICENSE](etch/firmware--fm1-native--LICENSE) | https://github.com/SikkenWorks/ETCH |
+| evilgenius/0.1.4.fwsc | EVIL GENIUS | Quixotic7 | MPL-2.0 | [LICENSE](evilgenius/LICENSE), [LICENSING.md](evilgenius/LICENSING.md), [third_party--plutovg--LICENSE](evilgenius/third_party--plutovg--LICENSE) | https://github.com/Quixotic7/evilgenius |
+| fart/1.1.0.fwsc | Fart Machine One | adamcharleswilsonmusic-code | GPL-3.0 | [LICENSE](fart/LICENSE), [LICENSING.md](fart/LICENSING.md) | https://github.com/adamcharleswilsonmusic-code/Fart-Machine-One |
+| felucca/1.8.3.fwsc | Felucca | hugelton | GPL-3.0 | [LICENSE](felucca/LICENSE), [LICENSING.md](felucca/LICENSING.md) | https://github.com/hugelton/Felucca |
+| felucca-salt/0.9-salt14.fwsc | Felucca [Salt] | ChanceTheMaker | GPL-3.0 | [LICENSE](felucca-salt/LICENSE), [LICENSING.md](felucca-salt/LICENSING.md) | https://github.com/ChanceTheMaker/Felucca |
+| felucca8/1.8.5.fwsc | Felucca 8 Patterns | echoe | GPL-3.0 | [LICENSE](felucca8/LICENSE), [LICENSING.md](felucca8/LICENSING.md), [firmware--bsp--LICENSE](felucca8/firmware--bsp--LICENSE), [firmware--bsp--LICENSING.md](felucca8/firmware--bsp--LICENSING.md), [firmware--bsp--NOTICE](felucca8/firmware--bsp--NOTICE), [firmware--engines--LICENSE](felucca8/firmware--engines--LICENSE) | https://github.com/echoe/Felucca_8_patterns |
+| fernbedienung/1.2.fwsc | Fernbedienung | Kabelmaier | GPL-3.0 | [LICENSE](fernbedienung/LICENSE), [LICENSING.md](fernbedienung/LICENSING.md), [tools--sdk--LICENSE](fernbedienung/tools--sdk--LICENSE), [web--emu--LICENSE](fernbedienung/web--emu--LICENSE) | https://github.com/DPangerl/fernbedienung |
+| fimba/0.7.0.fwsc | FiMba-1 | jadamsowers | GPL-3.0 | [LICENSE](fimba/LICENSE), [LICENSING.md](fimba/LICENSING.md) | https://github.com/jadamsowers/fm1-fimba |
+| fizz/0.13.0.fwsc | FIZZ | Quixotic7 | MPL-2.0 | [LICENSE](fizz/LICENSE), [LICENSING.md](fizz/LICENSING.md), [third_party--plutovg--LICENSE](fizz/third_party--plutovg--LICENSE) | https://github.com/Quixotic7/FIZZ |
+| flat20/0.3.2.fwsc | FLAT-20 | Brandon Matthews | GPL-3.0 | [LICENSE](flat20/LICENSE), [LICENSING.md](flat20/LICENSING.md) | https://github.com/thenewwazoo/FLAT-20 |
+| flyfish/1.1.1-fc4974e.fwsc | Flyfish | delirioux | GPL-3.0 | [LICENSE](flyfish/LICENSE), [LICENSING.md](flyfish/LICENSING.md) | https://github.com/delirioux/flyfish |
+| fm106/1.02.fwsc | FM-106 | PatttF | GPL-3.0 | [LICENSE](fm106/LICENSE), [LICENSING.md](fm106/LICENSING.md) | https://github.com/PatttF/fm-106 |
+| fm1800/0.12.5.fwsc | FM1-800 | morbious22 | GPL-3.0 | [LICENSE](fm1800/LICENSE), [LICENSING.md](fm1800/LICENSING.md) | https://github.com/morbious22/FM1-800 |
+| fm1again/1.0.4.fwsc | FM-1 Again | PolarPatch | GPL-3.0 | [LICENSE](fm1again/LICENSE), [LICENSING.md](fm1again/LICENSING.md) | https://github.com/PolarPatch/FM-1-Again |
+| fm1amy/0.1.0.fwsc | fm1-amy | Dan Ellis | GPL-3.0 | [LICENSE](fm1amy/LICENSE), [LICENSING.md](fm1amy/LICENSING.md) | https://github.com/dpwe/fm1-amy |
+| fm1chimeravocal/1.1.1.fwsc | FM-1 Chimera Vocal | Shan-Sherif | MIT + MPL-2.0 + BSD (CMUdict) | [LICENSE](fm1chimeravocal/LICENSE), [base--LICENSE](fm1chimeravocal/base--LICENSE), [base--LICENSING.md](fm1chimeravocal/base--LICENSING.md), [base--bsp--LICENSE](fm1chimeravocal/base--bsp--LICENSE), [base--bsp--LICENSING.md](fm1chimeravocal/base--bsp--LICENSING.md), [base--bsp--NOTICE](fm1chimeravocal/base--bsp--NOTICE), [base--web--m-bootloader--LICENSE](fm1chimeravocal/base--web--m-bootloader--LICENSE) | https://github.com/shan-sherif/fm-1-chimera-vocal |
+| fm1dock/0.9.0.fwsc | fm1-dock | joakimeriksson | GPL-3.0 | [LICENSE](fm1dock/LICENSE), [LICENSING.md](fm1dock/LICENSING.md), [modules--amb--amb--LICENSE](fm1dock/modules--amb--amb--LICENSE), [modules--amb--amb--LICENSING.md](fm1dock/modules--amb--amb--LICENSING.md), [modules--artihive--artihive--LICENSE](fm1dock/modules--artihive--artihive--LICENSE), [modules--artihive--artihive--LICENSING.md](fm1dock/modules--artihive--artihive--LICENSING.md), [modules--atek303--atek303--LICENSE](fm1dock/modules--atek303--atek303--LICENSE), [modules--b3--b3--LICENSE](fm1dock/modules--b3--b3--LICENSE), [modules--b3--b3--LICENSING.md](fm1dock/modules--b3--b3--LICENSING.md), [modules--cs1--cs1--LICENSING.md](fm1dock/modules--cs1--cs1--LICENSING.md), [modules--dub--dub--LICENSE](fm1dock/modules--dub--dub--LICENSE), [modules--dub--dub--LICENSING.md](fm1dock/modules--dub--dub--LICENSING.md), [modules--ensemble--LICENSE-MIT-Felucca-Engines.txt](fm1dock/modules--ensemble--LICENSE-MIT-Felucca-Engines.txt), [modules--fimba--fimba--LICENSE](fm1dock/modules--fimba--fimba--LICENSE), [modules--fimba--fimba--LICENSING.md](fm1dock/modules--fimba--fimba--LICENSING.md), [modules--flat20--flat20--LICENSE](fm1dock/modules--flat20--flat20--LICENSE), [modules--fm106--fm106--LICENSE](fm1dock/modules--fm106--fm106--LICENSE), [modules--fm106--fm106--LICENSING.md](fm1dock/modules--fm106--fm106--LICENSING.md), [modules--fm6--melodee--LICENSE](fm1dock/modules--fm6--melodee--LICENSE), [modules--fmini--fmini--LICENSE](fm1dock/modules--fmini--fmini--LICENSE), [modules--fmini--fmini--LICENSE-Felucca-Engines](fm1dock/modules--fmini--fmini--LICENSE-Felucca-Engines), [modules--fmini--fmini--LICENSING.md](fm1dock/modules--fmini--fmini--LICENSING.md), [modules--fomni--fomni--LICENSE](fm1dock/modules--fomni--fomni--LICENSE), [modules--fomni--fomni--LICENSING.md](fm1dock/modules--fomni--fomni--LICENSING.md), [modules--gator--gator--LICENSE](fm1dock/modules--gator--gator--LICENSE), [modules--gator--gator--LICENSING.md](fm1dock/modules--gator--gator--LICENSING.md), [modules--keys--LICENSE-MIT-Plaits](fm1dock/modules--keys--LICENSE-MIT-Plaits), [modules--keys--LICENSE-MIT-pico_piano](fm1dock/modules--keys--LICENSE-MIT-pico_piano), [modules--monk--monk--LICENSE](fm1dock/modules--monk--monk--LICENSE), [modules--niagara--niagara--LICENSE](fm1dock/modules--niagara--niagara--LICENSE), [modules--niagara--niagara--LICENSING.md](fm1dock/modules--niagara--niagara--LICENSING.md), [modules--obervave--obervave--LICENSE](fm1dock/modules--obervave--obervave--LICENSE), [modules--obervave--obervave--LICENSING.md](fm1dock/modules--obervave--obervave--LICENSING.md), [modules--prophet--melodee--LICENSE](fm1dock/modules--prophet--melodee--LICENSE), [modules--s1vave--s1vave--LICENSE](fm1dock/modules--s1vave--s1vave--LICENSE), [modules--s1vave--s1vave--LICENSING.md](fm1dock/modules--s1vave--s1vave--LICENSING.md), [modules--scintilla--LICENSING.md](fm1dock/modules--scintilla--LICENSING.md), [modules--sid--resid--COPYING](fm1dock/modules--sid--resid--COPYING), [modules--vector37--vector37--LICENSE](fm1dock/modules--vector37--vector37--LICENSE) | https://github.com/joakimeriksson/fm1-dock |
+| fm1doom/0.5.fwsc | FM-1 Doom | zvenson | GPL-3.0 | [COPYING](fm1doom/COPYING) | https://github.com/zvenson/fm1doom |
+| fm1gm/1.2.0.fwsc | FM1-GM | jartificer | GPL-3.0 | [LICENSE](fm1gm/LICENSE), [LICENSING.md](fm1gm/LICENSING.md), [assets--soundfont--LICENSE](fm1gm/assets--soundfont--LICENSE) | https://github.com/jartificer/fm1-gm |
+| fm1midimania/0.9.4.fwsc | FM-1 Midi-Mania | Shan-Sherif | GPL-3.0 | [LICENSE](fm1midimania/LICENSE), [LICENSING.md](fm1midimania/LICENSING.md), [firmware--bsp--LICENSE](fm1midimania/firmware--bsp--LICENSE), [firmware--bsp--LICENSING.md](fm1midimania/firmware--bsp--LICENSING.md), [firmware--bsp--NOTICE](fm1midimania/firmware--bsp--NOTICE), [firmware--engines--LICENSE](fm1midimania/firmware--engines--LICENSE) | https://github.com/shan-sherif/fm-1-midi-mania |
+| fm1pockettutor/0.7.fwsc | FM1 Pocket Tutor | Wellington Saam | GPL-3.0 | [LICENSE](fm1pockettutor/LICENSE), [LICENSING.md](fm1pockettutor/LICENSING.md), [modules--fm6--melodee--LICENSE](fm1pockettutor/modules--fm6--melodee--LICENSE) | https://github.com/wellingtonsaam/fm1-pocket-tutor |
+| fm1tonic/1.8e.fwsc | FM1 TONIC | Luigi Rossi | GPL-3.0 | [LICENSE](fm1tonic/LICENSE), [LICENSING.md](fm1tonic/LICENSING.md) | https://github.com/luigirossi-music/fm1-tonic |
+| fm1trax/0.9.5.fwsc | FM1-TRAX | jartificer | GPL-3.0 | [LICENSE](fm1trax/LICENSE) | https://github.com/jartificer/fm1-trax |
+| fm1yoga/1.0.fwsc | FM1 YOGA | Michael Milz | MPL-2.0 | [LICENSE](fm1yoga/LICENSE) | https://github.com/michamilz/fm1-yoga |
+| fm1zx/1.2.0.fwsc | FM-1 ZX | Orest Kulik | GPL-3.0 | [LICENSE](fm1zx/LICENSE), [LICENSING.md](fm1zx/LICENSING.md), [platform--fm1--bsp--LICENSE](fm1zx/platform--fm1--bsp--LICENSE), [platform--fm1--bsp--LICENSING.md](fm1zx/platform--fm1--bsp--LICENSING.md), [platform--fm1--bsp--NOTICE](fm1zx/platform--fm1--bsp--NOTICE), [third_party--Z80--COPYING](fm1zx/third_party--Z80--COPYING), [third_party--Z80--COPYING.LESSER](fm1zx/third_party--Z80--COPYING.LESSER), [third_party--Z80InsnClock--LICENSE-0BSD](fm1zx/third_party--Z80InsnClock--LICENSE-0BSD), [third_party--games--dino--LICENSE.release](fm1zx/third_party--games--dino--LICENSE.release), [third_party--games--oneway--COPYING.beeper](fm1zx/third_party--games--oneway--COPYING.beeper), [third_party--games--oneway--LICENSE.release](fm1zx/third_party--games--oneway--LICENSE.release), [third_party--games--sopwith--LICENSE](fm1zx/third_party--games--sopwith--LICENSE) | https://github.com/okulik/fm1-zx |
+| fmav1/0.6.4.fwsc | FMav-1 | wootrop & gpix | GPL-3.0 | [LICENSE](fmav1/LICENSE), [LICENSING.md](fmav1/LICENSING.md) | https://github.com/wootr0p/fmav1 |
+| fmdj/2026.10.22.fwsc | FMDj | DEADACTIVE | GPL-3.0 | [LICENSE](fmdj/LICENSE), [LICENSING.md](fmdj/LICENSING.md) | https://github.com/DeadActive/FMDj |
+| fmel/1.3.fwsc | FMEL-1 | Antonio Altea | GPL-3.0 | [LICENSE](fmel/LICENSE), [LICENSING.md](fmel/LICENSING.md) | https://github.com/AntonioAltea/fmel-1 |
+| fmfam/0.3.1.fwsc | FM-FAM | David Amo | MPL-2.0 | [LICENSE](fmfam/LICENSE), [LICENSING.md](fmfam/LICENSING.md), [web--m-bootloader--LICENSE](fmfam/web--m-bootloader--LICENSE) | https://github.com/davidamomusic/fm-fam |
+| fmini/2.6.0.fwsc | FMini-1 | Ruppert | GPL-3.0 | [LICENSE](fmini/LICENSE), [LICENSING.md](fmini/LICENSING.md) | https://github.com/ruppert/fmini-1 |
+| fmkick/0.5.1.fwsc | FM-KICK | David Amo | MPL-2.0 | [LICENSE](fmkick/LICENSE), [LICENSING.md](fmkick/LICENSING.md), [web--m-bootloader--LICENSE](fmkick/web--m-bootloader--LICENSE) | https://github.com/davidamomusic/fm-kick |
+| fmlarynx/0.4.2.fwsc | FMLarynx | Presethead | GPL-3.0 | [LICENSE](fmlarynx/LICENSE), [LICENSING.md](fmlarynx/LICENSING.md) | https://github.com/ejtb76/FMLarynx |
+| fmy262/0.8.3.fwsc | FMY262 | Mr. Tracy Evans | GPL-2.0 | [LICENSE](fmy262/LICENSE), [NOTICE.md](fmy262/NOTICE.md), [opl3--LICENSE](fmy262/opl3--LICENSE) | https://github.com/jpark-spec/fmy262 |
+| fomajam/0.1.12.fwsc | FOMAJAM | konsumer | GPL-3.0 | [LICENSE](fomajam/LICENSE), [LICENSING.md](fomajam/LICENSING.md), [vendor--felucca-engines--LICENSE](fomajam/vendor--felucca-engines--LICENSE) | https://github.com/konsumer/fomajam |
+| fomni/0.5.fwsc | FoMni | charlesvestal | GPL-3.0 | [LICENSE](fomni/LICENSE), [LICENSING.md](fomni/LICENSING.md) | https://github.com/charlesvestal/fm1-fomni |
+| frasil/3.4.1.fwsc | FRASIL | Styves Goupil | MPL-2.0 | [LICENSE](frasil/LICENSE), [LICENSING.md](frasil/LICENSING.md) | https://github.com/styvesgoupil/frasil |
+| freitakt/1.0.1.fwsc | FREITAKT | StripedBear | GPL-3.0 | [LICENSE](freitakt/LICENSE), [LICENSING.md](freitakt/LICENSING.md) | https://github.com/StripedBear/freitakt |
+| frodhes/0.9.14.fwsc | Frodhes | Leonardo Mirabal | GPL-3.0 | [LICENSE](frodhes/LICENSE), [LICENSING.md](frodhes/LICENSING.md), [move--vendor--LICENSE.schwung](frodhes/move--vendor--LICENSE.schwung), [mpc--sdk--LICENSE](frodhes/mpc--sdk--LICENSE), [mpc--sdk--NOTICE.txt](frodhes/mpc--sdk--NOTICE.txt) | https://github.com/leonardoMirabal/frodhes |
+| fumi/1.1.1.fwsc | FuMi-1 | cartesive | GPL-3.0 | [LICENSE](fumi/LICENSE), [LICENSING.md](fumi/LICENSING.md) | https://github.com/cartesive/fumi-1 |
+| gabberkix/1.0.0.fwsc | GABBERKIX | Presethead | GPL-3.0 | [LICENSE](gabberkix/LICENSE) | https://github.com/ejtb76/gabberkix |
+| gammawave/1.2.1-GW.fwsc | Pocket GammaWave | ShadowTune (GammaWave Audio) | GPL-3.0 | [LICENSE](gammawave/LICENSE), [LICENSING.md](gammawave/LICENSING.md) | https://github.com/fvalente/GammaWave-FM1 |
+| gator/0.6.fwsc | GATOR | ivanvoid | GPL-3.0 | [LICENSE](gator/LICENSE), [LICENSING.md](gator/LICENSING.md), [firmware--apps--gator--third_party.txt](gator/firmware--apps--gator--third_party.txt), [third_party--eurorack--LICENSE](gator/third_party--eurorack--LICENSE), [third_party--eurorack--stmlib--LICENSE](gator/third_party--eurorack--stmlib--LICENSE), [tools--sdk--LICENSE](gator/tools--sdk--LICENSE) | https://github.com/npi3pak/fm1-gator |
+| ghoulbox/2.4.fwsc | GHOULBOX | jasonpersinger | GPL-3.0 | [LICENSE](ghoulbox/LICENSE), [LICENSING.md](ghoulbox/LICENSING.md) | https://github.com/jasonpersinger/ghoulbox-fm1-dungeon-synth |
+| gio/0.3.1-beta.fwsc | GIO-1 | Guinan | MPL-2.0 | [LICENSE](gio/LICENSE), [LICENSING.md](gio/LICENSING.md) | https://github.com/GuinanNo1/fm1-gio |
+| glitch/2.0.2.fwsc | glitch | saulofilho | GPL-3.0 | [LICENSE](glitch/LICENSE), [LICENSING.md](glitch/LICENSING.md), [hub--LICENSE](glitch/hub--LICENSE), [hub--LICENSING.md](glitch/hub--LICENSING.md), [hub--emu--LICENSE](glitch/hub--emu--LICENSE), [hub--emu--LICENSING.md](glitch/hub--emu--LICENSING.md) | https://github.com/saulofilho/glitch |
+| golana/1.3.fwsc | Golana | Gadlele | GPL-3.0 | [LICENSE](golana/LICENSE), [LICENSING.md](golana/LICENSING.md) | https://github.com/Gadlele/Golana |
+| golanadz/0.1.0-beta.fwsc | Golana DZ Edition | dzwerg | GPL-3.0 | [LICENSE](golanadz/LICENSE), [LICENSING.md](golanadz/LICENSING.md) | https://github.com/dzwerg/Golana-DZ |
+| golf/1.0.fwsc | Golf | BARNIR | MPL-2.0 | [LICENSE](golf/LICENSE) | https://github.com/barnierg76/golf-fm1 |
+| grainpiano/1.4.fwsc | GRAIN PIANO | swtdr34mz | GPL-3.0 | [LICENSE](grainpiano/LICENSE) | https://github.com/swtdr34mz-afk/GRAIN_PIANO |
+| grimm/2.0.2.fwsc | GR!MM | GRiMMBIENT | GPL-3.0 | [LICENSE](grimm/LICENSE), [LICENSING.md](grimm/LICENSING.md) | https://github.com/GRiMMBIENT/grimm |
+| guitchordi/0.1.0-beta.1.fwsc | GuitChordi | Stoogs | GPL-3.0 | [LICENSE](guitchordi/LICENSE), [NOTICES.md](guitchordi/NOTICES.md), [docs--license-audit.md](guitchordi/docs--license-audit.md), [tests--licensing.test.mjs](guitchordi/tests--licensing.test.mjs), [third_party--fm1-platform--LICENSE](guitchordi/third_party--fm1-platform--LICENSE), [third_party--fm1-platform--LICENSING.md](guitchordi/third_party--fm1-platform--LICENSING.md), [web--licenses.html](guitchordi/web--licenses.html) | https://github.com/stoogs/guitchordi |
+| guru600/1.4.0.fwsc | Guru-600 | Marc Massé | GPL-3.0 | [LICENSE](guru600/LICENSE), [docs--firmware--LICENSE](guru600/docs--firmware--LICENSE), [docs--firmware--LICENSING.md](guru600/docs--firmware--LICENSING.md), [emulator--LICENSE](guru600/emulator--LICENSE), [emulator--vendor--minifb-0.28.0--LICENSE](guru600/emulator--vendor--minifb-0.28.0--LICENSE), [emulator--vendor--minifb-0.28.0--LICENSE-APACHE](guru600/emulator--vendor--minifb-0.28.0--LICENSE-APACHE), [emulator--vendor--minifb-0.28.0--LICENSE-MIT](guru600/emulator--vendor--minifb-0.28.0--LICENSE-MIT), [firmware--LICENSE](guru600/firmware--LICENSE), [firmware--LICENSING.md](guru600/firmware--LICENSING.md), [firmware--firmware--engines--LICENSE](guru600/firmware--firmware--engines--LICENSE), [tools--notice--notice.css](guru600/tools--notice--notice.css), [tools--tests--notice_shots.c](guru600/tools--tests--notice_shots.c) | https://github.com/MarcGoudy/guru-600 |
+| gwaan1/0.4.3.fwsc | GWAAN-1 | FEDLIC TOKYO | MIT | [LICENSE](gwaan1/LICENSE) | https://github.com/fedlic/fm1-gwaan1 |
+| h1/0.3.2.fwsc | h1 | Jake Handy | MIT | [LICENSE](h1/LICENSE) | https://github.com/jakehandy/h1 |
+| hadal1/1.0.1.fwsc | HADAL-1 | Polystellarflow | MPL-2.0 | [LICENSE](hadal1/LICENSE), [base--LICENSE](hadal1/base--LICENSE), [base--LICENSING.md](hadal1/base--LICENSING.md), [base--bsp--LICENSE](hadal1/base--bsp--LICENSE), [base--bsp--LICENSING.md](hadal1/base--bsp--LICENSING.md), [base--bsp--NOTICE](hadal1/base--bsp--NOTICE), [base--web--m-bootloader--LICENSE](hadal1/base--web--m-bootloader--LICENSE) | https://github.com/sparky480v/hadal-1 |
+| hawkchua/2.1.7.fwsc | hawk-chua | plieuwski | GPL-3.0 | [LICENSE](hawkchua/LICENSE), [LICENSING.md](hawkchua/LICENSING.md), [open--LICENSE.md](hawkchua/open--LICENSE.md), [open--LICENSING.md](hawkchua/open--LICENSING.md), [open--THIRD_PARTY.md](hawkchua/open--THIRD_PARTY.md) | https://github.com/Plieuw/hawk-chua |
+| hera/1.1.fwsc | HERA | Ben Badio | GPL-3.0 | [LICENSE](hera/LICENSE), [LICENSING.md](hera/LICENSING.md) | https://github.com/benbadio/hera-fm1 |
+| hortator/1.0.1.fwsc | Hortator | DeadActive | GPL-3.0 | [LICENSE](hortator/LICENSE), [LICENSING.md](hortator/LICENSING.md) | https://github.com/DeadActive/hortator |
+| hortator-bt/1.0.1.fwsc | Hortator (Bluetooth) | DEADACTIVE | GPL-3.0 | [LICENSE](hortator-bt/LICENSE), [LICENSING.md](hortator-bt/LICENSING.md) | https://github.com/deadactive/hortator |
+| hungrytravis/2026.11.10.fwsc | Hungry Travis | Trust This Mechanism | GPL-3.0 | [LICENSE](hungrytravis/LICENSE), [LICENSING-REVIEW.md](hungrytravis/LICENSING-REVIEW.md), [LICENSING.md](hungrytravis/LICENSING.md), [THIRD_PARTY_NOTICES.md](hungrytravis/THIRD_PARTY_NOTICES.md), [fm1--LICENSE](hungrytravis/fm1--LICENSE), [fm1--LICENSING.md](hungrytravis/fm1--LICENSING.md), [fm1--THIRD_PARTY_NOTICES.md](hungrytravis/fm1--THIRD_PARTY_NOTICES.md), [fm1--vendor--ac79--LICENSE](hungrytravis/fm1--vendor--ac79--LICENSE), [fm1--vendor--ac79--NOTICE.md](hungrytravis/fm1--vendor--ac79--NOTICE.md), [release--LICENSING-REVIEW.md](hungrytravis/release--LICENSING-REVIEW.md) | https://github.com/adamcharleswilsonmusic-code/Hungry-Travis |
+| hyp1/1.5.70.fwsc | HYP-1 | RedtailWorks | GPL-3.0 | [LICENSE](hyp1/LICENSE), [LICENSING.md](hyp1/LICENSING.md), [bit1--LICENSE](hyp1/bit1--LICENSE), [bit1--LICENSING.md](hyp1/bit1--LICENSING.md), [cty1--LICENSE](hyp1/cty1--LICENSE), [cty1--LICENSING.md](hyp1/cty1--LICENSING.md), [eco1--LICENSE](hyp1/eco1--LICENSE), [eco1--LICENSING.md](hyp1/eco1--LICENSING.md), [grav1--LICENSE](hyp1/grav1--LICENSE), [grav1--LICENSING.md](hyp1/grav1--LICENSING.md), [lof1--LICENSE](hyp1/lof1--LICENSE), [lof1--LICENSING.md](hyp1/lof1--LICENSING.md) | https://github.com/RustyPawz/fm1-HYP1 |
+| insertcoin/0.9.fwsc | INSERT COIN | swtdr34mz (based on Blop by Obsimo) | GPL-3.0 | [LICENSE](insertcoin/LICENSE) | https://github.com/swtdr34mz-afk/INSERT_COIN |
+| j6/1.4.0.fwsc | J6 | JackieAlacrity2373 | MPL-2.0 | [LICENSE](j6/LICENSE), [fm1-base--LICENSE](j6/fm1-base--LICENSE), [fm1-base--LICENSING.md](j6/fm1-base--LICENSING.md), [fm1-base--bsp--LICENSE](j6/fm1-base--bsp--LICENSE), [fm1-base--bsp--LICENSING.md](j6/fm1-base--bsp--LICENSING.md), [fm1-base--bsp--NOTICE](j6/fm1-base--bsp--NOTICE) | https://github.com/JackieAlacrity2373/fm1-j6 |
+| jam/1.2.0.fwsc | Jam Playground | Bob Perry | GPL-3.0 | [LICENSE](jam/LICENSE), [LICENSING.md](jam/LICENSING.md), [eco1--LICENSE](jam/eco1--LICENSE), [eco1--LICENSING.md](jam/eco1--LICENSING.md), [grav1--LICENSE](jam/grav1--LICENSE), [grav1--LICENSING.md](jam/grav1--LICENSING.md), [lof1--LICENSE](jam/lof1--LICENSE), [lof1--LICENSING.md](jam/lof1--LICENSING.md) | https://github.com/BunnyOrchard/jam-playground |
+| jamtrack/0.2.3.fwsc | JAMTRACK | PhilipsKnobs | MIT | [LICENSE](jamtrack/LICENSE), [LICENSING.md](jamtrack/LICENSING.md), [companion--vendor--fm1-base--LICENSE-MPL-2.0](jamtrack/companion--vendor--fm1-base--LICENSE-MPL-2.0) | https://github.com/Philip-Bos/jamtrack-fm1 |
+| jangada/1.0.1.fwsc | Jangada | zednaked | GPL-3.0 | [LICENSE](jangada/LICENSE), [LICENSING.md](jangada/LICENSING.md) | https://github.com/zednaked/jangada |
+| jiant/V10.8.48.fwsc | JIANT FM | juanjiant-bit | GPL-3.0 | [LICENSE](jiant/LICENSE), [LICENSING.md](jiant/LICENSING.md), [rescue--firmware--LICENSE](jiant/rescue--firmware--LICENSE) | https://github.com/juanjiant-bit/JIANT |
+| juicy/0.1.fwsc | Juicy | Daniel Gilbert | GPL-3.0 | [LICENSE](juicy/LICENSE), [LICENSING.md](juicy/LICENSING.md) | https://github.com/DanielGilbert/Juicy |
+| karma/3.1.6.fwsc | KARMA | Ariel Muchnik | GPL-3.0 | [LICENSE](karma/LICENSE), [LICENSING.md](karma/LICENSING.md) | https://github.com/eatyourgreensstudio-dotcom/karma-fm1 |
+| kawa/0.9.fwsc | KAWA | Omnipotard | GPL-3.0 | [LICENSE](kawa/LICENSE), [LICENSING.md](kawa/LICENSING.md) | https://github.com/Guizmoh/Kawa-Tracker-Fm1 |
+| keystepone/0.5.42.fwsc | keySTEP ONE | dzwerg | MPL-2.0 | [LICENSE](keystepone/LICENSE), [LICENSING.md](keystepone/LICENSING.md), [app--dsp--eas--LICENSE-2.0.txt](keystepone/app--dsp--eas--LICENSE-2.0.txt), [app--dsp--eas--NOTICE](keystepone/app--dsp--eas--NOTICE) | https://github.com/dzwerg/keySTEP-ONE |
+| kicksidesidekick/0.10.7.fwsc | KickSide SideKick | Kyle (kjs4discovery) | GPL-3.0 | [LICENSE](kicksidesidekick/LICENSE), [LICENSES--LicenseRef-KickSide-Trademark.txt](kicksidesidekick/LICENSES--LicenseRef-KickSide-Trademark.txt), [NOTICE](kicksidesidekick/NOTICE), [firmware--vendor--felucca-engines--LICENSE](kicksidesidekick/firmware--vendor--felucca-engines--LICENSE), [firmware--vendor--fm1-base--LICENSE](kicksidesidekick/firmware--vendor--fm1-base--LICENSE), [firmware--vendor--fm1-base--LICENSING.md](kicksidesidekick/firmware--vendor--fm1-base--LICENSING.md), [firmware--vendor--sonivox--LICENSE](kicksidesidekick/firmware--vendor--sonivox--LICENSE), [firmware--vendor--sonivox--LICENSE-2.0.txt](kicksidesidekick/firmware--vendor--sonivox--LICENSE-2.0.txt), [firmware--vendor--sonivox--NOTICE](kicksidesidekick/firmware--vendor--sonivox--NOTICE) | https://github.com/kjs4discovery/kicksidesidekick |
+| kitten/2.8-kitten.14.fwsc | Kitten Synths | Black Kitten Devices | GPL-3.0 | [LICENSE](kitten/LICENSE) | https://github.com/BlackKittenDevices/Kitten-Synths |
+| kittenrack/1.5.0.fwsc | Kitten Rack | Black Kitten Devices | GPL-3.0 | [LICENSE](kittenrack/LICENSE), [LICENSING.md](kittenrack/LICENSING.md), [web--public--LICENSE-ymfm.txt](kittenrack/web--public--LICENSE-ymfm.txt), [web--public--firmware--LICENSE-Apache-2.0.txt](kittenrack/web--public--firmware--LICENSE-Apache-2.0.txt), [web--public--firmware--LICENSE-GPL-3.0.txt](kittenrack/web--public--firmware--LICENSE-GPL-3.0.txt), [web--public--firmware--NOTICE-FM-1_015.txt](kittenrack/web--public--firmware--NOTICE-FM-1_015.txt) | https://github.com/BlackKittenDevices/kitten-rack |
+| kriechstrom/0.5.2.fwsc | KRIECHSTROM | Grigorii Bezborodov | GPL-3.0 | [LICENSE](kriechstrom/LICENSE), [LICENSING.md](kriechstrom/LICENSING.md), [firmware--bsp--LICENSE](kriechstrom/firmware--bsp--LICENSE), [firmware--bsp--LICENSING.md](kriechstrom/firmware--bsp--LICENSING.md), [firmware--bsp--NOTICE](kriechstrom/firmware--bsp--NOTICE), [firmware--engines--LICENSE](kriechstrom/firmware--engines--LICENSE) | https://github.com/Xforsa/kriechstrom |
+| krisjangle/0.15.fwsc | Kris Jangle | w33tSnx | MPL-2.0 | [LICENSE](krisjangle/LICENSE), [LICENSING.md](krisjangle/LICENSING.md), [web--m-bootloader--LICENSE](krisjangle/web--m-bootloader--LICENSE) | https://github.com/doohinkus/kris-jangle |
+| kurzhaar/1.1.fwsc | Kurzhaar, der Basshund | JazzMasterT | GPL-3.0 | [LICENSE](kurzhaar/LICENSE), [LICENSING.md](kurzhaar/LICENSING.md) | https://github.com/kurzhaar168/kurzhaar |
+| kwasub/1.2.7b.fwsc | K-WASUB | Omnipotard (Guizmoh) | GPL-3.0 | [LICENSE](kwasub/LICENSE), [LICENSING.md](kwasub/LICENSING.md) | https://github.com/Guizmoh/K-WASUB_Firmware_for_FM1 |
+| loafbreaker/0.9.79.fwsc | LOAF BREAKER | FLEXOR | MPL-2.0 | [LICENSE](loafbreaker/LICENSE) | https://github.com/FLEXOR-R/loaf-breaker |
+| loom/0.18.2.fwsc | LOOM-8 | Charles Vestal | MPL-2.0 | [COPYING](loom/COPYING), [LICENSE](loom/LICENSE), [LICENSING.md](loom/LICENSING.md) | https://github.com/charlesvestal/fm1-loom |
+| loomfm1/0.1.0.fwsc | Loom FM-1 | Co-oscillator | GPL-3.0 | [LICENSE](loomfm1/LICENSE), [LICENSING.md](loomfm1/LICENSING.md) | https://github.com/Co-oscillator/Loom-FM-1 |
+| loopheads/0.1.2.fwsc | LOOPHEADS | Jaak St-Jaaques | GPL-3.0 | [LICENSE](loopheads/LICENSE), [LICENSING.md](loopheads/LICENSING.md) | https://github.com/jaak-stjaaques/LOOPHEADS-public |
+| lrry/0.1.0-beta.fwsc | L/RRY | OSCILL/R | GPL-3.0 | [LICENSE](lrry/LICENSE), [NOTICE.md](lrry/NOTICE.md), [lrry--LICENSE](lrry/lrry--LICENSE), [lrry--LICENSING.md](lrry/lrry--LICENSING.md) | https://github.com/oscillr/LRRY |
+| luxr/2026.11.02.fwsc | LUXR | HOLODECK AUDIOTOOLS | GPL-3.0 | [LICENSE](luxr/LICENSE), [NOTICE.md](luxr/NOTICE.md), [schwung--LICENSE-SCHWUNG](luxr/schwung--LICENSE-SCHWUNG), [schwung--NOTICE-LXR.txt](luxr/schwung--NOTICE-LXR.txt) | https://github.com/orbitator/LUXR |
+| makohai/1.4.fwsc | Makohai | delirioux | GPL-3.0 | [LICENSE](makohai/LICENSE), [LICENSING.md](makohai/LICENSING.md) | https://github.com/delirioux/makohai |
+| maku/1.0.fwsc | MAKU | okumurari | GPL-3.0 | [LICENSE](maku/LICENSE), [LICENSING.md](maku/LICENSING.md) | https://github.com/okumurari2/maku |
+| manifold/1.0.7.fwsc | Manifold | stets43 | MPL-2.0 | [LICENSE](manifold/LICENSE) | https://github.com/stets43/Manifold |
+| manta/1.1.fwsc | Manta | delirioux | GPL-3.0 | [LICENSE](manta/LICENSE), [LICENSING.md](manta/LICENSING.md) | https://github.com/delirioux/manta |
+| matryoshka/1.26.3.fwsc | Matryoshka | glvno | GPL-3.0 | [LICENSE](matryoshka/LICENSE), [LICENSING.md](matryoshka/LICENSING.md), [web--public--LICENSE-ymfm.txt](matryoshka/web--public--LICENSE-ymfm.txt), [web--public--firmware--LICENSE-Apache-2.0.txt](matryoshka/web--public--firmware--LICENSE-Apache-2.0.txt), [web--public--firmware--LICENSE-GPL-3.0.txt](matryoshka/web--public--firmware--LICENSE-GPL-3.0.txt), [web--public--firmware--NOTICE-FM-1_015.txt](matryoshka/web--public--firmware--NOTICE-FM-1_015.txt) | https://github.com/glvno/matryoshka |
+| mb1/0.25.1.fwsc | MB-1 | Leonardo Lopez Chavira | MIT | [LICENSE](mb1/LICENSE), [app--editor--pdfjs--LICENSE](mb1/app--editor--pdfjs--LICENSE), [fm1--base--LICENSE](mb1/fm1--base--LICENSE), [fm1--base--LICENSING.md](mb1/fm1--base--LICENSING.md), [fm1--base--bsp--LICENSE](mb1/fm1--base--bsp--LICENSE), [fm1--base--bsp--LICENSING.md](mb1/fm1--base--bsp--LICENSING.md), [fm1--base--bsp--NOTICE](mb1/fm1--base--bsp--NOTICE) | https://github.com/leonardolopezchavira/minibrute-fm1 |
+| mc1/1.2.0.fwsc | MC-1 | dspaudio | GPL-3.0 | [LICENSE](mc1/LICENSE), [NOTICE.md](mc1/NOTICE.md) | https://github.com/dspaudio/mc-1 |
+| melodee/1.6.1.fwsc | Melodee | keremimo | GPL-3.0 | [LICENSE](melodee/LICENSE), [LICENSING.md](melodee/LICENSING.md), [web--m-bootloader--LICENSE](melodee/web--m-bootloader--LICENSE) | https://github.com/keremimo/melodee |
+| metronome/0.4.fwsc | METRONOME | Da-Wei Lee | GPL-3.0 | [LICENSE](metronome/LICENSE) | https://github.com/daviddwlee84/fm1-metronome |
+| midimon/0.5.fwsc | MIDIMON | ignis32 | MPL-2.0 | [LICENSE](midimon/LICENSE), [LICENSING.md](midimon/LICENSING.md), [app--site--m-bootloader--LICENSE](midimon/app--site--m-bootloader--LICENSE) | https://github.com/ignis32/midimonitor_fm1 |
+| mightyarcade/1.0.fwsc | Mighty Arcade | Moby Pixel | MPL-2.0 | [LICENSE](mightyarcade/LICENSE), [LICENSING.md](mightyarcade/LICENSING.md) | https://github.com/NickCulbertson/FM1-Mighty-Arcade |
+| mightyarp/1.5.fwsc | Mighty Arp | Moby Pixel | MPL-2.0 | [LICENSE](mightyarp/LICENSE), [LICENSING.md](mightyarp/LICENSING.md) | https://github.com/NickCulbertson/FM1-Mighty-Arp |
+| mikufm/0.9.fwsc | Miku-FM | Michael Perry | GPL-3.0 | [LICENSE](mikufm/LICENSE), [LICENSING.md](mikufm/LICENSING.md), [assets--NOTICE.md](mikufm/assets--NOTICE.md), [firmware--audio--dx7--LICENSE](mikufm/firmware--audio--dx7--LICENSE), [firmware--usb--jpeg--NOTICE.md](mikufm/firmware--usb--jpeg--NOTICE.md) | https://github.com/MichaelAPerry/MIKU-FM1 |
+| min1/0.2.1.fwsc | MIN-1 | Reytian | GPL-3.0 | [LICENSE](min1/LICENSE), [LICENSING.md](min1/LICENSING.md) | https://github.com/Reytian/fm1-min1 |
+| minigrain/1.0.0.fwsc | Mini-Grain | eldontyrellcorp | GPL-3.0 | [LICENSE](minigrain/LICENSE), [LICENSING.md](minigrain/LICENSING.md) | https://github.com/eldontyrellcorp/Mini-Grain |
+| miniju08/08-1.00.fwsc | Mini-Ju08 | Stephane Schmitz | GPL-3.0 | [LICENSE](miniju08/LICENSE), [LICENSING.md](miniju08/LICENSING.md) | https://github.com/eldontyrellcorp/Mini-Ju08 |
+| minitone/1.0.5.fwsc | Mini-Tone | Stéphane Schmitz | GPL-3.0 | [LICENSE](minitone/LICENSE), [LICENSING.md](minitone/LICENSING.md) | https://github.com/eldontyrellcorp/Mini-Tone |
+| mnm1/1.0.1.fwsc | MNM-1 | Veff | GPL-3.0 | [LICENSE](mnm1/LICENSE), [LICENSING.md](mnm1/LICENSING.md) | https://github.com/galfaroth/mnm1 |
+| modelar/0.3.fwsc | MODELAR | Hirakos | MPL-2.0 | [LICENSE](modelar/LICENSE) | https://github.com/hirakos999/MODELAR |
+| monk/0.10.fwsc | MONK-1 | Charles Vestal | GPL-3.0 | [LICENSE](monk/LICENSE) | https://github.com/charlesvestal/fm1-monk |
+| mono2k/1.13.fwsc | MONO2K | Iñigo Hernandez | GPL-3.0 | [LICENSE](mono2k/LICENSE), [assets--fonts--mono2k-pixel--license.txt](mono2k/assets--fonts--mono2k-pixel--license.txt), [move--vendor--schwung--LICENSE](mono2k/move--vendor--schwung--LICENSE) | https://github.com/InigoHernandez/mono2k |
+| monohull/0.2.0.fwsc | Monohull | Mark White | GPL-3.0 | [LICENSE](monohull/LICENSE), [ext--open303--License.txt](monohull/ext--open303--License.txt), [ext--sst-filters--LICENSE.md](monohull/ext--sst-filters--LICENSE.md) | https://github.com/markterm/monohull |
+| mope1/0.5.0.fwsc | MOPE-1 | slothpallas | GPL-3.0-only | [LICENSE](mope1/LICENSE), [LICENSING.md](mope1/LICENSING.md) | https://github.com/slothpallas/mope-1 |
+| morpheus/1.0.0.fwsc | MORPHEUS | Ben Badio | GPL-3.0 | [LICENSE](morpheus/LICENSE), [LICENSING.md](morpheus/LICENSING.md) | https://github.com/benbadio/morpheus-fm1 |
+| morse/0.8.fwsc | MORSE | Da-Wei Lee | GPL-3.0 | [LICENSE](morse/LICENSE) | https://github.com/daviddwlee84/fm1-morse |
+| moss1/1.0.fwsc | MOSS-1 | Theo Wecker | MPL-2.0 | [LICENSE](moss1/LICENSE) | https://github.com/theowecker/fm1-moss |
+| mpyre/1.0.3.fwsc | M-PYRE | History Of Sky | GPL-3.0 | [LICENSE](mpyre/LICENSE), [LICENSING.md](mpyre/LICENSING.md) | https://github.com/HistoryOfSky/m-pyre |
+| mumble/0.1.1.fwsc | Mumble | Kiryl Dziamura | GPL-3.0 | [LICENSE](mumble/LICENSE), [NOTICE.md](mumble/NOTICE.md) | https://github.com/kdziamura/fm1-mumble |
+| mutable/2.4.fwsc | Mutable Dreams | Kid Bunka | GPL-3.0 | [LICENSE](mutable/LICENSE), [LICENSE-MIT.txt](mutable/LICENSE-MIT.txt), [LICENSING-GPL.txt](mutable/LICENSING-GPL.txt), [base--LICENSE](mutable/base--LICENSE), [base--LICENSING.md](mutable/base--LICENSING.md), [base--bsp--LICENSE](mutable/base--bsp--LICENSE), [base--bsp--LICENSING.md](mutable/base--bsp--LICENSING.md), [base--bsp--NOTICE](mutable/base--bsp--NOTICE), [base--web--m-bootloader--LICENSE](mutable/base--web--m-bootloader--LICENSE) | https://github.com/kidbee85-beep/mutable-dreams |
+| mvance/2.8.1.fwsc | M-Vance | Kris (bk40-home) | GPL-3.0 | [LICENSE](mvance/LICENSE), [LICENSING.md](mvance/LICENSING.md), [assets--fonts--dejavu--LICENSE](mvance/assets--fonts--dejavu--LICENSE) | https://github.com/bk40-home/M-vance |
+| mvaneyard/0.15.fwsc | mvane yard | Enkerli | GPL-3.0 | [LICENSE](mvaneyard/LICENSE), [app--clipper--LICENSE](mvaneyard/app--clipper--LICENSE) | https://github.com/Enkerli/mvane-yard |
+| mvave-v15/V15.fwsc | M-VAVE stock firmware | M-VAVE | Apache-2.0 (M-VAVE's FM1 Open recovery image) | [LICENSE.md](mvave-v15/LICENSE.md), [THIRD_PARTY.md](mvave-v15/THIRD_PARTY.md) | https://github.com/m-vave/fm1_open |
+| mvsynth2/1.5.2.fwsc | M-Vsynth2 | Kris (bk40-home) | GPL-3.0 | [LICENSE](mvsynth2/LICENSE), [LICENSING.md](mvsynth2/LICENSING.md), [assets--fonts--dejavu--LICENSE](mvsynth2/assets--fonts--dejavu--LICENSE) | https://github.com/bk40-home/M-Vsynth2 |
+| mycelium/1.0-test.fwsc | MYCELIUM | Mandalars | GPL-3.0 | [LICENSE](mycelium/LICENSE) | https://github.com/megagott/mycelium-fm1 |
+| nachtfahrt/1.0.2.fwsc | NACHTFAHRT | Cranky Man | GPL-3.0 | [LICENSE](nachtfahrt/LICENSE), [LICENSING.md](nachtfahrt/LICENSING.md) | https://github.com/FartyPants/fm1-nachtfahrt |
+| nanofreak/3.0.1.fwsc | Nano Freak | Virus Installer | GPL-3.0 | [LICENSE](nanofreak/LICENSE), [LICENSING.md](nanofreak/LICENSING.md) | https://github.com/Virusiinstaller/nano-freak-fm1 |
+| nauclerus/1.1.0.fwsc | Nauclerus | Mr. Roboto | GPL-3.0 | [LICENSE](nauclerus/LICENSE), [LICENSING.md](nauclerus/LICENSING.md) | https://github.com/Mr-Roboto/nauclerus |
+| nccnovationcircuitcompan/0.7.fwsc | NCC – Novation Circuit Companion | Fenderberg | GPL-3.0 | [LICENSE](nccnovationcircuitcompan/LICENSE), [LICENSING.md](nccnovationcircuitcompan/LICENSING.md) | https://github.com/fenderberg/fm1-nc-companion |
+| neon/0.2.fwsc | NEON | Neon Summers | GPL-3.0 | [LICENSE](neon/LICENSE), [LICENSING.md](neon/LICENSING.md), [firmware--engines--LICENSE](neon/firmware--engines--LICENSE) | https://github.com/LotionOnTheSkin/NEON |
+| niagara/0.3.1.fwsc | Niagara Drift | evanyerburgh | GPL-3.0 | [LICENSE](niagara/LICENSE), [LICENSING.md](niagara/LICENSING.md), [web--manual--icons--LICENSE](niagara/web--manual--icons--LICENSE) | https://github.com/evanyerburgh/niagara-drift |
+| nmsfm/0.9.fwsc | No Man Sky FM | Hericdk | GPL-3.0 | [LICENSE](nmsfm/LICENSE), [firmware--LICENSE](nmsfm/firmware--LICENSE), [firmware--LICENSING.md](nmsfm/firmware--LICENSING.md) | https://github.com/hericdk/nomanskyFM |
+| noizdemons/666.fwsc | NOIZ DEMONS | SPIKE the Percussionist | GPL-3.0 | [LICENSE](noizdemons/LICENSE), [LICENSING.md](noizdemons/LICENSING.md) | https://github.com/SPIKE-the-Percussionist/noiz_demons |
+| obervave/3.5.4.fwsc | OberVave | zvenson | GPL-3.0 | [LICENSE](obervave/LICENSE), [LICENSING.md](obervave/LICENSING.md), [firmware--src--screen_mirror--LICENSE](obervave/firmware--src--screen_mirror--LICENSE), [video--fonts--LICENSE-PermanentMarker.txt](obervave/video--fonts--LICENSE-PermanentMarker.txt) | https://github.com/zvenson/obervave |
+| obscuraline/1.0.fwsc | Obscura Line | MammothCheese | GPL-3.0 | [LICENSE](obscuraline/LICENSE), [LICENSING.md](obscuraline/LICENSING.md) | https://github.com/MammothCheese/obscuraline |
+| obssynthfm1/0.2.0.fwsc | ObsSynth FM-1 | Orian Beltrame | GPL-3.0 | [LICENSE](obssynthfm1/LICENSE), [LICENSING.md](obssynthfm1/LICENSING.md) | https://github.com/orianbsilva/obssynth-fm1 |
+| offworld/0.4.3.fwsc | OFFWORLD | swtdr34mz | MPL-2.0 | [LICENSE](offworld/LICENSE) | https://github.com/swtdr34mz-afk/OFFWORLD |
+| ombak/1.3.fwsc | Ombak | Lunar Eclipse Forge | GPL-3.0 | [LICENSE](ombak/LICENSE), [LICENSING.md](ombak/LICENSING.md) | https://github.com/MadMooneyham/Ombak |
+| opdream/1.2.3.fwsc | OP dream | James | GPL-3.0 | [LICENSE](opdream/LICENSE), [LICENSING.md](opdream/LICENSING.md) | https://github.com/bertrandhustle2/skiff |
+| opn1/2.0.1.fwsc | OPN-1 | putchdev | GPL-3.0 | [LICENSE](opn1/LICENSE), [LICENSING.md](opn1/LICENSING.md), [tests--ref--nuked-opn2--LICENSE](opn1/tests--ref--nuked-opn2--LICENSE), [tests--ref--ymfm--LICENSE](opn1/tests--ref--ymfm--LICENSE) | https://github.com/putchdev/opn-1 |
+| orbit/1.0.1B.fwsc | ORBIT | dspaudio | GPL-3.0 | [LICENSE](orbit/LICENSE), [LICENSING.md](orbit/LICENSING.md) | https://github.com/dspaudio/orbit |
+| orbita/2.0.12.fwsc | ORBITA | Polaris Sound Lab | GPL-3.0 | [LICENSE](orbita/LICENSE), [Orbita-FM1--modulo--COPYING](orbita/Orbita-FM1--modulo--COPYING), [firmware--firmware-src--LICENSE](orbita/firmware--firmware-src--LICENSE), [firmware--firmware-src--LICENSING.md](orbita/firmware--firmware-src--LICENSING.md) | https://github.com/drophlex/ORBITA |
+| orgigs/1.5.fwsc | OrGigs | Bobo | GPL-3.0 | [LICENSE](orgigs/LICENSE), [LICENSING.md](orgigs/LICENSING.md), [assets--seqtrak--LICENSE.seqtrak-docs](orgigs/assets--seqtrak--LICENSE.seqtrak-docs) | https://github.com/orgelbobo/orgigs |
+| paperlagoon/1.1.fwsc | PaperLagoon | hacha | GPL-3.0 | [LICENSE](paperlagoon/LICENSE), [LICENSING.md](paperlagoon/LICENSING.md) | https://github.com/hacha/paperlagoon |
+| patchwerk/1.0.3.fwsc | Patchwerk | Matt Kuebrich | GPL-3.0 | [LICENSE](patchwerk/LICENSE), [assets--dx--LICENSE-ymfm.txt](patchwerk/assets--dx--LICENSE-ymfm.txt), [base--LICENSE](patchwerk/base--LICENSE), [base--LICENSING.md](patchwerk/base--LICENSING.md), [base--bsp--LICENSE](patchwerk/base--bsp--LICENSE), [base--bsp--LICENSING.md](patchwerk/base--bsp--LICENSING.md), [base--bsp--NOTICE](patchwerk/base--bsp--NOTICE) | https://github.com/MattKuebrich/patchwerk |
+| penumbra/1.13.fwsc | Penumbra | Lunar Eclipse Forge | GPL-3.0 | [LICENSE](penumbra/LICENSE), [LICENSING.md](penumbra/LICENSING.md) | https://github.com/MadMooneyham/Penumbra |
+| perf1/0.17.0.fwsc | PERF-1 | deamonSLINKY | GPL-3.0 | [LICENSE](perf1/LICENSE), [LICENSING.md](perf1/LICENSING.md) | https://github.com/deamonSLINKY/PERF-1 |
+| pigeon/0.5.0-beta.1.fwsc | PIGEON | The Shrimp Blimp | GPL-3.0 | [LICENSE](pigeon/LICENSE), [LICENSING.md](pigeon/LICENSING.md), [firmware--vendor--libmad--COPYING](pigeon/firmware--vendor--libmad--COPYING) | https://github.com/TheShrimpBlimp/pigeon |
+| pingos1/1.0.1.fwsc | PING OS-1 | PING AUDIO | MPL-2.0 | [LICENSE](pingos1/LICENSE), [docs--THIRD_PARTY.md](pingos1/docs--THIRD_PARTY.md) | https://github.com/PINGAUDIO/PING-OS-1 |
+| piterfly/1.2.5.fwsc | Piterfly | Piotr Woźniak | GPL-3.0 | [LICENSE](piterfly/LICENSE), [LICENSING.md](piterfly/LICENSING.md), [THIRD_PARTY_NOTICES.md](piterfly/THIRD_PARTY_NOTICES.md), [assets--piterfly--LICENSE.txt](piterfly/assets--piterfly--LICENSE.txt), [vendor--ac79--LICENSE](piterfly/vendor--ac79--LICENSE), [web--licences.html](piterfly/web--licences.html) | https://github.com/piotrwozniak/piterfly |
+| playa/0.1.fwsc | PLAYA | JFS | GPL-3.0 | [LICENSE](playa/LICENSE), [LICENSING.md](playa/LICENSING.md), [web--fm1base--m-bootloader--LICENSE](playa/web--fm1base--m-bootloader--LICENSE) | https://github.com/juan-ms2lab/playa |
+| plissken/0.31.fwsc | Plissken | OscarDad | MPL-2.0 | [LICENSE](plissken/LICENSE), [base--LICENSE](plissken/base--LICENSE), [base--LICENSING.md](plissken/base--LICENSING.md), [base--bsp--LICENSE](plissken/base--bsp--LICENSE), [base--bsp--LICENSING.md](plissken/base--bsp--LICENSING.md), [base--bsp--NOTICE](plissken/base--bsp--NOTICE), [base--web--m-bootloader--LICENSE](plissken/base--web--m-bootloader--LICENSE) | https://github.com/dustekin/plissken |
+| pocketband/0.4.fwsc | Pocket Band | elpabl0 | GPL-3.0 | [LICENSE](pocketband/LICENSE), [LICENSING.md](pocketband/LICENSING.md) | https://github.com/elpabl0/pocketband |
+| polly/0.6.4.fwsc | Polly | charlesvestal | GPL-3.0 | [LICENSE](polly/LICENSE), [LICENSING.md](polly/LICENSING.md), [app--dsp--eas--LICENSE-2.0.txt](polly/app--dsp--eas--LICENSE-2.0.txt), [app--dsp--eas--NOTICE](polly/app--dsp--eas--NOTICE), [styles--drums--LICENSE](polly/styles--drums--LICENSE) | https://github.com/charlesvestal/fm1-polly |
+| prophet67/1.4.fwsc | PROPHET-67 | swtdr34mz | MPL-2.0 | [LICENSE](prophet67/LICENSE) | https://github.com/swtdr34mz-afk/PROPHET-67 |
+| ptfm/0.26.fwsc | PT/FM | hitosu | GPL-3.0 | [LICENSE](ptfm/LICENSE) | https://github.com/hitosu/ptfm |
+| pulhra/1.5.1.fwsc | PULHRA | 646timur-cell | GPL-3.0 | [LICENSE](pulhra/LICENSE), [LICENSING.md](pulhra/LICENSING.md), [build--release-1.5.1--LICENSE](pulhra/build--release-1.5.1--LICENSE), [build--release-1.5.1--LICENSING.md](pulhra/build--release-1.5.1--LICENSING.md) | https://github.com/646timur-cell/pulhra_main |
+| purplemonkey/0.12.fwsc | PurpleMonkey | Quixotic7 | GPL-3.0 | [LICENSE](purplemonkey/LICENSE), [LICENSING.md](purplemonkey/LICENSING.md), [tools--sdk--LICENSE](purplemonkey/tools--sdk--LICENSE) | https://github.com/Quixotic7/PurpleMonkeyFM1 |
+| pvox/1.1-7869-fm1.fwsc | P-Vox | Hans Volt | GPL-3.0 | [LICENSE](pvox/LICENSE), [NOTICE.txt](pvox/NOTICE.txt), [assets--logo--NOTICE.txt](pvox/assets--logo--NOTICE.txt), [assets--voice--NOTICE.txt](pvox/assets--voice--NOTICE.txt), [smk37--NOTICE.txt](pvox/smk37--NOTICE.txt), [smk37--assets--logo--NOTICE.txt](pvox/smk37--assets--logo--NOTICE.txt), [smk37--assets--voice--NOTICE.txt](pvox/smk37--assets--voice--NOTICE.txt) | https://github.com/HanzVolt/P-Vox |
+| quantumgammawave/2.5.1.fwsc | Quantum GammaWave | Guille Lauría | GPL-3.0 | [LICENSE](quantumgammawave/LICENSE), [LICENSING.md](quantumgammawave/LICENSING.md), [site--firmware--LICENSE](quantumgammawave/site--firmware--LICENSE), [site--firmware--LICENSING.md](quantumgammawave/site--firmware--LICENSING.md) | https://github.com/Guillel51/Quantum-GammaWave |
+| quartet/3.1.fwsc | Quartet | MammothCheese | GPL-3.0 | [LICENSE](quartet/LICENSE), [LICENSING.md](quartet/LICENSING.md) | https://github.com/MammothCheese/quartet |
+| quartz/0.10.fwsc | QUARTZ | f0nski | GPL-3.0 | [LICENSE](quartz/LICENSE), [app--third_party--stmlib--LICENSE](quartz/app--third_party--stmlib--LICENSE) | https://github.com/F0nski/quartz |
+| quest/43.fwsc | FM1 Quest | hericdk | GPL-3.0 | [LICENSE](quest/LICENSE), [LICENSING.md](quest/LICENSING.md), [quest--web--LICENSE-GPL3](quest/quest--web--LICENSE-GPL3) | https://github.com/hericdk/fm1-quest |
+| rainbow/1.1.5-rb.fwsc | Rainbow Mode | joshbartlettband-web | GPL-3.0 | [LICENSE](rainbow/LICENSE), [LICENSING.md](rainbow/LICENSING.md), [web--m-bootloader--LICENSE](rainbow/web--m-bootloader--LICENSE) | https://github.com/joshbartlettband-web/felucca-rainbow |
+| rakt/0.1.8.fwsc | RAKT | Chase DeAnda | GPL-3.0 | [LICENSE](rakt/LICENSE), [LICENSING.md](rakt/LICENSING.md), [docs--LICENSING-choralroot.md](rakt/docs--LICENSING-choralroot.md), [tools--sdk--LICENSE](rakt/tools--sdk--LICENSE) | https://github.com/chasedeanda/rakt-fm1 |
+| rambeaver/745-hub.fwsc | RAMBEAVER | Trust This Mechanism | GPL-3.0 | [LICENSE](rambeaver/LICENSE), [LICENSING.md](rambeaver/LICENSING.md), [THIRD_PARTY_NOTICES.md](rambeaver/THIRD_PARTY_NOTICES.md), [dist--browser--LICENSES--LICENSE](rambeaver/dist--browser--LICENSES--LICENSE), [release--license-audit.json](rambeaver/release--license-audit.json), [vendor--ac79--LICENSE](rambeaver/vendor--ac79--LICENSE), [vendor--ac79--NOTICE.md](rambeaver/vendor--ac79--NOTICE.md) | https://github.com/adamcharleswilsonmusic-code/RAMBEAVER |
+| rand/1.0.1.fwsc | RAND | swtdr34mz | MPL-2.0 | [LICENSE](rand/LICENSE) | https://github.com/swtdr34mz-afk/RAND |
+| ravel/1.46.0.fwsc | Ravel | De-Pattern | GPL-3.0 | [LICENSE](ravel/LICENSE), [THIRD_PARTY.md](ravel/THIRD_PARTY.md), [third_party--m-vave--LICENSE-Apache-2.0.txt](ravel/third_party--m-vave--LICENSE-Apache-2.0.txt) | https://github.com/De-Pattern/Ravel_FM1 |
+| rdpno/0.3.3.fwsc | RDPNO | R-Jeb | GPL-3.0 | [LICENSE](rdpno/LICENSE), [LICENSING.md](rdpno/LICENSING.md) | https://github.com/R-Jeb/rdpno-fm1 |
+| remotefm1/0.4.0.fwsc | RemoteFM1 | Quixotic7 | MPL-2.0 | [LICENSE](remotefm1/LICENSE), [LICENSING.md](remotefm1/LICENSING.md), [web--installer--firmware--LICENSE](remotefm1/web--installer--firmware--LICENSE), [web--installer--firmware--LICENSING.md](remotefm1/web--installer--firmware--LICENSING.md) | https://github.com/Quixotic7/RemoteFM1 |
+| rhinotiger/1.1.fwsc | RhinoTiger | hacha | GPL-3.0 | [LICENSE](rhinotiger/LICENSE), [LICENSING.md](rhinotiger/LICENSING.md) | https://github.com/hacha/rhinotiger |
+| rhythmer/0.1.1-beta3.fwsc | Rhythmer | Jazzy Rhythmer | GPL-3.0 | [LICENSE](rhythmer/LICENSE), [THIRD-PARTY-AUDIO.txt](rhythmer/THIRD-PARTY-AUDIO.txt), [docs--THIRD_PARTY.md](rhythmer/docs--THIRD_PARTY.md), [rhythmer--LICENSE](rhythmer/rhythmer--LICENSE), [rhythmer--LICENSES--ported-fmini--LICENSE](rhythmer/rhythmer--LICENSES--ported-fmini--LICENSE), [rhythmer--LICENSES--ported-fmini--LICENSING.md](rhythmer/rhythmer--LICENSES--ported-fmini--LICENSING.md), [rhythmer--LICENSES--ported-melodee--LICENSE](rhythmer/rhythmer--LICENSES--ported-melodee--LICENSE), [rhythmer--LICENSES--ported-melodee--LICENSING.md](rhythmer/rhythmer--LICENSES--ported-melodee--LICENSING.md), [rhythmer--LICENSES--ported-obervave--LICENSE](rhythmer/rhythmer--LICENSES--ported-obervave--LICENSE), [rhythmer--LICENSES--ported-obervave--LICENSING.md](rhythmer/rhythmer--LICENSES--ported-obervave--LICENSING.md), [rhythmer--LICENSING.md](rhythmer/rhythmer--LICENSING.md), [rhythmer--firmware--mono2k--LICENSE](rhythmer/rhythmer--firmware--mono2k--LICENSE), [site--media--video--NOTICE.txt](rhythmer/site--media--video--NOTICE.txt), [site--vendor--fm1-emu--LICENSE](rhythmer/site--vendor--fm1-emu--LICENSE), [site--vendor--m-vave-v15--LICENSE.md](rhythmer/site--vendor--m-vave-v15--LICENSE.md), [site--vendor--m-vave-v15--NOTICE.txt](rhythmer/site--vendor--m-vave-v15--NOTICE.txt), [site--vendor--m-vave-v15--THIRD_PARTY.md](rhythmer/site--vendor--m-vave-v15--THIRD_PARTY.md), [site--vendor--upstream-editor--LICENSE.txt](rhythmer/site--vendor--upstream-editor--LICENSE.txt), [site--vendor--upstream-installer--LICENSE](rhythmer/site--vendor--upstream-installer--LICENSE), [www--assets--LICENSE.txt](rhythmer/www--assets--LICENSE.txt), [www--assets--video--NOTICE.txt](rhythmer/www--assets--video--NOTICE.txt), [www--downloads--THIRD-PARTY-AUDIO.txt](rhythmer/www--downloads--THIRD-PARTY-AUDIO.txt), [www--downloads--official-v15--LICENSE.md](rhythmer/www--downloads--official-v15--LICENSE.md), [www--downloads--official-v15--NOTICE.txt](rhythmer/www--downloads--official-v15--NOTICE.txt), [www--downloads--official-v15--THIRD_PARTY.md](rhythmer/www--downloads--official-v15--THIRD_PARTY.md), [www--editor--LICENSE.txt](rhythmer/www--editor--LICENSE.txt), [www--emulator--LICENSE.txt](rhythmer/www--emulator--LICENSE.txt), [www--installer--LICENSE](rhythmer/www--installer--LICENSE) | https://github.com/JazzyRhythmer/Rhythmer |
+| rhytmsec1/1.4.3.fwsc | RHYTM-SEC-1 | James Hampshire | GPL-3.0 | [LICENSE](rhytmsec1/LICENSE), [LICENSING.md](rhytmsec1/LICENSING.md), [rhytmsec1--perf--LICENSE](rhytmsec1/rhytmsec1--perf--LICENSE), [rhytmsec1--perf--LICENSING.md](rhytmsec1/rhytmsec1--perf--LICENSING.md) | https://github.com/hamperj/rhytm-sec-1 |
+| ruido/0.7.3.fwsc | Ruido | Miguel Hernández Domenech | GPL-3.0 | [LICENSE](ruido/LICENSE), [THIRD_PARTY_NOTICES.md](ruido/THIRD_PARTY_NOTICES.md) | https://github.com/miguelhd/ruido |
+| rupture/2.0.14.fwsc | RUPTURE | Joppe Sikken (SikkenWorks) | GPL-3.0 | [LICENSE](rupture/LICENSE), [emu--LICENSE](rupture/emu--LICENSE), [vendor--etch-v1.88-source--LICENSE](rupture/vendor--etch-v1.88-source--LICENSE) | https://github.com/SikkenWorks/RUPTURE |
+| s1vave/2.0.1.fwsc | S1Vave | Andrew GG | GPL-3.0 | [LICENSE](s1vave/LICENSE), [LICENSING.md](s1vave/LICENSING.md) | https://github.com/AndrewGG88/S1Vave |
+| samsara/1.0.0.fwsc | SAMSARA | Tomorrow's Man | MPL-2.0 | [LICENSE](samsara/LICENSE), [LICENSING.md](samsara/LICENSING.md), [base--LICENSE](samsara/base--LICENSE), [base--LICENSING.md](samsara/base--LICENSING.md), [base--bsp--LICENSE](samsara/base--bsp--LICENSE), [base--bsp--LICENSING.md](samsara/base--bsp--LICENSING.md), [base--bsp--NOTICE](samsara/base--bsp--NOTICE), [base--web--m-bootloader--LICENSE](samsara/base--web--m-bootloader--LICENSE) | https://github.com/tomorrowsman/fm1-samsara |
+| sardine/1.0.6.fwsc | Sardine | delirioux | GPL-3.0 | [LICENSE](sardine/LICENSE), [LICENSING.md](sardine/LICENSING.md) | https://github.com/delirioux/sardine |
+| satie1/0.1.3-beta.fwsc | SATIE-1 | OCKM Studio | GPL-3.0 | [LICENSE](satie1/LICENSE), [LICENSING.md](satie1/LICENSING.md) | https://github.com/OCKM-STUDIO/SATIE-1 |
+| scintilla/0.3.2.fwsc | Scintilla | Joakim Eriksson | GPL-3.0 | [LICENSE](scintilla/LICENSE), [firmware--LICENSE](scintilla/firmware--LICENSE), [firmware--LICENSING.md](scintilla/firmware--LICENSING.md) | https://github.com/joakimeriksson/scintilla-fm1 |
+| shifl/1.0.0.fwsc | shifl | Char Baba | GPL-3.0 | [LICENSE](shifl/LICENSE), [LICENSING.md](shifl/LICENSING.md) | https://github.com/schwartzworld/shifl |
+| shineon/3.5.fwsc | Shine On | zvenson | GPL-3.0 | [LICENSE](shineon/LICENSE), [LICENSING.md](shineon/LICENSING.md), [firmware--src--screen_mirror--LICENSE](shineon/firmware--src--screen_mirror--LICENSE) | https://github.com/zvenson/shineon |
+| sid/0.3.fwsc | FM-1 SID | joakimeriksson | GPL-3.0 | [LICENSE](sid/LICENSE), [LICENSING.md](sid/LICENSING.md), [dinghy--LICENSE](sid/dinghy--LICENSE), [dinghy--LICENSING.md](sid/dinghy--LICENSING.md) | https://github.com/joakimeriksson/fm1-sid |
+| sid1/1.0.1.fwsc | SID-1 | putchdev | GPL-3.0 | [LICENSE](sid1/LICENSE), [LICENSING.md](sid1/LICENSING.md), [tests--ref--resid-0.16--COPYING](sid1/tests--ref--resid-0.16--COPYING) | https://github.com/putchdev/sid-1 |
+| sidj/1.5.1.fwsc | SiDJ | thomasj (tubesockor) | GPL-3.0 | [LICENSE](sidj/LICENSE), [LICENSING.md](sidj/LICENSING.md), [third_party--6502_functional_test--license.txt](sidj/third_party--6502_functional_test--license.txt), [third_party--resid-0.16--COPYING](sidj/third_party--resid-0.16--COPYING) | https://github.com/thomasj/fm1-sidj |
+| sidou/2.0.0.fwsc | SIDOU | Denis Sablić | GPL-3.0 | [LICENSE](sidou/LICENSE), [LICENSES--LicenseRef-GoatTracker-Playroutine.txt](sidou/LICENSES--LicenseRef-GoatTracker-Playroutine.txt), [LICENSES--LicenseRef-PublicDomain.txt](sidou/LICENSES--LicenseRef-PublicDomain.txt), [LICENSING.md](sidou/LICENSING.md), [platform--fm1--bsp--LICENSE](sidou/platform--fm1--bsp--LICENSE), [platform--fm1--bsp--NOTICE](sidou/platform--fm1--bsp--NOTICE), [third_party--goattracker2--copying](sidou/third_party--goattracker2--copying) | https://github.com/dsablic/sidou |
+| sill/1.0.4-c5cfe9e.fwsc | Sill | delirioux | GPL-3.0 | [LICENSE](sill/LICENSE), [LICENSING.md](sill/LICENSING.md) | https://github.com/delirioux/sill |
+| sillage/2.2.2.fwsc | Sillage | T-TAURI | GPL-3.0 | [LICENSE](sillage/LICENSE), [LICENSING.md](sillage/LICENSING.md) | https://github.com/lelacnoir-lab/Sillage |
+| sixmachines/0.1.6.fwsc | SIX MACHINES | swtdr34mz | MPL-2.0 | [LICENSE](sixmachines/LICENSE) | https://github.com/swtdr34mz-afk/SIX_MACHINES |
+| skiff/2.7.2.fwsc | Skiff | illuminus5 | GPL-3.0 | [LICENSE](skiff/LICENSE), [LICENSING.md](skiff/LICENSING.md) | https://github.com/illuminus5/skiff |
+| sloop/2.8.5.fwsc | SLOOP | isod89 | GPL-3.0 | [LICENSE](sloop/LICENSE), [LICENSING.md](sloop/LICENSING.md) | https://github.com/isod89/sloop-fm1 |
+| sloop-banks/2.5-b28-test.fwsc | SLOOP DX7 Banks | majnikool | GPL-3.0 | [LICENSE](sloop-banks/LICENSE), [LICENSING.md](sloop-banks/LICENSING.md) | https://github.com/majnikool/sloop-fm1 |
+| sloop-floyd/2.4.fwsc | SLOOP Floyd FM | renebohne | GPL-3.0 | [LICENSE](sloop-floyd/LICENSE), [LICENSING.md](sloop-floyd/LICENSING.md) | https://github.com/renebohne/sloop-fm1 |
+| sloopdub/1.8.fwsc | sloop-DUB | altessproduction | GPL-3.0 | [LICENSE](sloopdub/LICENSE), [LICENSING.md](sloopdub/LICENSING.md) | https://github.com/altessproduction/sloop-dub-fm1 |
+| sloopdx/4.0.1.fwsc | sloopDX | zvenson | GPL-3.0 | [LICENSE](sloopdx/LICENSE), [LICENSING.md](sloopdx/LICENSING.md) | https://github.com/zvenson/dxsloop |
+| smileyface/1.3.0-tutorialtime.fwsc | Smileyface | pbarilla | GPL-3.0 | [LICENSE](smileyface/LICENSE), [LICENSING.md](smileyface/LICENSING.md) | https://github.com/pbarilla/smileyface |
+| spampy/1.2-r080.fwsc | SPAMPY | Spampy-Droid | GPL-3.0 | [LICENSE](spampy/LICENSE), [LICENSING.md](spampy/LICENSING.md), [upstream--obervave--LICENSE](spampy/upstream--obervave--LICENSE), [upstream--obervave--LICENSING.md](spampy/upstream--obervave--LICENSING.md) | https://github.com/Spampy-Droid/SPAMPY-0.0-r949 |
+| spellbox/0.3.fwsc | SPELLBOX | Philippe Jaccoud | GPL-3.0 | [LICENSE](spellbox/LICENSE), [LICENSING.md](spellbox/LICENSING.md), [platform--mvave--LICENSE.md](spellbox/platform--mvave--LICENSE.md), [platform--mvave--THIRD_PARTY.md](spellbox/platform--mvave--THIRD_PARTY.md) | https://github.com/pjac1810/spellbox |
+| splitmilk/1.0.fwsc | SPLITMILK | MammothCheese | GPL-3.0 | [LICENSE](splitmilk/LICENSE), [LICENSING.md](splitmilk/LICENSING.md) | https://github.com/MammothCheese/SPLITMILK |
+| sq80/128-test.fwsc | SQ-80 | Leonardo Lopez Chavira | MIT | [LICENSE](sq80/LICENSE), [LICENSING.md](sq80/LICENSING.md), [fm1--base--LICENSE](sq80/fm1--base--LICENSE), [fm1--base--LICENSING.md](sq80/fm1--base--LICENSING.md), [fm1--base--bsp--LICENSE](sq80/fm1--base--bsp--LICENSE), [fm1--base--bsp--LICENSING.md](sq80/fm1--base--bsp--LICENSING.md), [fm1--base--bsp--NOTICE](sq80/fm1--base--bsp--NOTICE) | https://github.com/leonardolopezchavira/sq80-fm1 |
+| stack/4.01-beta.fwsc | STACK | Maker Hip (Hippie Maker) | MPL-2.0 | [LICENSE](stack/LICENSE), [stack--LICENSING.md](stack/stack--LICENSING.md) | https://github.com/perawoga2-coder/stack |
+| stallion/1.1.fwsc | Stallion | Eberon Limited (John Gorman) | GPL-3.0 | [LICENSE](stallion/LICENSE), [LICENSING.md](stallion/LICENSING.md), [tools--licence_check.py](stallion/tools--licence_check.py) | https://github.com/EberonLtd/stallion-fm1 |
+| strangersynth/0.8.0.fwsc | STRANGER SYNTH | swtdr34mz | MPL-2.0 | [LICENSE](strangersynth/LICENSE) | https://github.com/swtdr34mz-afk/STRANGER_SYNTH |
+| sy1/1.0.0.fwsc | SY1 | Fenderberg | MIT | [LICENSE](sy1/LICENSE), [THIRD_PARTY.md](sy1/THIRD_PARTY.md) | https://github.com/fenderberg/fm1-sy1 |
+| tack/0.15.0.fwsc | Tack | oikoaudio | GPL-3.0 | [LICENSE](tack/LICENSE), [NOTICE.md](tack/NOTICE.md) | https://github.com/oikoaudio/tack |
+| tangram/1.0.fwsc | Tangram | Mr. Roboto | GPL-2.0-or-later | [LICENSE](tangram/LICENSE), [app--engine--softfloat--LICENSE](tangram/app--engine--softfloat--LICENSE) | https://github.com/Mr-Roboto/fm1-tangram |
+| tastywaves/1.0.1.fwsc | TastyWaves | marksweiss | GPL-3.0 | [LICENSE](tastywaves/LICENSE), [LICENSING.md](tastywaves/LICENSING.md) | https://github.com/marksweiss/tastywaves |
+| tekstuur/2.0.fwsc | Tekstuur | BARNIR | MPL-2.0 | [LICENSE](tekstuur/LICENSE) | https://github.com/barnierg76/tekstuur-fm1 |
+| telegram101/857.fwsc | Telegram 101 | Big Beat Studio | GPL-3.0 | [LICENSE](telegram101/LICENSE), [THIRD_PARTY.txt](telegram101/THIRD_PARTY.txt), [board--vendor--LICENSE](telegram101/board--vendor--LICENSE), [board--vendor--LICENSING.md](telegram101/board--vendor--LICENSING.md), [vendor--bb--LICENSE](telegram101/vendor--bb--LICENSE), [vendor--bb--LICENSING.md](telegram101/vendor--bb--LICENSING.md), [vendor--smk37--LICENSE.md](telegram101/vendor--smk37--LICENSE.md) | https://github.com/TexasRADIO/telegram-101-fm1-firmware |
+| tessera/3.7.5.fwsc | Tessera | Theo Dainis (Rastapopolix) | GPL-3.0 | [LICENSE](tessera/LICENSE), [LICENSING.md](tessera/LICENSING.md), [docs--classic--firmware--LICENSE](tessera/docs--classic--firmware--LICENSE), [docs--classic--firmware--LICENSING.md](tessera/docs--classic--firmware--LICENSING.md), [docs--firmware--LICENSE](tessera/docs--firmware--LICENSE), [docs--firmware--LICENSING.md](tessera/docs--firmware--LICENSING.md), [firmware--third_party--mi--LICENSE](tessera/firmware--third_party--mi--LICENSE) | https://github.com/Rastapopolix/tessera |
+| tether/1.0.fwsc | Tether | utopick | MIT | [LICENSE](tether/LICENSE), [pocket--firmware--LICENSE](tether/pocket--firmware--LICENSE), [pocket--firmware--LICENSING.md](tether/pocket--firmware--LICENSING.md), [pocket--vendor--LICENSE-fm1-emu](tether/pocket--vendor--LICENSE-fm1-emu), [pocket--vendor--mboot--LICENSE-m-bootloader](tether/pocket--vendor--mboot--LICENSE-m-bootloader) | https://github.com/utopick/fm1-pocket |
+| textura/0.3.0.fwsc | Textura | Leonardo Mirabal | GPL-3.0 | [LICENSE](textura/LICENSE) | https://github.com/leonardoMirabal/textura |
+| tonitor/2026.11.10.fwsc | Tonitor | Nuno Zimas | GPL-3.0 | [LICENSE](tonitor/LICENSE), [LICENSING.md](tonitor/LICENSING.md) | https://github.com/nzimas/tonitor |
+| trapstationos/1.1.0.2.fwsc | TRAPSTATION OS | Schlensog Audio Lab | GPL-3.0 | [LICENSE](trapstationos/LICENSE), [LICENSING.md](trapstationos/LICENSING.md) | https://github.com/sog-maker/trapstation-os |
+| tribe/0.3-beta.fwsc | TRIBE | apiel | GPL-3.0 | [LICENSE](tribe/LICENSE), [LICENSING.md](tribe/LICENSING.md) | https://github.com/apiel/fm1-tribe |
+| trumpagotchi/1.0.1.fwsc | Trumpagotchi | Trust This Mechanism | GPL-3.0 | [LICENSE](trumpagotchi/LICENSE), [LICENSING.md](trumpagotchi/LICENSING.md) | https://github.com/adamcharleswilsonmusic-code/Trumpagotchi |
+| tuna/1.2-99d50fb.fwsc | Tuna | delirioux | GPL-3.0 | [LICENSE](tuna/LICENSE), [LICENSING.md](tuna/LICENSING.md) | https://github.com/delirioux/tuna |
+| u0u/0.4.fwsc | U0U | @Y_oulisse | GPL-3.0 | [LICENSE](u0u/LICENSE), [LICENSING.md](u0u/LICENSING.md), [firmware--bsp--LICENSE](u0u/firmware--bsp--LICENSE), [firmware--bsp--LICENSING.md](u0u/firmware--bsp--LICENSING.md), [firmware--bsp--NOTICE](u0u/firmware--bsp--NOTICE), [firmware--engines--LICENSE](u0u/firmware--engines--LICENSE), [site--firmware--LICENSE](u0u/site--firmware--LICENSE), [site--firmware--LICENSING.md](u0u/site--firmware--LICENSING.md) | https://github.com/youlisse/U0U |
+| unholy/0.2.3.fwsc | Unholy Union | actuallysparky | GPL-3.0 | [LICENSE](unholy/LICENSE), [LICENSING.md](unholy/LICENSING.md) | https://github.com/actuallysparky/FM-1-Unholy-Union-generative-drone-firmware |
+| valle/0.9.1-alpha.fwsc | Vallée | tammygucci | GPL-3.0 | [LICENSE](valle/LICENSE), [LICENSING.md](valle/LICENSING.md) | https://github.com/tammygucci/valee |
+| vector37/0.3.2.fwsc | Vector37 | genkigenki | GPL-3.0 | [LICENSE](vector37/LICENSE), [ref--LICENSE](vector37/ref--LICENSE) | https://github.com/genkigenki/Vector37 |
+| veffbox/0.11.0.fwsc | Veffbox | Veff | GPL-3.0 | [LICENSE](veffbox/LICENSE) | https://github.com/galfaroth/veffbox |
+| vesper/2.0.2.fwsc | VESPER | Fat Cat Studios | GPL-3.0 + SDK exception | [LICENSE.md](vesper/LICENSE.md), [THIRD_PARTY.md](vesper/THIRD_PARTY.md) | https://github.com/fatcatstudios-hub/vesper-fm1 |
+| viber/1.2.fwsc | Viber | Anto | GPL-3.0 | [LICENSE](viber/LICENSE), [LICENSING.md](viber/LICENSING.md) | https://github.com/ant25fr/viber |
+| vnl1/0.9.2.fwsc | VNL-1 | pianomansam | GPL-3.0 | [LICENSE](vnl1/LICENSE), [NOTICE](vnl1/NOTICE), [app--drums--LICENSES.md](vnl1/app--drums--LICENSES.md), [app--drums--fomajam--LICENSE](vnl1/app--drums--fomajam--LICENSE), [app--drums--fomajam--LICENSE.poketrack](vnl1/app--drums--fomajam--LICENSE.poketrack), [app--drums--optimist--LICENSE](vnl1/app--drums--optimist--LICENSE) | https://github.com/pianomansam/fm1-vnl |
+| volna/1.1.fwsc | Volna | M_Bougrimoff | GPL-3.0 | [LICENSE](volna/LICENSE), [LICENSING.md](volna/LICENSING.md) | https://github.com/MaxMaximoff/volna |
+| wanderer/1.4.0.fwsc | Wanderer | Nicholas James / Low Vision Music | GPL-3.0 | [LICENSE](wanderer/LICENSE), [LICENSING.md](wanderer/LICENSING.md), [assets--icons--lucide--LICENSE.txt](wanderer/assets--icons--lucide--LICENSE.txt), [assets--icons--tabler--LICENSE.txt](wanderer/assets--icons--tabler--LICENSE.txt), [docs--screenshots-3.0--notice-home-z0.png](wanderer/docs--screenshots-3.0--notice-home-z0.png), [docs--screenshots-3.0--notice-kept-z0.png](wanderer/docs--screenshots-3.0--notice-kept-z0.png), [docs--screenshots-3.1--notice-home.png](wanderer/docs--screenshots-3.1--notice-home.png) | https://github.com/spinnicholas/lvm-wanderer-fm1 |
+| waveloop/1.0.5.2-midi23.fwsc | WaveLoop FM-1 | ELI7VH | GPL-3.0 | [LICENSE](waveloop/LICENSE), [LICENSING.md](waveloop/LICENSING.md), [tests--reference--yama-bruh--LICENSE](waveloop/tests--reference--yama-bruh--LICENSE) | https://github.com/ELI7VH/Felucca |
+| winampfm/0.12.fwsc | winampFM Synth | hericdk | GPL-3.0 | [LICENSE](winampfm/LICENSE), [firmware--LICENSE](winampfm/firmware--LICENSE), [firmware--LICENSING.md](winampfm/firmware--LICENSING.md) | https://github.com/hericdk/winampFM |
+| x0x/1.3.fwsc | X0X | charlesvestal | GPL-3.0 | [LICENSE](x0x/LICENSE), [LICENSING.md](x0x/LICENSING.md) | https://github.com/charlesvestal/fm1-x0x |
+| x0xrmx/1.1.0.fwsc | X0X-RMX | Mr-Roboto (Oliver) | GPL-3.0 | [LICENSE](x0xrmx/LICENSE), [LICENSING.md](x0xrmx/LICENSING.md) | https://github.com/Mr-Roboto/fm1-x0x-rmx |
+| xenolith/1.0.fwsc | XENOLITH | Unit_v743 | GPL-3.0 | [LICENSE](xenolith/LICENSE), [app--COPYING_SUPERCOLLIDER](xenolith/app--COPYING_SUPERCOLLIDER), [app--LICENSE](xenolith/app--LICENSE), [app--LICENSE_MPL_TEMPLATE](xenolith/app--LICENSE_MPL_TEMPLATE), [app--THIRD_PARTY.md](xenolith/app--THIRD_PARTY.md), [sdk-resources--LICENSE](xenolith/sdk-resources--LICENSE), [vendor--fm1-base--LICENSE](xenolith/vendor--fm1-base--LICENSE), [vendor--fm1-base--LICENSING.md](xenolith/vendor--fm1-base--LICENSING.md), [vendor--fm1-base--bsp--LICENSE](xenolith/vendor--fm1-base--bsp--LICENSE), [vendor--fm1-base--bsp--LICENSING.md](xenolith/vendor--fm1-base--bsp--LICENSING.md), [vendor--fm1-base--bsp--NOTICE](xenolith/vendor--fm1-base--bsp--NOTICE) | https://github.com/CaptainChronosis/XENOLITH |
+| xmod/1.2.1.fwsc | XMOD | Kot Morderca | GPL-3.0 | [LICENSE](xmod/LICENSE), [THIRD_PARTY.md](xmod/THIRD_PARTY.md), [third_party--fonts--LICENSE](xmod/third_party--fonts--LICENSE) | https://github.com/KotMorderca/XMOD |
+| yehnah/0.1.0.fwsc | Yehnah | Mello-D | GPL-3.0 | [LICENSE](yehnah/LICENSE), [LICENSING.md](yehnah/LICENSING.md) | https://github.com/Mello-D/yehnah |
+| zen/1.2.fwsc | ZEN-1 | aceyprime | GPL-3.0 | [LICENSE](zen/LICENSE), [LICENSING.md](zen/LICENSING.md) | https://github.com/aceyprime/zen-1 |
+| zenith1/1.0.fwsc | ZENITH-1 | Polystellarflow | MPL-2.0 | [LICENSE](zenith1/LICENSE), [LICENSING.md](zenith1/LICENSING.md), [base--LICENSE](zenith1/base--LICENSE), [base--LICENSING.md](zenith1/base--LICENSING.md), [base--bsp--LICENSE](zenith1/base--bsp--LICENSE), [base--bsp--LICENSING.md](zenith1/base--bsp--LICENSING.md), [base--bsp--NOTICE](zenith1/base--bsp--NOTICE), [base--web--m-bootloader--LICENSE](zenith1/base--web--m-bootloader--LICENSE) | https://github.com/sparky480v/zenith-1 |
+| zodiac/1.0.0.fwsc | Zodiac | CU_STE | GPL-3.0 | [LICENSE](zodiac/LICENSE) | https://github.com/stephencummins/fm1-zodiac |
+| zp12/2.5.fwsc | zp12 | zvenson | GPL-3.0 | [LICENSE](zp12/LICENSE), [LICENSING.md](zp12/LICENSING.md) | https://github.com/zvenson/zp12 |

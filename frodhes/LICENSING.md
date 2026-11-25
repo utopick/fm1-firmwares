@@ -1,0 +1,72 @@
+# Licensing
+
+Frodhes is free software under the GNU General Public License, version 3 only (`GPL-3.0-only`, full text in
+`LICENSE`). You may use, study, change and share it. If you give someone a firmware built from it, give them its
+complete source under the same licence too.
+
+## Who made what
+
+| | |
+| --- | --- |
+| The platform: `firmware/hal/`, `firmware/loader/`, `crt0.S`, `app.ld`, `firmware/src/` (`usb.c`, `ota.c`, `recovery.c`, `lcd.c`, `gfx.c`, `libc.c`, `bootguard.h`, `uac_fir.h`), `tools/` | Copyright (C) 2026 Leo Kuroshita (@kurogedelic), Hügelton Instruments ([Felucca](https://github.com/hugelton/Felucca)), with the changes of [SLOOP](https://github.com/isod89/sloop-fm1) (isod89) |
+| The SMK-37 board layer: `firmware/hal/smk_input.h`, `fm1_flash_map.h`, the SMK-37 parts of `fm1_cc.h`, `fm1_flash.h`, `fm1_lcd_hw.h`, `lcd.c`, `ota.c`, `bootguard.h`, `firmware/loader/`, `tools/fm1pkg_make.py`, `tools/fm1_install.py`, `tools/build.py`; `firmware/src/smk_wheel.h`; `tests/ota_test.c`, `ldr_test.c`, `install_test.py`, `smk_wheel_test.c`, `smk_pkg_test.py` | Copyright (C) 2026 M. Geisler (genkigenki/makkuro), from [genkigenki/sloop-fm1](https://github.com/genkigenki/sloop-fm1) branch `smk37` (the reference port of the [fm1-to-smk37](https://github.com/genkigenki/fm1-to-smk37) kit) |
+| The TRS MIDI IN `firmware/src/midi_uart.c` | Felucca's, as sloopDX carries it, with the ring read by content from Felucca [Salt] 0.9-salt14 by ChanceTheMaker (found by keremimo) |
+| The update loader's screen: `firmware/loader/ldr_screen.c`, `tests/ldr_screen_test.c` | Copyright (C) 2026 zvenson (from OberVave, the Firmware Hub's look); the idea, a loader that draws, its 5 x 7 letters and the order of things from [Skiff](https://github.com/illuminus5/skiff) by illuminus5, GPL-3.0 |
+| From OberVave: the storage (blobs, slots), `LCD_IDLE`, the SMK-37 wiring of `platform.c`, `store.h`, the pad event queue in `smk_input.h`, `tests/smk_flash_test.c`, `tests/run_tests.sh` | Copyright (C) 2026 zvenson |
+| The wiring `platform.c`, the host mode `tests/`, `docs/API.md`, `docs/RULES.md` ([Dinghy](https://github.com/zvenson/dinghy)) | zvenson |
+| The app `firmware/src/frodhes.c` (derived from Dinghy's app), the engine `firmware/src/rhodes.c` | Leonardo Mirabal |
+| Key velocity: `firmware/src/keyvel.c`, `firmware/src/keyvel.h`, `firmware/hal/fm1_keyadc.h` and the converter scheduling in `firmware/hal/fm1_adc.h`, after [fm1-velocity](https://github.com/charlesvestal/fm1-velocity) (commit 8f62ce0, GPL-3.0-only): the method, the row drive and the curve, rewritten in integers for the panel scan | Charles Vestal (fm1-velocity); Leonardo Mirabal (this version) |
+
+## What each target compiles
+
+| Target | Compiles | Third-party code |
+| --- | --- | --- |
+| FM-1 and SMK-37 firmware | the whole tree above: the platform files, the app, the engines | as listed under "Who made what" and "Third-party material" |
+| Move, MPC, web emulator | the app and engines with their own platform layers | as today: the same third-party code as the firmware where it compiles it |
+| Desktop plugin (CLAP, VST3, Audio Unit) | only Frodhes' own code: the app with its own plugin layer, drive, delay and tables (`FR_OWN`, `FR_OWN_HAL`; `docs/ARCHITECTURE.md`), and the window | only the libraries in `plugin/deps.lock` (CLAP, clap-wrapper with {fmt}, the VST3 SDK, AudioUnitSDK, all MIT or Apache-2.0), the platform's C/C++ runtime, and the window's SIL OFL fonts (Inter Tight, Michroma). No Terminus font, none of the platform files, no third-party delay or drive code |
+
+The plugin's files carry Frodhes' own copyright only, and outside contributions are not merged into them
+(`AGENTS.md`). `tools/own_check.py` checks the plugin's source closure for this. The upstream copyright headers of
+the other targets stay where they are.
+
+## Third-party material
+
+| What | Licence | Where |
+| --- | --- | --- |
+| Terminus font 8x16 (`assets/fonts/ter-u16n.bdf`), rendered into `firmware/gen/felucca_font.h` by `tools/gen_font.py` | SIL OFL 1.1 | `assets/fonts/Terminus-LICENSE.txt` |
+| Inter Tight (`assets/fonts/InterTight[wght].ttf`), rendered into `firmware/gen/aa_font.h` by `tools/gen_aa_font.py` (the screen's values and labels); the desktop plugin's UI (`plugin/ui/`) draws its text from the same file | SIL OFL 1.1, Copyright 2022 The Inter Project Authors | `assets/fonts/OFL-InterTight.txt` |
+| The desktop plugin's dependencies (`plugin/`; fetched by `tools/plugin_deps.sh` at the commits pinned in `plugin/deps.lock` into `.local/plugin-deps`, none in this tree; compiled into the plugin bundles): the [CLAP](https://github.com/free-audio/clap) headers, [clap-wrapper](https://github.com/free-audio/clap-wrapper) (with its copy of the {fmt} library), the [VST3 SDK](https://github.com/steinbergmedia/vst3sdk) | MIT ({fmt}: MIT, with its optional exception for compiled forms) | `LICENSES/MIT.txt`; each project's own `LICENSE` |
+| The desktop plugin's Audio Unit layer: Apple's [AudioUnitSDK](https://github.com/apple/AudioUnitSDK), fetched the same way, compiled into `Frodhes.component` | Apache-2.0 | `LICENSES/Apache-2.0.txt` |
+| The desktop plugin's Windows runtime: the Microsoft C/C++ runtime, linked statically (`/MT`) into the Windows `.clap` and `.vst3`; the Windows SDK and CRT for the cross build come from Microsoft through [xwin](https://github.com/Jake-Shadle/xwin) (`tools/plugin_win.sh setup`, its licence accepted there; nothing of it in this tree) | Microsoft's Visual Studio / Windows SDK terms (redistributable in linked form; no notice required) | — |
+| The desktop plugin's Linux runtime: GCC's libstdc++ and libgcc, linked into the Linux `.clap` and `.vst3` | GPL-3.0 WITH GCC-exception-3.1 | the Linux package's `THIRD-PARTY-NOTICES.txt` |
+| clap-wrapper's copy of the PreSonus gain-reduction header (`ipslgainreduction.h`), compiled into the VST3 | public domain | its README in clap-wrapper |
+| The plugin test tools, fetched pinned by `tools/plugin_deps.sh` and run only (never shipped): clap-validator (MIT), pluginval (GPL-3.0); wine (LGPL-2.1, in Docker, the Windows tests) | MIT, GPL-3.0, LGPL-2.1 | their own repositories |
+| Michroma (`assets/fonts/Michroma-Regular.ttf`): the desktop plugin UI's wordmark and section titles (`plugin/ui/`) | SIL OFL 1.1 | `assets/fonts/OFL-Michroma.txt` |
+| JieLi AC79 SDK: `uboot.boot`, `cfg_tool.bin`, `eq_cfg_hw.bin` are read from your SDK checkout at build time and placed in the package; no SDK files are in this tree. Every release attaches the licence text as `Apache-2.0.txt` | Apache-2.0 | `LICENSES/Apache-2.0.txt`; <https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK> |
+
+Every plugin package (`tools/plugin_pack.sh`, docs/PLUGIN.md "Packages") carries `LICENSE.txt`, `SOURCE.txt` and a
+`THIRD-PARTY-NOTICES.txt` with the full licence text of each item above that its binaries contain, taken from the
+pinned checkouts at build time.
+
+## The Frodhes name and logo
+
+The GPL covers the code, not the project's identity. "Frodhes", the Frodhes wordmark and logo, and the boot screen and
+artwork that show them (on the instruments, the plugin window, the MPC skin, the documentation and the website) are
+Leonardo Mirabal's and are not licensed under the GPL. As GPL-3.0 section 7(e) allows, no right to use them is granted.
+
+You may fork, change and share the code under the GPL. If you distribute a changed version:
+- give it a different name that does not contain "Frodhes", and use your own logo and boot screen;
+- don't present it as Frodhes or as made, endorsed or supported by this project, and don't point its links or
+  homepage at this project's pages as if they were its own;
+- you may say, as a plain fact, that it is "based on Frodhes" and link here.
+
+Unchanged copies of an official release may keep the name and logo. For anything else, ask first.
+
+## Trademarks
+
+"Felucca" and "Hügelton Instruments" are names of Hügelton Instruments; "M-VAVE", "FM-1", "SMK-37" and "MKE-P37"
+belong to their owners. Frodhes is not made or endorsed by them. "Fender" and "Rhodes" are trademarks of their owners;
+Frodhes is an independent emulation, not affiliated with or endorsed by them. "VST" is a trademark of Steinberg Media
+Technologies GmbH; "Audio Units" and "macOS" are trademarks of Apple Inc. The desktop plugin uses these formats
+under their SDKs' licences and is not made or endorsed by either company. "CLAP" names the CLAP plugin standard of
+the free-audio project. No format logo is used.

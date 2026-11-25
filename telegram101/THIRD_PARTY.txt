@@ -1,0 +1,2 @@
+Telegram 101 and the Felucca browser updater retain their component licences. See LICENSE and the component notices under vendor and board/vendor in Source.zip.
+Dillo phrases adapted from J. McConaghy / Acid-Tabs.com (https://acid-tabs.com) are renamed, revoiced and retimed. CC BY-SA 4.0 applies (https://creativecommons.org/licenses/by-sa/4.0/). Acid Voice charts (https://acidvoice.com) are adapted under a separate project licence. Picnic firmware glyphs are by Taylor Rushing.

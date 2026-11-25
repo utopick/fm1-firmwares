@@ -1,0 +1,3 @@
+hv_splash_b.png: the HanzVolt "HV" logo. Copyright (C) Hans Volt (HanzVolt). All rights reserved.
+NOT licensed under GPL-3.0; the GPL grants no right to it. Included with Hans's permission for the Polivoks
+FM-1 firmware (and FORM). See ../../ATTRIBUTION.txt.

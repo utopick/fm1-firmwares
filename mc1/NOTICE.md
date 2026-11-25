@@ -1,0 +1,161 @@
+# Licensing and provenance
+
+## Optional dual-core HAL (2026-10-19)
+
+`firmware/hal/fm1_cpu1.S` and `fm1_cpu1.h` adapt the CPU1 startup, stack entry,
+boot self-test and safe hold from SLOOP v2.7.1, commit
+`4ec1ac829fd2bdf2c571ea215fb3d62477d01220`:
+https://github.com/isod89/sloop-fm1/tree/4ec1ac829fd2bdf2c571ea215fb3d62477d01220
+
+The GPL-3.0-only notices retain Copyright (C) 2026 Charles Vestal (X0X
+`00bff73`, after Melodee dual-core audio by Kerem Kilic), Leo Kuroshita
+(@kurogedelic), Hügelton Instruments (safe hold, after Felucca 1.6.1), and
+Andre Rezemini (SLOOP boot integration). MC-1 changes are Copyright (C) 2026
+dspaudio: private C/F job payload, transactional completion, failure quarantine,
+bounded waits, memory/stack guards and integration. SLOOP's shared track state,
+voice shedding, power settings and DSP are not imported. See `docs/DUAL_CORE.md`
+for the pinned version comparison and official SDK synchronization references.
+
+MC-1 is GPL-3.0-only; the complete license is in LICENSE.
+New engine, sequencer, project format, UI, host harness, presets and mathematical assets:
+Copyright (C) 2026 dspaudio. These are original implementations, not copies of Roland sound algorithms or content.
+
+The following files were copied from the **public** dspaudio/orbit repository at commit
+`07e3fed30e8e6757dbe3c6810276599987e4970e` and retain their original GPL-3.0-only notices:
+
+- `firmware/hal/fm1_*.h`, `firmware/hal/fm1_isr.S`, `firmware/hal/fm1_vec.S`
+- `firmware/crt0.S`, `firmware/app.ld`, `firmware/lcd.c`, `firmware/libc.c`
+- `firmware/loader/*`, `firmware/update/*`, `tools/fm1pkg_make.py`, `tools/lz4blk.py`,
+  `tests/ldr_test.c`; loader wrapping in `tools/build_package.py` is adapted from upstream `tools/build.py`.
+- `firmware/connection/midi_uart.c` and `tests/connections.c` adapt the upstream
+  TRS MIDI parser and USB Audio/UART tests. `firmware/hal/fm1_uart.h` supplies
+  the inherited UART register mapping. MC-1 adds application routing and USB identity.
+
+Copyright (C) 2026 Leo Kuroshita (@kurogedelic), Hügelton Instruments.
+The lineage is ORBIT → SLOOP → Felucca; ORBIT identifies SLOOP origin commit
+`d691ba7b2d922f1a1f41a3622cffe29ce41c5506` and subsequent upstream integrations.
+Upstream source: https://github.com/dspaudio/orbit/tree/07e3fed30e8e6757dbe3c6810276599987e4970e
+
+Hardware, startup, LCD-transfer, freestanding libc and update-loader infrastructure are reused.
+The encoder acceleration thresholds are inspired by the GPL ORBIT `ui_input.c` at
+the same commit: ranges above 40 use 3× within 60 ms, or 6× above 150. MC-1 adds
+first-input, direction/context reset and shared host/device timing behavior.
+MC-1 does not include ORBIT engines, tape workflow, sequencer, sample banks, patch assets,
+restricted Felucca icons, panel photos, Hügelton Sample Pack, proprietary Roland ROMs,
+PicoFaceJV ROMs, Munt code, Open303 code or DaisySP code.
+
+## Browser firmware installer
+
+`site/firmware-ota.js` ports the public `tools/fm1_install.py` at the ORBIT
+commit above. The audited Python source is 19402 bytes, SHA256
+`987f3203c4575d82c4234217964f2f5e7e7cbf41ad277154c378bc9433a244f9`.
+Copyright (C) 2026 Leo Kuroshita (@kurogedelic), Hügelton Instruments;
+GPL-3.0-only. Copyright (C) 2026 dspaudio covers the JavaScript port, package
+and SHA256 checks, bounded Web MIDI transport, event-driven reconnection,
+installer UI and tests. Original notices remain in the source files.
+The installer and checked MC-1 release package are served together by this
+repository's Pages site. The corresponding source is available at its release
+tag. `FM-1_900` and `FELUCCA-LOADER-1` are protocol identifiers, not MC-1 version
+claims. Package SDK assets retain the licenses described below.
+
+`site/firmware-stock.js` follows the official V15 file identity and layout checks
+in `validateStockPackage` from public hugelton/Felucca-WebApp, `index_pkg.html`,
+commit `b7947ad1da2017d211368610b5e96deabef4849a`:
+https://github.com/hugelton/Felucca-WebApp/blob/b7947ad1da2017d211368610b5e96deabef4849a/index_pkg.html
+The original GPL-3.0-only and Leo Kuroshita/Hügelton Instruments notices are
+retained. MC-1's local preparation pairs the user's verified official application
+with its existing small RAM loader. Official M-VAVE firmware is not distributed
+in this repository, its installer archive or its Pages site.
+
+## Sensing reference audit — excluded from this release
+
+The earlier velocity/aftertouch investigation examined
+`charlesvestal/fm1-monk` commit `8af3c3d91d51194cf5f5259da3327033db90deb4`:
+https://github.com/charlesvestal/fm1-monk/tree/8af3c3d91d51194cf5f5259da3327033db90deb4
+Its root LICENSE contains GPL version 3. The sensing source
+`firmware/src/app/sense.c` explicitly carries `GPL-3.0-only` and does not name
+a separate copyright holder in its header. Its `firmware/hal/fm1_input.h`
+also carries `GPL-3.0-only` and the original Leo Kuroshita/Hügelton Instruments
+notice quoted above. These existing notices must be retained verbatim in any
+adapted files; new adaptation notices must identify MC-1's changes and date
+without inventing authorship of upstream work.
+
+Physical sensing and pressure modulation were removed from this release's scope.
+No code from this reference has been imported into the current MC-1 build.
+This audit does not assert that unrelated MONK-1 DSP, artwork, fonts, or other
+dependencies are included or have all been audited. The actual imported file
+list and modifications must replace this reference-only entry if a future
+release imports that code.
+
+## Original assets and recorded samples
+
+### Version 1.2.0 replacement LA-PCM bank
+
+All 112 LA presets now use real recorded attacks and source-derived synthesized
+harmonic sustain. The active bank has 24 zones and 17 instrument families:
+
+| Source | Active zones | Families | Recording license |
+|---|---:|---|---|
+| Meta Open Sound | 6 | Piano | CC0-1.0 |
+| Meta Open Sound | 3 | Nylon guitar | CC0-1.0 |
+| VSCO 2 Community Edition | 15 | Organ, Marimba, Glockenspiel, Xylophone, Harp, Solo violin, Viola section, Cello section, Contrabass, Flute, Oboe, Clarinet, Bassoon, Trumpet, French horn | CC0-1.0 |
+
+The recorded attacks and generated harmonic audio arrays derive from these CC0
+recordings. Firmware, generator code, original patch parameters and compositions
+remain GPL-3.0-only; the CC0 provenance does not relicense that code. Conversely,
+the recordings are not represented as original GPL mathematical waveforms.
+All source hashes and processing settings are in `assets/hybrid/manifest.json`.
+The retained VSCO piano is historical source material, not the active piano bank.
+
+`src/tables.h` is generated by `tools/gen_assets.py`: additive waveform tables, sine/tuning
+and 24 original short deterministic attacks. These assets, demo compositions and original
+bitmap font glyphs are GPL-3.0-only. Screenshots depict the original MC-1 UI.
+
+The 16 retained instrument recordings in `assets/recorded/` are CC0-1.0, from VSCO 2 Community Edition by
+Sam Gossner and Simon Dalzell, with sample cutting by Elan Hickler/Soundemote.
+Source commit: `440300901dfe9275fd84e0b7763af1f8443ae62e`. The manifest records
+individual source URLs, SHA-256 hashes and SFZ pitch keycenters. See
+`LICENSES/CC0-VSCO.txt`. The CC0 sample license does not change the GPL-3.0-only
+license of the code, original patches or generated mathematical assets.
+
+`assets/hybrid/` additionally retains six piano and three nylon-guitar WAVs from
+Meta Open Sound, CC0-1.0, pinned repository commit
+`e2ff154845994fe4135becc4d5b857c19f172784`, releases `meta-piano-v1.0.0`
+and `meta-nylon-guitar-v1.0.0`. The repository is
+https://github.com/facebookincubator/Meta-open-sound
+and its license is retained in `LICENSES/CC0-Meta.txt`.
+`assets/hybrid/manifest.json` records every selected file hash and extraction
+parameter. `tools/gen_hybrid_pcm.py` derives real PCM attacks and phase-coherent
+harmonic sustain frames from those recordings and the retained VSCO sources.
+`src/recorded_pcm.h` now contains only source-ID aliases, not duplicate recordings.
+Meta's recordings and metadata are credited to Meta Platforms, Inc., Creative
+Audio team. The complete piano WAV archive was downloaded for source selection:
+752,311,261 bytes, SHA256
+`ee9023dbde849ecab393a098aa0cfbd6f2ef48d4a096b9c08808b72fc913f70e`.
+The archive remains an ignored local build input, not an installed firmware asset.
+The active VSCO pitch metadata is pinned separately to commit
+`6dd651d55dde97fd4028699be9d4481f26917891`; the recording commit above is unchanged.
+
+The public GPL-3.0-only `jartificer/fm1-gm` repository at commit
+`4f8ffb06bb356fc14e5a8ad5c5bcc1a80f8a92b8` was inspected as an audio-quality
+reference. No GM engine, Fluid R3 SoundFont, ADPCM decoder or sample bank from it
+is included in MC-1. The LA-PCM engine and generated assets above remain the
+implementation used here.
+
+The JieLi compiler and SDK are external build dependencies, absent from the source tree.
+Experimental `.fwsc` packages include three Apache-2.0 SDK assets (`uboot.boot`,
+`cfg_tool.bin`, `cfg/eq_cfg_hw.bin`) from the official JieLi AC79 SDK commit
+`d179b4484759423312073f5fbb232501aa491047`, tag `AC79NN_SDK_V1.2.1_2023-12-13`:
+https://gitee.com/Jieli-Tech/fw-AC79_AIoT_SDK
+Their hashes are pinned in `tools/build_package.py` and the package report. See
+`LICENSES/Apache-2.0-AC79.txt` for the SDK license. The included bootloader head is
+package metadata: the inherited RAM update loader never writes flash below 0x4000.
+The protocol identity FM-1_900 and FELUCCA-LOADER-1 marker are retained for updater
+compatibility. They do not change product branding. The MC-1 audio application
+also links inherited USB audio/MIDI and Felucca OTA transport code. Its OTA entry
+path stages the RAM installer in the separately guarded `0xe0000..0xe4fff` range;
+the RAM installer performs the application update.
+
+Roland, MC-303, TB-303, TR-808, MT-32, M-VAVE and FM-1 names identify inspirations or target
+hardware. Their owners do not sponsor or endorse MC-1. No original tone/patch compatibility
+is intended. Bluetooth and Wi-Fi are not enabled.

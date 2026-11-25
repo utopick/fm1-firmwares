@@ -1,0 +1,25 @@
+FM-1 Chimera Vocal is made of parts under different licences. Each file says its own at its top (an SPDX line); the
+full texts are in LICENSES/.
+
+  Files                                                    Licence                         Copyright
+  -------------------------------------------------------  ------------------------------  ------------------------------
+  engine/, app/dsp/voice_male.h (the port of CHIMERA's     MIT (LICENSES/MIT-CHIMERA.txt)  Jameson Hodge (CHIMERA);
+  voice)                                                                                   the C port: Shan-Sherif
+  app/app.c, app/app.h, app/.github/ (started from         MPL-2.0 (LICENSES/MPL-2.0.txt)  Charles Vestal (fm1-base's
+  fm1-base's template)                                                                     template); Shan-Sherif
+  app/web/, app/site/, app/docs/, app/tests/, tools/, lab/ MIT (LICENSES/MIT.txt)          Shan-Sherif
+  engine/ch_dict_data.h, app/dsp/words_default.h           CMUdict's BSD-style licence     Carnegie Mellon University
+  (CMU Pronouncing Dictionary entries)                     (LICENSES/CMUdict.txt)          (the entries)
+
+Not in this repository, with their own licences: fm1-base and felucca-bsp (base/, a git submodule: MPL-2.0, including
+code from Felucca by Leo Kuroshita and from Melodee by Kerem Kilic, both relicensed MPL-2.0 by their authors, and fonts
+under the SIL OFL 1.1: see base/LICENSING.md); CHIMERA itself (external/, cloned for the lab: MIT); the JieLi AC79 SDK
+files every FM-1 package carries (Apache-2.0, read from your SDK at build time).
+
+The firmware package (chimera-X.Y.Z.fwsc) combines them: MPL-2.0 AND MIT, with the CMUdict entries under CMU's licence
+and the SDK's files under Apache-2.0. The site ships those licence texts beside the package.
+
+"CHIMERA" and the flat-view head are used with Jameson Hodge's permission
+(https://github.com/jamesondh/chimera-vocal-synth/issues/104#issuecomment-6882133297). FM-1 Chimera Vocal is
+unofficial: not affiliated with or endorsed by Jameson Hodge, M-VAVE, JieLi or fm1-base's authors. M-VAVE and FM-1 are
+trademarks of their owners.
