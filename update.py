@@ -90,7 +90,7 @@ def main():
         git("reflog", "expire", "--expire=now", "--all"); git("gc", "-q", "--prune=now")
     size = sum(int(l.split()[1]) for l in git("count-objects", "-v").splitlines() if l.split()[0] in ("size:", "size-pack:")) >> 10
     print("repository: %d MB of history%s" % (size, " (past %d MB: run with --squash)" % WARN_MB if size > WARN_MB else ""))
-    if "--push" in sys.argv and (changed or squash):
+    if "--push" in sys.argv:  # also pushes commits an earlier run made without --push
         subprocess.run(["git", "-C", here, "push", *(["--force"] if squash else []), "origin", "main"], check=True)
 
 
