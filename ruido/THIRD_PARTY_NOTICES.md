@@ -1,6 +1,6 @@
 # Licensing & Third-Party Notices
 
-**Ruido** (`v0.7.3`, FM-1 package identity `FM-1_312`)
+**Ruido** (`v0.8.0`, FM-1 package identity `FM-1_312`)
 Copyright (C) 2026 Miguel Hernández Domenech (<https://github.com/miguelhd/ruido>)
 
 All synthesis DSP, scanline CRT UI, 3-model pressure keybed logic, and WebAssembly/macOS simulator code in `src/` and `platforms/sim/` are original first-party Ruido code. Firmware images built for the M-VAVE FM-1 (`build/fm1/ruido.fwsc`) link against the open-source FM-1 platform layer (`GPL-3.0-only`) and are distributed under the **GNU General Public License, version 3 only (`GPL-3.0-only`)**. See [`LICENSE`](LICENSE) for the full license text.
