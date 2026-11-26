@@ -28,6 +28,7 @@ LIST = args[0] if args else os.path.join(here, "..", "fm1-pocket", "pocket", "ve
 OPEN = re.compile(r"^(GPL|LGPL|MPL|MIT|Apache|BSD)")  # licences that let us pass the package on; the rest stay at their author's
 WARN_MB = 700
 RFM1 = "https://github.com/Quixotic7/RemoteFM1FW/releases/latest/download/"
+OWN_RFM1 = os.path.join(here, "..", "fm1-rfm1", "out")  # our own builds (TP/fm1-rfm1's convert.py): copied from there, not downloaded
 WHO = ["-c", "user.name=utopick", "-c", "user.email=310144039+utopick@users.noreply.github.com"]
 AUTHOR = "--author=utopick <310144039+utopick@users.noreply.github.com>"
 
@@ -101,7 +102,10 @@ def rfm1(f):
     n = f.get("rfm1") or ""
     dest = os.path.join(here, f["id"], n)
     if not re.fullmatch(r"[\w.-]{1,80}\.rfm1", n) or os.path.exists(dest): return 0
-    with urllib.request.urlopen(urllib.request.Request(RFM1 + n, headers={"User-Agent": "fm1-firmwares-update"}), timeout=180) as r: data = r.read()
+    if os.path.exists(os.path.join(OWN_RFM1, n)):
+        with open(os.path.join(OWN_RFM1, n), "rb") as fh: data = fh.read()
+    else:
+        with urllib.request.urlopen(urllib.request.Request(RFM1 + n, headers={"User-Agent": "fm1-firmwares-update"}), timeout=180) as r: data = r.read()
     if not 16 < len(data) <= 40 << 20: raise ValueError("size %d" % len(data))
     if not OPEN.match(rfm1_licence(data)): raise ValueError("no open licence in its manifest")
     with open(dest, "wb") as fh: fh.write(data)
@@ -124,7 +128,8 @@ Each firmware belongs to its author and keeps its own licence, which is listed b
 are copied here. Each one's folder also holds the licence and notice files of its repository, and its source code is at
 the link in its row. Some also have a fast build, an `.rfm1` from
 [RemoteFM1FW](https://github.com/Quixotic7/RemoteFM1FW): the firmware's own code built as WebAssembly by Quixotic7's FM1VST,
-with its licence texts and the exact source commit inside the file. The files and this list are made by `update.py`,
+with its licence texts and the exact source commit inside the file. A few were built here instead, with the same
+FM1VST tools and glue of our own, for firmwares that release doesn't have yet. The files and this list are made by `update.py`,
 from the list FM1.Pocket builds out of [the FM-1 Firmware Hub](https://thefirmwarehub.com/) and Joakim Eriksson's fm1-emu
 list, so please don't edit them by hand. If you wrote one of these and want it taken down, open an issue and it will be
 removed.
