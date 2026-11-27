@@ -98,12 +98,14 @@ def rfm1_licence(data):
 
 
 def rfm1(f):
-    """Downloads the firmware's .rfm1 when it is new; returns 1 if it did. One with no open licence in its manifest is not kept."""
+    """Downloads the firmware's .rfm1 when it is new (copies our own build when it changed); returns 1 if it did. One with no open licence in its manifest is not kept."""
     n = f.get("rfm1") or ""
     dest = os.path.join(here, f["id"], n)
-    if not re.fullmatch(r"[\w.-]{1,80}\.rfm1", n) or os.path.exists(dest): return 0
-    if os.path.exists(os.path.join(OWN_RFM1, n)):
+    if not re.fullmatch(r"[\w.-]{1,80}\.rfm1", n): return 0
+    if os.path.exists(os.path.join(OWN_RFM1, n)):  # (a glue fix keeps the name, so a copy that differs is replaced)
         with open(os.path.join(OWN_RFM1, n), "rb") as fh: data = fh.read()
+        if os.path.exists(dest) and open(dest, "rb").read() == data: return 0
+    elif os.path.exists(dest): return 0
     else:
         with urllib.request.urlopen(urllib.request.Request(RFM1 + n, headers={"User-Agent": "fm1-firmwares-update"}), timeout=180) as r: data = r.read()
     if not 16 < len(data) <= 40 << 20: raise ValueError("size %d" % len(data))
