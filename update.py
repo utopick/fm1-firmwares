@@ -150,7 +150,7 @@ def main():
         if os.path.exists(dest):
             if "--notices" in sys.argv:  # fetch every firmware's notices again
                 for n in os.listdir(os.path.dirname(dest)):
-                    if not n.endswith((".fwsc", ".rfm1")): os.remove(os.path.join(os.path.dirname(dest), n))
+                    if not n.endswith((".fwsc", ".rfm1")) and n != "screen.png": os.remove(os.path.join(os.path.dirname(dest), n))
                 notices(f)
         else:
             try:
@@ -159,7 +159,7 @@ def main():
                 os.makedirs(os.path.dirname(dest), exist_ok=True)
                 with open(dest, "wb") as fh: fh.write(data)
                 for n in os.listdir(os.path.dirname(dest)):  # the old version's notices go with it
-                    if not n.endswith((".fwsc", ".rfm1")): os.remove(os.path.join(os.path.dirname(dest), n))
+                    if not n.endswith((".fwsc", ".rfm1")) and n != "screen.png": os.remove(os.path.join(os.path.dirname(dest), n))
                 notices(f)
                 got += 1
             except Exception as e:
